@@ -9,7 +9,7 @@
 
         
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-        <link href="src/css/styles.css" rel="stylesheet" media="only screen and (max-device-width: 1024px)">
+        <link href="src/css/styles.css" rel="stylesheet" media="only screen and (color)">
         
         <style></style>
         <!-- TemplateBeginEditable name="head" -->
