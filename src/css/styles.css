@@ -19,6 +19,9 @@ p{}
 i{}
 u{}
 wbr{}
+hr{}
+br{}
+
 
 /* Headings ---------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 { 
@@ -151,6 +154,10 @@ input[type="url"]{
 
 /* Classes -------------------------------------------------------------- */
 
+.left{float:left;}
+.right{float:right;}
+.clearleft{clear:left;}
+.clear{clear:both;}
 
 
 /*  Copyright v 0.1 2012 authors_name for company_name
