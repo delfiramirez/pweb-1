@@ -72,9 +72,9 @@
                     </figure>
                     <nav>
                         <ul id="{{id}}" class="{{mission vision values}}">
-                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow1"}}> {{link.image.one}} </a> </li>
-                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow2"}}> {{link.image.two}} </a> </li>
-                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow3"}}> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow1}}"> {{link.image.one}} </a> </li>
+                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow2}}"> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow3}}"> {{link.image.two}} </a> </li>
                         </ul>
                     <nav>
             	</section>
