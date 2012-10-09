@@ -26,11 +26,11 @@
                 <hgroup>
                     <h1> {{title.h1}} </h1>
                     <h2> {{title.h2}} </h2>
-                    <h3> {{title.h3}} </h3>
+                    <time></time>
                 </hgroup>
                 <img src="{{ /path-to/.img}}" alt ="{{ alternative-text-2 }}" > </header>
                 <hr>
-                <nav>
+                <nav id="{{language-selection}}" class="language nav-top">
                     <ul>
                         <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> {{link.one}} </a> </li>
                         <li> <a href="#" class="{{link-one nav.ul.li.b}}" title="{{title.b}}"> {{link.two}} </a> </li>
@@ -70,7 +70,7 @@
             <hr>
             <footer>
              
-                    <ul>
+                    <ul id="sitemap-navigation" class="nav-bottom">
                         <li> {{link.one}}</li>
                         <li> {{link.two}} </li>
                         <li> {{link.three}} </li>
