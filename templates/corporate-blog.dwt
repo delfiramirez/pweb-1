@@ -18,7 +18,17 @@
     <body>
         <div id="wrapper" class=" span12" >
             <header>
-                <h1 class ="company-name"> {{title.h1}} </h1>
+        <div id="wrapper" class="[{{class1 class2 class3}}]" role="main" >
+            <header>
+                <h1> 
+                    <a class="{{title.logo}}" href="/" title="Go to homepage">
+                        <i class="corporate-logo">
+                            <u>
+                {{title}}
+                            </u>
+                        </i>
+                    </a>
+                </h1>
                 <img src="{{ /path-to/.img}}" alt ="{{ alternative-text }}" >
                 <hgroup>
                     <h1> Corporate Project</h1>
@@ -27,9 +37,9 @@
                 </hgroup>
                 <nav>
                     <ul>
-                        <li> <a href="#" class={{"link-one nav.ul.li.a"}} title={{"title.a"}}> {{link.one}} </a> </li>
-                        <li> <a href="#" class={{"link-two nav.ul.li.a"}} title={{"title.b"}}> {{link.two}} </a> </li>
-                        <li> <a href="#" class={{"link-three nav.ul.li.a"}} title={{"title.b"}}> {{link.three}} </a> </li>
+                        <li> <a href="#" class="{{link-one nav.ul.li.a}}" title={{"title.a}}"> {{link.one}} </a> </li>
+                        <li> <a href="#" class="{{link-two nav.ul.li.a"}} title={{"title.b}}"> {{link.two}} </a> </li>
+                        <li> <a href="#" class={"{{link-three nav.ul.li.a"}} title={{"title.b}}"> {{link.three}} </a> </li>
                     </ul>
                 </nav>
             </header>
@@ -37,9 +47,9 @@
             <hr>
             <nav>
                 <ul>
-                    <li> <a href="#" class={{"link-one nav.ul.li.a"}} title={{"title.a"}}> {{link.one}} </a> </li>
-                    <li> <a href="#" class={{"link-two nav.ul.li.a"}} title={{"title.b"}}> {{link.two}} </a> </li>
-                    <li> <a href="#" class={{"link-three nav.ul.li.a"}} title={{"title.b"}}> {{link.three}} </a> </li>
+                    <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> {{link.one}} </a> </li>
+                    <li> <a href="#" class="{{link-two nav.ul.li.a}}" title="{{title.b}}"> {{link.two}} </a> </li>
+                    <li> <a href="#" class={"{{link-three nav.ul.li.a}}" title="{{title.b}}"> {{link.three}} </a> </li>
                 </ul>
             </nav>
             <hr>
@@ -62,9 +72,9 @@
                     </figure>
                     <nav>
                         <ul id="{{id}}" class="{{mission vision values}}">
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow1"}}> {{link.image.one}} </a> </li>
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow2"}}> {{link.image.two}} </a> </li>
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow3"}}> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow1"}}> {{link.image.one}} </a> </li>
+                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow2"}}> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class={"{{a.nav.ul.li.slideshow}}" title={{"title.a.slideshow3"}}> {{link.image.two}} </a> </li>
                         </ul>
                     <nav>
             	</section>
