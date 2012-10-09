@@ -21,6 +21,7 @@ u{}
 wbr{}
 hr{}
 br{}
+blockquote{}
 
 
 /* Headings ---------------------------------------------------- */
@@ -91,6 +92,8 @@ border-bottom : 1px solid #a8a8a8; }
 address{}
 article{}
 aside{}
+command{} /*Coming soon*/
+datafield{}
 figure{}
 figcaption{}
 footer{}
@@ -150,6 +153,9 @@ input[type="url"]{
 /* IDS -------------------------------------------------------------- */
 
 #wrapper{}
+#our-mission{}
+#our-vision{}
+#our-values{}
 
 
 /* Classes -------------------------------------------------------------- */
