@@ -3,15 +3,17 @@
 *{
 
 }
-
+/* Document ---------------------------------------------------- */
 html{}
 html> body{}
 body{}
-
+/* Hyperlinks ---------------------------------------------------- */
 a{}
 a:hover{}
 a:active{}
 a:focus{}
+
+/* Presentational tags ---------------------------------------------------- */
 img{}
 p{}
 i{}
@@ -48,6 +50,9 @@ font-size : 1em; }
 
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { 
 margin : 0; }
+h1 img a, h2 img a, h3 img a, h4 img a, h5 img a, h6 img a { 
+border:none; }
+
 
 /* Lists -------------------------------------------------------------- */
 
@@ -89,6 +94,7 @@ footer{}
 header{}
 hgroup{}
 menu{}
+picture{}  /* Coming soon ;) */
 nav{}
 section{}
 
@@ -101,22 +107,46 @@ textarea{}
 select{}
 option{}
 checkbox{}
-input["type=color"]{
+input[type="color"]{
 
 	
 }
+input[type="date"]{
 
-input["type=text"]{
+	
+}
+input[type="email"]{
+
+	
+}
+input[type="number"]{
+
+	
+}
+input[type="range"]{
+
+	
+}
+input[type="text"]{
 
 
 }
-input["type=search"]{
+input[type="tel"]{
+
+
+}
+input[type="search"]{
+
+
+}
+input[type="url"]{
 
 	
 }
 
 /* IDS -------------------------------------------------------------- */
 
+#wrapper{}
 
 
 /* Classes -------------------------------------------------------------- */
