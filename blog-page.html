@@ -42,42 +42,29 @@
             <!-- [ corporate template ]  //-->
             
             <div id="{{id}}" class="our-mission [{{class1 class2 class3}}]">
-                <section id="{{id}}" class="corporate-slideshow">
-                <!--no need for header in section as part //-->
-                    	<h1> {{section-title.h1}} </h1>
-                    <figure> 
-                    	<img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" >
-                    	<figcaption>
-                            <ol class="{{our-company}}">
-                                <li>{{slideshow-caption-text-1}}</li>
-                                <li>{{slideshow-caption-text-2}}</li>
-                                <li>{{slideshow-caption-text-3}}</li>
-                            </ol>
-                    	</figcaption>
-                    </figure>
-                    <nav>
-                        <ul id="{{id}}" class="{{mission vision values}}">
-                            <li> <a href="#" class=class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow1}}"> {{link.image.one}} </a> </li>
-                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow2}}"> {{link.image.two}} </a> </li>
-                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow3}}"> {{link.image.two}} </a> </li>
-                        </ul>
-                    <nav>
-                </section>
-                <article id="corporate-articles">
+                    
+                <article id="corporate-articles" class="corporate-news">
+                    <header>
+                    <h1> {{section-title.h1}} </h1>
+                    <img src="path-to-image" alt="description" title="Corporate Blog News">
+                    </header>
                     <article id="our-mission" class="mission">
                         Lorem ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod 
                     </article>
 
                     <article id="our-vision" class="vision">
-                        <img src="path-to-image" alt="description" title="Compamny Vision">
                         Lorem ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod 
                     </article>
                     
                     <article id="our-values" class="values">
                         Lorem ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod 
                     </article>
-                </article>    
+                </article>   
             </div>
+            <aside>
+            </aside>
+  
+
             <!-- [ end corporate template ]  //-->
             
             <hr class="clearfix" hidden="hidden">
@@ -90,8 +77,8 @@
                     </ul>
                     <ul id="social-network" class="nav-social">
                         <li><a href="#" title="our company at Twitter">Twitter</a></li>
-                        <li><a href="#" title="our company at G+"> Google+</a> </li>
-                        <li><a href="#" title="our company at FB"> Facebook</a></li>
+                        <li><a href="#" title="our company at G+">Google+</a> </li>
+                        <li><a href="#" title="our company at FB">Facebook</a></li>
                     </ul>
                 <address>
                     Name of the Street
@@ -100,6 +87,7 @@
                     Country
                     PO BOX
           </address>
+           <p>&copy; Copyright etcetera. <timedate> 2012</timedate>.</p>
             </footer>
         </div>
     </body>

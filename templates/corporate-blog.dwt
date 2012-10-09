@@ -88,6 +88,11 @@
                         <li> {{link.two}} </li>
                         <li> {{link.three}} </li>
                     </ul>
+                    <ul id="social-network" class="nav-social">
+                        <li><a href="#" title="our company at Twitter">Twitter</a></li>
+                        <li><a href="#" title="our company at G+"> Google+</a> </li>
+                        <li><a href="#" title="our company at FB"> Facebook</a></li>
+                    </ul>
                 <address>
                     Name of the Street
                     City
@@ -95,6 +100,7 @@
                     Country
                     PO BOX
           </address>
+             <p>&copy; Copyright etcetera. <timedate> 2012</timedate>.</p>
             </footer>
         </div>
     </body>
