@@ -20,7 +20,7 @@
             <header>
         <div id="wrapper" class="[{{class1 class2 class3}}]" role="main" >
             <header>
-                <h1> 
+                <h1 title="{{title }}" > 
                     <a class="{{title.logo}}" href="/" title="Go to homepage">
                         <i class="corporate-logo">
                             <u>
