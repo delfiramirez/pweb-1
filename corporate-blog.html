@@ -11,9 +11,17 @@
         
     </head>
     <body>
-        <div id="{{id}}" class="[{{class1 class2 class3}}]" role="main" >
+        <div id="wrapper" class="[{{class1 class2 class3}}]" role="main" >
             <header>
-                <h1> {{title.h1}} </h1>
+                <h1> 
+                    <a class="{{title.logo}}" href="/" title="Go to homepage">
+                        <i class="corporate-logo">
+                            <u>
+                {{title}}
+                            </u>
+                        </i>
+                    </a>
+                </h1>
                 <img src="{{ /path-to/.img}}" alt ="{{ alternative-text }}" >
                 <hgroup>
                     <h1> {{title.h1}} </h1>
