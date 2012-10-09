@@ -18,24 +18,24 @@
                 <hr>
                 <nav>
                     <ul>
-                        <li> <a href="#" class={{"link-one nav.ul.li.a"}} title={{"title.a"}}> {{link.one}} </a> </li>
-                        <li> <a href="#" class={{"link-two nav.ul.li.a"}} title={{"title.b"}}> {{link.two}} </a> </li>
-                        <li> <a href="#" class={{"link-three nav.ul.li.a"}} title={{"title.b"}}> {{link.three}} </a> </li>
+                        <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> {{link.one}} </a> </li>
+                        <li> <a href="#" class="{{link-one nav.ul.li.b}}" title="{{title.b}}"> {{link.two}} </a> </li>
+                        <li> <a href="#" class={"{{link-one nav.ul.li.c}}" title="{{title.c}}"> {{link.three}} </a> </li>
                     </ul>
                 </nav>
             </header>
             <hr>
             <!-- [ corporate template ]  //-->
             
-            <div id="{{id}}" class=" our-mission [{{class1 class2 class3}}]">
+            <div id="{{id}}" class="our-mission [{{class1 class2 class3}}]">
                 <section id="{{id}}" class="corporate-slideshow">
-                    <header>
+                <!--no need for header in section as part //-->
                     	<h1> {{section-title.h1}} </h1>
-                    </header>
+                  
                     <figure> 
                     	<img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" >
                     	<figcaption>
-                            <ol>
+                            <ol class="{{our-company}}">
                                 <li>{{slideshow-caption-text-1}}</li>
                                 <li>{{slideshow-caption-text-2}}</li>
                                 <li>{{slideshow-caption-text-3}}</li>
@@ -44,9 +44,9 @@
                     </figure>
                     <nav>
                         <ul id="{{id}}" class="{{mission vision values}}">
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow1"}}> {{link.image.one}} </a> </li>
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow2"}}> {{link.image.two}} </a> </li>
-                            <li> <a href="#" class={{"a.nav.ul.li.slideshow"}} title={{"title.a.slideshow3"}}> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class=class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow1}}"> {{link.image.one}} </a> </li>
+                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow2}}"> {{link.image.two}} </a> </li>
+                            <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow3}}"> {{link.image.two}} </a> </li>
                         </ul>
                     <nav>
                 </section>
@@ -55,15 +55,19 @@
             
             <hr>
             <footer>
-                <nav>
+             
                     <ul>
                         <li> {{link.one}}</li>
                         <li> {{link.two}} </li>
                         <li> {{link.three}} </li>
                     </ul>
-                </nav>
                 <address>
-                </address>
+                    Name of the Street
+                    City
+                    Postal Code
+                    Country
+                    PO BOX
+          </address>
             </footer>
         </div>
     </body>
