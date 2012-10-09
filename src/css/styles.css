@@ -22,6 +22,7 @@ wbr{}
 hr{}
 br{}
 blockquote{}
+abbr { text-transform: none; }
 
 
 /* Headings ---------------------------------------------------- */
@@ -157,13 +158,19 @@ input[type="url"]{
 #our-vision{}
 #our-values{}
 
+/* Location Objects */
+#googlemap img, object { max-width: none; }
+#map_canvas img { max-width: none; }
+#map_canvas object { max-width: none; }
+
+
 
 /* Classes -------------------------------------------------------------- */
 
-.left{float:left;}
-.right{float:right;}
-.clearleft{clear:left;}
-.clear{clear:both;}
+.left { float:left; }
+.right { float:right; }
+.clearleft { clear:left; }
+.clear { clear:both; }
 
 /*Header */
 .corporate-logo{}
