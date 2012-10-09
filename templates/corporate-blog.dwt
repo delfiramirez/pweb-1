@@ -35,14 +35,15 @@
                     <h2> {{title.h2}} </h2>
                     <h3> {{title.h3}} </h3>
                 </hgroup>
+                <!-- TemplateBeginEditable name="nav" -->
                 <nav>
-                    <ul>
-                        <li> <a href="#" class="{{link-one nav.ul.li.a}}" title={{"title.a}}"> {{link.one}} </a> </li>
-                        <li> <a href="#" class="{{link-two nav.ul.li.a"}} title={{"title.b}}"> {{link.two}} </a> </li>
-                        <li> <a href="#" class={"{{link-three nav.ul.li.a"}} title={{"title.b}}"> {{link.three}} </a> </li>
-                    </ul>
+                  <ul>
+                    <li> <a href="#" class="{{link-one nav.ul.li.a}}" title={{"title.a}}"> {{link.one}} </a></li>
+                    <li> <a href="#" class="{{link-two nav.ul.li.a"}} title={{"title.b}}"> {{link.two}} </a></li>
+                    <li> <a href="#" class={"{{link-three nav.ul.li.a"}} title={{"title.b}}"> {{link.three}} </a></li>
+                  </ul>
                 </nav>
-            </header>
+                <!-- TemplateEndEditable --></header>
             
             <hr>
             <nav>
