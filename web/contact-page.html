@@ -47,17 +47,32 @@
           <label for ="email"> Email</label>
           <input type="email" id="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required >
           <!--first form-data //-->
-          <button class="data-user" data-user="" >
-          <i> {{additional info}}</i>
-          <img src="" alt="Continue" > </button>
+          <input type="submit" formnovalidate value="Save">
+
         </fieldset>
       </form>
     </section>
     <section id="your-company-data" class="contact tab2">
       <form>
         <!--second form-data //-->
-      </form>
+    <input type="submit" formnovalidate value="Save">
     </section>
+    <section id="subscription-range-data" class="contact tab3">
+    <p>Newsletter Subscription</p>  
+<input type="text" value="" list="newsletter-subscription" placeholder="Select your subscription" />
+<datalist id="newsletter-subscription">
+  <option value="{{Ein}}"></option> 
+  <option value="{{Zwei}}"></option> 
+  <option value="{{Drei}}"></option> 
+</datalist>
+       <input type="submit" formnovalidate value="Save">
+    <section>
+    <section id="confirmal-range-data" class="contact tab4">
+        <button class="data-user" data-user="" >
+          <i> {{additional info}}</i>
+          <img src="" alt="Continue" > </button>
+        <section>
+      </form>
   </div>
   <aside class="our-location left">
   <h5 title="where we are">Where We Are</h5>

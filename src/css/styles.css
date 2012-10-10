@@ -94,8 +94,9 @@ ul {
 ol {
 	list-style-type : decimal;
 }
+
 dl {
-	margin-bottom: 1.5em;
+	margin: 0 0 1.625em 0;
 	padding-top: 1.5em;
 	border-top : 1px solid #a8a8a8;
 }
@@ -107,8 +108,19 @@ dl dt {
 dd {
 	margin-bottom: 1.5em;
 	padding-bottom: 1.5em;
-	border-bottom : 1px solid #a8a8a8;
+	border-bottom : 1px dotted #a8a8a8;
 }
+
+/* Legibility */
+
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+pre, code { margin: 1.625em 0; white-space: pre; }
+pre, code, tt { font: 1em monospace; line-height: 1.5; } 
+tt { display: block; margin: 1.625em 0; }
+hr { margin-bottom:1.625em; }
+
 /* Semantic HTML5 tags -------------------------------------------------------------- */
 address {
 	
@@ -242,8 +254,8 @@ form label{
 }
 /*Header */
 .corporate-logo {
-	/*background-image:url(http://cdn.static.domini.com/images/400x100-logo.png)*/
-	background-image:url(../images/400x100-logo.png);
+
+	background-image:url(images/400x100-logo.png);
 	background-position: top left;
 	background-repeat: no-repeat;
 	margin:0;
