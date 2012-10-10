@@ -123,15 +123,26 @@ hr { margin-bottom:1.625em; }
 
 /* Semantic HTML5 tags -------------------------------------------------------------- */
 address {
+	clear:left;
 	
 }
 article {
+	float:left;
 }
 aside {
+
+	height:auto;
+	min-height:100%;
+	height: auto !important;
 }
 command {
 } /*Coming soon*/
 datafield {
+}
+
+datalist{
+
+
 }
 figure {
 }
@@ -142,6 +153,9 @@ footer {
 header {
 }
 hgroup {
+	float:left;
+	margin-left: .325em;
+	max-width:33%;
 }
 menu {
 }
@@ -149,7 +163,15 @@ picture {
 }  /* Coming soon ;) */
 nav {
 }
+progress{
+
+
+}
 section {
+}
+summary{
+
+
 }
 /* Forms -------------------------------------------------------------- */
 form {
@@ -238,6 +260,40 @@ form label{
 #map_canvas object {
 	max-width: none;
 }
+#sitemap-navigation{
+
+float:left;
+
+}
+
+#social-network{
+
+float:left;
+
+}
+
+#social-network li{
+
+	list-style:none;
+}
+
+#selected-articles, #our-location{
+
+width:25%;
+margin:0;
+padding:0 .6em 0 0;
+height: 100%;
+min-height:100%;
+height: auto !important;
+
+}
+
+#weblog-company, #form-corporate{
+
+	width:70%;
+	padding:1em;
+	margin:0;
+}
 /* Classes -------------------------------------------------------------- */
 
 .left {
@@ -268,6 +324,13 @@ form label{
 	min-height: 100px;
 	height: auto !important;
 }
+.title-logo{
+
+float:left;
+width:auto;
+min-height:100px;
+
+}
 
 /*Content */
 
@@ -297,8 +360,33 @@ form label{
 	
 	padding: 10%;	
 }
+.progress{
+
+}
+
+.window{
+
+
+}
+
+.weblog{
+width:100%;
+margin: 0 .325em 0 0;
+border-bottom:1px dashed #ccc;
+line-height: 157%;
+
+}
+
+.contact{
+
+	width:70%;
+	padding:1em;
+	margin:0;
+}
 
 /*Footer */
+
+
 
 /*  Copyright v 0.1 2012 authors_name for company_name
 
