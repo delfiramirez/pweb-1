@@ -1,5 +1,39 @@
+@import url("corporate-fonts.css") screen, print;
+
 @media screen {
-  * { font-family: serif }
+  * { font-family: serif; }
+  html {}
+  body {
+
+  	  	text-rendering:optimizeLegibility;}
 }
 
-@media screen and
+@media print{
+
+  * { font-family: serif; }
+
+}
+  body {
+  	font-size: 12pt;
+}
+
+@media projector{
+
+
+
+}
+
+@media tv{
+
+
+}
+
+@media speech, aural{
+
+
+}
+
+@media screen and (device-aspect-ratio: 16/9) { … }
+@media screen and (device-aspect-ratio: 32/18) { … }
+@media screen and (device-aspect-ratio: 1280/720) { … }
+@media screen and (device-aspect-ratio: 2560/1440) { … }
