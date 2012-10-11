@@ -54,41 +54,39 @@
           <!--first form-data //-->
           <section>
 <fieldset>
-          <legend>About You</legend>  
+        <legend>About You</legend>  
           <label for=name>Name</label>
-          <input type=text id=name placeholder="Please, your name" required>
+            <input type=text id=name placeholder="Please, your name" required>
           <label for=surname> Surname</label>
-          <input type=text id=surname placeholder="Please, your surname" required>
+            <input type=text id=surname placeholder="Please, your surname" required>
           <label for=emaile>Email</label>
-          <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
+            <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
           <label for=files-upload>Choose an Image</label>
-          <input type=file id="files-upload" single>
-          <div id="drop-area">
+            <input type=file id="files-upload" single>
+        <div id="drop-area">
           or drag and drop image here
         </div>
-          <input type=submit formnovalidate value="Next">
+            <input type=submit formnovalidate value="Next">
 </fieldset>
           </section>
         <!--second form-data //-->
 
           <section id="your-company-data" class="contact tab2">
 <fieldset>
-          <legend>About Your Company</legend>  
-
+        <legend>About Your Company</legend>  
           <label for=work>Company name</label> 
             <input type=text id=work placeholder="your company name">
-            <label for=site>Website</label> 
+           <label for=site>Website</label> 
             <input type=url id=site name="site" placeholder="your company website" pattern="https?://.+" required>
           <label for=telefon>Telephone: </label>
             <input type=tel id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000">
-
-             <label for=street>Name of the Street</label>
+          <label for=street>Name of the Street</label>
             <input type=text id=street  placeholder="av/ name street">
-            <label for=city>City</label>
+          <label for=city>City</label>
             <input type=text id=city  placeholder="Headquarters">
-            <label for=postal>Postal Code</label>
+          <label for=postal>Postal Code</label>
             <input type=text id=postal  placeholder="00000">
-            <label for=country>Country</label>
+          <label for=country>Country</label>
             <input type=text id=country  placeholder="Country">
 
             <input type=submit formnovalidate value="Next">
@@ -101,30 +99,30 @@
 <fieldset>
           <legend>Newsletter Subscription</legend> 
           <label>I am interested in</label>
-          <input type=text value="" list="newsletter-subscription" placeholder="Select your subscription" required>
+            <input type=text value="" list="newsletter-subscription" placeholder="Select your subscription" required>
         <datalist id="newsletter-subscription">
             <option value="first-option">{{first}} 
             <option value="second-option">{{second}}
             <option value="third-option">{{third}}
         </datalist>
 </fieldset>
-    <label>Preferred delivery time</label>
-      <input type=time min="08:00" max="18:00" step="600">
-    <label>Payment Method</label>
+          <label>Preferred delivery time</label>
+            <input type=time min="08:00" max="18:00" step="600">
+          <label>Payment Method</label>
 <fieldset>
-           <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
-            <label class="radio-box"> <input type=radio name=payment value="mastercard">MasterCard </label>
-            <label class="radio-box"> <input type=radio name=payment value="other">Other </label>
+          <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
+          <label class="radio-box"> <input type=radio name=payment value="mastercard">MasterCard </label>
+          <label class="radio-box"> <input type=radio name=payment value="other">Other </label>
 </fieldset>
             <p>Please specify:</p>
 <fieldset>
-            <select multiple required>
+          <select multiple required>
             <option value="first-choice">{{first}}
             <option value="second-choice">{{second}} 
             <option value="third-choice">{{third}}
-            </select>
+          </select>
 </fieldset>
-          <input type=submit formnovalidate value="Next">
+            <input type=submit formnovalidate value="Next">
     </section>
 
 <!-- fourth validation step // -->
@@ -133,12 +131,12 @@
          <legend>Confirmal</legend> 
           <label>Additional needs</label>
             <textarea name="comments" id=comments maxlength="500"></textarea>
-         <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
-        <button class="subscription-done" >
-          <i> {{additional info}}</i>
-          <img src="" alt="Save and Submit" > 
-        </button>
+            <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
 </fieldset>
+        <button class="subscription-done" >
+            <i> {{additional info}}</i>
+            <img src="" alt="Save and Submit" > 
+        </button>
   </section>
   </form>
 
