@@ -222,6 +222,8 @@ option {
 input{
 
 	font-size: 90%;
+	width:100%;
+
 }
 input[type="radio"] {
 }
@@ -288,6 +290,17 @@ form label.radioBox::after{};
 
 .text label {
 	/*display:block;*/
+}
+
+.text {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.text:first-child {float:left;}
+.text input {
+    box-sizing:border-box;
+    width:100%;
 }
 
 /* IDS -------------------------------------------------------------- */
@@ -502,11 +515,18 @@ form label.radioBox::after{};
 /* Forms */
 
 .contact{
-	width:70%;
+	width:100%;
 	padding:1em;
 	margin:0;
 }
-.subscription-done{}
+.tab1, .tab2, .tab3, .tab4, .tab5{
+
+
+}
+.subscription-done{
+
+	
+}
 
 /*Footer */
 

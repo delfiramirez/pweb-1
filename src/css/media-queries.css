@@ -74,4 +74,13 @@ header, nav, footer{
 section, aside{
   	float:left;
 }
+
+/* Corporate Classes */
+
+/*Form  */
+.text {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
 }
