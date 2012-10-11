@@ -275,6 +275,10 @@ form label::after {content:":";}
 form label.radioBox:after{};
 form label.radioBox::after{};
 
+.text label {
+	display:block;
+}
+
 /* IDS -------------------------------------------------------------- */
 
 #wrapper {
@@ -357,8 +361,8 @@ form label.radioBox::after{};
 	border:none;
 	width: auto;
 	max-width:400px;
-	height:100%;
-	max-height: 100px;
+	max-height:100px;
+	height: 100%;
 	height: auto !important;
 	margin-bottom: 0.923em;
 }
@@ -367,6 +371,7 @@ form label.radioBox::after{};
 	float:left;
 	width:auto;
 	min-height:100px;
+
 
 }
 /*Navigation */
@@ -404,6 +409,22 @@ form label.radioBox::after{};
 .main-nav .sel a:focus {background:#b31203;}
 .main-nav strong {font-weight:normal;}
 
+/* Subnavigation */
+
+.article-navigation{
+
+	list-style:none;
+}
+.article-navigation li{
+
+	display:inline;
+	margin: 0 2% 0 0;
+}
+.article-navigation li a{
+
+	display:inline-block;
+}
+
 /*Content */
 
 .handheld{
@@ -424,6 +445,12 @@ form label.radioBox::after{};
 	tex-align:left;
 	text-justify:distribute;
 	
+}
+.contact{
+
+	margin:0 auto;
+	padding:0;
+	width: 60%;
 }
 .progress{
 

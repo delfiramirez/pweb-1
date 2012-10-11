@@ -5,10 +5,7 @@
   html {}
   body {
   		font-size: 62.5%;
-  	  	text-rendering:optimizeLegibility;}
-  section, aside{
-  	float:left;
-  }
+}
 }
 
 @media print{
@@ -36,7 +33,7 @@
 	li ul, li ol  { margin:0 1.625em;  }
 	ul, ol { margin: 0 0 1.625em 0; }
 
-
+}
 
 @media projector{
 
@@ -65,8 +62,16 @@
 		elders deserve some kinda respect ;)
 
     */
+body {
+	text-rendering:optimizeLegibility;
+}
+
 header, nav, footer{
 
 	width:100%;
-};
+}
+
+section, aside{
+  	float:left;
+}
 }
