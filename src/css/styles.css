@@ -160,10 +160,15 @@ datalist{
 figure {
 }
 figcaption {
+	font-style: italic;
+	color: #ededed;
 }
 footer {
+	width:100%;
+	min-width:0;
 }
 header {
+	width:100%;
 }
 hgroup {
 	float:left;
@@ -183,6 +188,7 @@ progress{
 
 }
 section {
+
 }
 
 summary{
@@ -321,7 +327,6 @@ height: auto !important;
 	max-width: 70%;
 	padding:1em;
 	margin:0;
-
 	float:left;
 }
 /* Classes -------------------------------------------------------------- */
@@ -360,9 +365,9 @@ height: auto !important;
 }
 .title-logo{
 
-float:left;
-width:auto;
-min-height:100px;
+	float:left;
+	width:auto;
+	min-height:100px;
 
 }
 /*Navigation */
@@ -423,7 +428,7 @@ min-height:100px;
 
 }
 .read-more{
-	text-align:right;
+	/*text-align:right;*/
 	font-size:85%;
 	font-style:italic;
 	padding:2% 0 0 0 ;

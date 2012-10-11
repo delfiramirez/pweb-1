@@ -22,7 +22,6 @@
       <h2> {{title.h2}} </h2>
     </hgroup>
     <img src="{{ /path-to/.img}}" alt ="{{ alternative-text-2 }}" > 
-  <hr>
   <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
       <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> ENG </a> </li>
@@ -40,7 +39,7 @@
       <li><a href="#">Contact Us</a></li>
     </ul>
   </nav>
-
+  <!--<hr class="clear"> //-->
   <!-- begin template  //-->
   <article id="weblog-company" class="main left" >
   
@@ -86,16 +85,16 @@
   <section id="selected-articles" class="right">
     <dl>
       <dt> Mission November</dt>
-      <dd> by {{author}}</dd>
+      <dd class="read-more"> by {{author}}</dd>
       <dt> Board of Directors
-      <dt>
-      <dd> by {{author}}</dd>
+      </dt>
+      <dd class="read-more"> by {{author}}</dd>
       <dt> Board of Directors
-      <dt>
+      </dt>
       <dd> by {{author}}</dd>
       <dt> Lipsum lorem
-      <dt>
-      <dd> BY <a href="#" title="{{author}}">{{author}}</a></dd>
+      </dt>
+      <dd class="read-more"> BY <a href="#" title="{{author}}">{{author}}</a></dd>
     </dl>
     <aside>
   <img src="{{ /path-to/.img}}" alt ="{{ external-banner }}" >
