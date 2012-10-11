@@ -46,7 +46,7 @@
 
       <!--section used to collect data //-->
 
-      <h1> Contact {{title}}</h1>
+      <h1> Contact Us</h1>
 
       <!--removed quotes from atrributes HTML5 spec //-->
       <form action="send.cgi">
@@ -61,6 +61,11 @@
           <input type=text id=surname placeholder="Please, your surname" required>
           <label for=emaile>Email</label>
           <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
+          <label for=files-upload>Choose an Image</label>
+          <input type=file id="files-upload" single>
+          <div id="drop-area">
+          or drag and drop image here
+        </div>
           <input type=submit formnovalidate value="Next">
 </fieldset>
           </section>
@@ -77,7 +82,7 @@
           <label for=telefon>Telephone: </label>
             <input type=tel id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000">
 
-             <label for=street> Name of the Street</label>
+             <label for=street>Name of the Street</label>
             <input type=text id=street  placeholder="av/ name street">
             <label for=city>City</label>
             <input type=text id=city  placeholder="Headquarters">
@@ -108,8 +113,8 @@
     <label>Payment Method</label>
 <fieldset>
            <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
-            <label class="radio-box"> <input type=radio name=payment value="mastercard"> MasterCard </label>
-            <label class="radio-box"> <input type=radio name=payment value="other"> Other </label>
+            <label class="radio-box"> <input type=radio name=payment value="mastercard">MasterCard </label>
+            <label class="radio-box"> <input type=radio name=payment value="other">Other </label>
 </fieldset>
             <p>Please specify:</p>
 <fieldset>
@@ -146,10 +151,10 @@
   </p>
   <address itemscope>
   <span itemprop="name">Name of the Street</span>
-  <span itemprop="city"> City</span>
+  <span itemprop="city">City</span>
   <span itemprop="PostalCode">Postal Code</span>
   <span itemprop="country">Country</span>
- <span itemprop="poBox"> PO BOX</span>
+ <span itemprop="poBox">PO BOX</span>
   </address>
 </aside>
 
