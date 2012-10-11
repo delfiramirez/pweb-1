@@ -36,10 +36,7 @@
 	li ul, li ol  { margin:0 1.625em;  }
 	ul, ol { margin: 0 0 1.625em 0; }
 
-  header, nav, footer{
 
-	display:none;
-}
 
 @media projector{
 
@@ -61,3 +58,14 @@
 @media screen and (device-aspect-ratio: 32/18) {  }
 @media screen and (device-aspect-ratio: 1280/720) {  }
 @media screen and (device-aspect-ratio: 2560/1440) { }
+
+@media only screen {
+    /* "Advanced" CSS2 and CSS3 comes here to hide styles from older browsers 
+		Yes, mates, besides your low budget and hurry, elders deserve some kinda respect ;)
+
+    */
+header, nav, footer{
+
+	width:100%;
+};
+}
