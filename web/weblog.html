@@ -5,26 +5,25 @@
 <title>{{title}}</title>
 <script src="src/js/html5.js"></script>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-<link href="src/css/styles.css" rel="stylesheet" media="only screen and (color)">
+<link href="../src/css/styles.css" rel="stylesheet" media="only screen and (color)">
 </head>
 
 <body>
 <div id="wrapper" role="main">
    <header>
-    <h1> <a class="{{title.logo}}" href="/" title="Go to Corporate Company Homepage"> 
+    <h1> <a class="title-logo" href="/" title="Go to Corporate Company Homepage">
     <i class="corporate-logo"> 
     <u> Corporate Company Main Page</u> 
     </i> 
     </a> 
     </h1>
-    <img src="{{ /path-to/.img}}" alt ="{{ alternative-text }}" >
     <hgroup>
       <h1> {{title.h1}} </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
     <img src="{{ /path-to/.img}}" alt ="{{ alternative-text-2 }}" > 
   <hr>
-  <nav id="language-selection" class="language nav-top" role ="navigation">
+  <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
       <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> ENG </a> </li>
       <li> <a href="#" class="{{link-one nav.ul.li.b}}" title="{{title.b}}"> ES </a> </li>
@@ -33,7 +32,7 @@
   </nav>
   </header>
   <hr>
-  <nav id="corporate-company" >
+  <nav id="corporate-company" class="main-nav" >
     <ul>
       <li><a href="#">Mission</a></li>
       <li><a href="#">Vision</a></li>
@@ -41,11 +40,11 @@
       <li><a href="#">Contact Us</a></li>
     </ul>
   </nav>
-  <hr class="clearfix">
+
   <!-- begin template  //-->
   <article id="weblog-company" class="main left" >
   
-  <article id="our-new-offices" class="mission-november">
+  <article id="our-new-offices" class="weblog">
     <header>
  <h1>{{article1.title}}</h1>
     </header>
@@ -54,20 +53,32 @@
    dolore aliqua non est magna in labore pig pork biltong. 
    Eiusmod
    <footer>
-    <p><a href="#" title="{{article1.title}}">Read More</a></p>
+    <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
    </footer>
    </article>
-   <article id="say-tah" class="mission-november">
+   <article id="say-tah" class="weblog">
+        <header>
+ <h1>{{article2.title}}</h1>
+    </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, 
    dolore aliqua non est magna in labore pig pork biltong. 
    Eiusmod
+    <footer>
+    <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
+   </footer>
    </article>
-     <article id="glad-toi-meet-you" class="mission-november">
+     <article id="glad-toi-meet-you" class="weblog">
+          <header>
+ <h1>{{article3.title}}</h1>
+    </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, 
    dolore aliqua non est magna in labore pig pork biltong. 
    Eiusmod
+      <footer>
+    <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
+   </footer>
    </article>
   
   
@@ -84,14 +95,14 @@
       <dd> by {{author}}</dd>
       <dt> Lipsum lorem
       <dt>
-      <dd> BY {{author}}</dd>
+      <dd> BY <a href="#" title="{{author}}">{{author}}</a></dd>
     </dl>
     <aside>
   <img src="{{ /path-to/.img}}" alt ="{{ external-banner }}" >
     </aside>
   </section>
   <!-- end template  //-->
-<footer>
+<footer class="clear">
   <ul id="sitemap-navigation" class="nav-bottom">
     <li> {{link.one}}</li>
     <li> {{link.two}} </li>

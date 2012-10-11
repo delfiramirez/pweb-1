@@ -1,29 +1,28 @@
 <!doctype html>
-<html lang="en-GB" id="corporate-project" class=" no-js">
+<html lang="en-GB"  id="corporate-project" class="no-js">
 <head>
 <meta charset="utf-8">
-<title>{{ title }}</title>
+<title>{{title}}</title>
 <script src="src/js/html5.js"></script>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-<link href="src/css/styles.css" rel="stylesheet" media=" only screen and (color)">
+<link href="../src/css/styles.css" rel="stylesheet" media="only screen and (color)">
 </head>
 <body>
-<div id="wrapper" class="[{{class1 class2 class3}}]" role="main" >
-  <header>
-    <h1> <a class="{{title.logo}}" href="/" title="Go to Corporate Company Homepage"> 
+<div id="wrapper" role="main" >
+     <header>
+    <h1> <a class="title-logo" href="/" title="Go to Corporate Company Homepage">
     <i class="corporate-logo"> 
-    <u>Main Page</u> 
+    <u> Corporate Company Main Page</u> 
     </i> 
     </a> 
     </h1>
-    <img src="{{ /path-to/.img}}" alt ="{{ alternative-text }}" >
     <hgroup>
       <h1> {{title.h1}} </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-    <img src="{{ /path-to/.img}}" alt ="{{ alternative-text-2 }}" >
+    <img src="{{ /path-to/.img}}" alt ="{{ alternative-text-2 }}" > 
   <hr>
-  <nav id="language-selection" class="language nav-top" role ="nav">
+  <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
       <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> ENG </a> </li>
       <li> <a href="#" class="{{link-one nav.ul.li.b}}" title="{{title.b}}"> ES </a> </li>
@@ -31,52 +30,121 @@
     </ul>
   </nav>
   </header>
-  <hr class="clearfix">
+    <nav id="corporate-company" class="main-nav">
+    <ul>
+      <li><a href="#" rel="">Mission</a></li>
+      <li><a href="#" rel="">Vision</a></li>
+      <li><a href="#" rel="">Values</a></li>
+      <li><a href="#" rel="">Contact Us</a></li>
+    </ul>
+  </nav>
+  <hr class="clear">
+
   <!-- [ corporate template ]  //-->
   
-  <div id="{{id}}" class="contact [{{class1 class2 class3}}]" itemscope ="http://schema.org/" itemname="">
+  <div id="form-corporate" class="left">
     <section id="your-personal-data" class="contact tab1"> 
-      <!--section used to collect data //-->
-      <h1> Contact {{title}}</h1>
-      <form action="">
-        <fieldset>
-          <label for ="name"> Name </label>
-          <input type="text" id="name" placeholder="Please, your name" required>
-          <label for ="surname"> Surname </label>
-          <input type="text" id="surname" placeholder="Please, your surname" required>
-          <label for ="email"> Email</label>
-          <input type="email" id="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required >
-          <!--first form-data //-->
-          <input type="submit" formnovalidate value="Save">
 
-        </fieldset>
-      </form>
-    </section>
-    <section id="your-company-data" class="contact tab2">
-      <form>
+      <!--section used to collect data //-->
+
+      <h1> Contact {{title}}</h1>
+
+      <!--removed quotes from atrributes HTML5 spec //-->
+      <form action="send.cgi">
+
+          <!--first form-data //-->
+          <section>
+<fieldset>
+          <legend>About You</legend>  
+          <label for=name>Name</label>
+          <input type=text id=name placeholder="Please, your name" required>
+          <label for=surname> Surname</label>
+          <input type=text id=surname placeholder="Please, your surname" required>
+          <label for=emaile>Email</label>
+          <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required >
+          <input type=submit formnovalidate value="Next">
+</fieldset>
+          </section>
         <!--second form-data //-->
-    <input type="submit" formnovalidate value="Save">
-    </section>
+
+          <section id="your-company-data" class="contact tab2">
+<fieldset>
+          <legend>About Your Company</legend>  
+
+          <label for=work>Company name</label> 
+            <input type=text id=work placeholder="your company name">
+            <label for=site>Website</label> 
+            <input type=url id=site name="site" placeholder="your company website" pattern="https?://.+" required>
+          <label for=telefon>Telephone: </label>
+            <input type=tel id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000">
+            <input type=submit formnovalidate value="Next">
+             <label for=street> Name of the Street</label>
+            <input type=text id=street  placeholder="av/ name street">
+            <label for=city>City</label>
+            <input type=text id=city  placeholder="Headquarters">
+            <label for=postal>Postal Code</label>
+            <input type=text id=postal  placeholder="00000">
+            <label for=country>Country</label>
+            <input type=text id=country  placeholder="Country">
+  Country
+  PO BOX
+</fieldset>
+          </section>
+
+       <!--third form-data //-->
+
     <section id="subscription-range-data" class="contact tab3">
-    <p>Newsletter Subscription</p>  
-<input type="text" value="" list="newsletter-subscription" placeholder="Select your subscription" />
-<datalist id="newsletter-subscription">
-  <option value="{{Ein}}"></option> 
-  <option value="{{Zwei}}"></option> 
-  <option value="{{Drei}}"></option> 
-</datalist>
-       <input type="submit" formnovalidate value="Save">
-    <section>
+<fieldset>
+          <legend>Newsletter Subscription</legend> 
+          <label>I am interested in</label>
+          <input type=text value="" list="newsletter-subscription" placeholder="Select your subscription" required>
+        <datalist id="newsletter-subscription">
+            <option value="first-option">{{first}} 
+            <option value="second-option">{{second}}
+            <option value="third-option">{{third}}
+        </datalist>
+</fieldset>
+    <label>Preferred delivery time</label>
+      <input type=time min="08:00" max="18:00" step="600">
+    <label>Payment Method</label>
+<fieldset>
+           <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
+            <label class="radio-box"> <input type=radio name=payment value="mastercard"> MasterCard </label>
+            <label class="radio-box">> <input type=radio name=payment value="other"> Other </label>
+</fieldset>
+            <p>Please specify:</p>
+<fieldset>
+            <select multiple required>
+            <option value="first-choice">{{first}}
+            <option value="second-choice">{{second}} 
+            <option value="third-choice">{{third}}
+            </select>
+</fieldset>
+          <input type=submit formnovalidate value="Next">
+    </section>
+
+<!-- fourth validation step // -->
     <section id="confirmal-range-data" class="contact tab4">
-        <button class="data-user" data-user="" >
+<fieldset>
+         <legend>Confirmal</legend> 
+          <label>Additional needs</label>
+            <textarea name="comments" id=comments maxlength="500"></textarea>
+         <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
+        <button class="subscription-done" >
           <i> {{additional info}}</i>
-          <img src="" alt="Continue" > </button>
-        <section>
-      </form>
-  </div>
-  <aside class="our-location left">
-  <h5 title="where we are">Where We Are</h5>
-  <p> <a href="" ><img src="{{path-to-MAPimg}}" /></a> <a href="#mapWindow">{{action done}}</a> </p>
+          <img src="" alt="Save and Submit" > 
+        </button>
+</fieldset>
+  </section>
+  </form>
+
+</div>
+<aside id="our-location" class="left" role="complementary">
+  <h3 title="where we are">Where We Are</h5>
+  <p> 
+    <a href="#" ><img src="{{path-to-MAPimg}}" /></a> 
+    <a href="#mapWindow">{{action done}}</a> 
+  </p>
   <address>
   Name of the Street
   City
@@ -87,31 +155,31 @@
 </aside>
 
 <!-- [ end corporate template ]  //-->
-
-<hr class="clearfix" hidden="hidden">
+  <hr class="clear">
 <footer>
   <ul id="sitemap-navigation" class="nav-bottom">
     <li> {{link.one}}</li>
     <li> {{link.two}} </li>
     <li> {{link.three}} </li>
   </ul>
-  <ul id="social-network" class="nav-social">
-    <li><a href="#" title="our company at Twitter">Twitter</a></li>
-    <li><a href="#" title="our company at G+"> Google+</a> </li>
-    <li><a href="#" title="our company at FB"> Facebook</a></li>
+  <ul id="social-network" class="nav-social" itemscope>
+    <li itemprop="Twitter"><a href="#" title="our company at Twitter" rel="http://twitter.com">Twitter</a></li>
+    <li itemprop="Google"><a href="#" title="our company at G+"> Google+</a> </li>
+    <li itemprop ="Facebook"><a href="#" title="our company at FB"> Facebook</a></li>
   </ul>
-  <address>
-  Name of the Street
-  City
-  Postal Code
-  Country
-  PO BOX
+  <address itemscope>
+  <span>Name of the Street</span>
+  <span>City</span>
+  <span>Postal Code</span>
+  <span>Country</span>
+  <span>PO BOX</span>
   </address>
-  <p>&copy;     <time> 2012</time> Copyright et al.
+  <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small>
 
     </p>
 </footer>
-  <div id="mapWindow">
+  </div>
+  <div id="mapWindow" itemscope>
 <!-- here goes the modal map; scripts included //-->
   </div>
 <script src="src/js/jquery/path"></script>
