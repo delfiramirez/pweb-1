@@ -500,6 +500,11 @@ button i{
 	text-justify:distribute;
 	
 }
+.company-location{
+
+	display:block;
+	margin: 0 0 0.625em 0;
+}
 .contact{
 
 	margin:0 auto;
