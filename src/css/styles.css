@@ -378,7 +378,6 @@ button i{
 
 }
 #weblog-company, #corporate-articles, #form-corporate{
-
 	width:70%;
 	min-width: 0;
 	max-width: 70%;
@@ -405,6 +404,7 @@ button i{
 	background-image:url(../../images/400x100-logo.png);
 	background-position: top left;
 	background-repeat: no-repeat;
+
 	/* CSS3 spec */
 	background-origin: border-box, content-box; 
 	background-size:100%;
@@ -420,7 +420,6 @@ button i{
 	margin-bottom: 0.923em;
 }
 .title-logo{
-
 	float:left;
 	width:auto;
 	min-height:100px;
@@ -434,7 +433,7 @@ button i{
 	margin:0;
 	padding:0;
 	list-style:none;
-	background:#020202;
+	background:#4c4c4c;
 	font:1.45em/3 serif;
 }
 .main-nav li {
@@ -447,10 +446,10 @@ button i{
 .main-nav a {
 	display:block;
 	padding:0 12px;
-	border-right:1px solid #4b4b4b;
-	border-left:1px solid #4b4b4b;
-	color:#fafafa;
-	background:#020202;
+	border-right:1px solid #e6e6e7;
+	border-left:1px solid #e6e6e7;
+	color:#ccc;
+	background:transparent;
 	text-decoration:none;
 }
 .main-nav a:hover,
@@ -458,9 +457,9 @@ button i{
 	color:inherit;
     font-size:inherit;
 }
-.main-nav .sel a {background:#720000;}
+.main-nav .sel a {background:#4c4c4c;}
 .main-nav .sel a:hover,
-.main-nav .sel a:focus {background:#b31203;}
+.main-nav .sel a:focus {background:#4d4d4d;}
 .main-nav strong {font-weight:normal;}
 
 /* Subnavigation */
@@ -501,9 +500,9 @@ button i{
 	
 }
 .company-location{
-
 	display:block;
 	margin: 0 0 0.625em 0;
+	font-weight:200;
 }
 .contact{
 
