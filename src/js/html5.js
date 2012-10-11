@@ -1,3 +1,5 @@
+document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');
+
 document.createElement('aside');
 document.createElement('article');
 document.createElement('canvas');
@@ -17,5 +19,7 @@ document.createElement('progress');
 document.createElement('picture');
 document.createElement('section');
 document.createElement('time');
+document.createElement('wbr');
+
 
 
