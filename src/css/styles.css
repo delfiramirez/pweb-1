@@ -207,10 +207,12 @@ legend {
 }
 button {
 	cursor:pointer;
+	display:block;
 }
 textarea {
 	color:inherit;
     font-size:inherit;
+    display:block;
 }
 select {
 	max-width: 3em;
@@ -230,14 +232,23 @@ input[type="color"] {
 }
 input[type="date"] {
 }
+input[type="datetime"] {
+}
 input[type="email"] {
 	font-style: italic;
 	color:inherit;
+}
+input[type="file"] {
+
 }
 input[type="number"] {
 	letter-spacing:2px;
 }
 input[type="range"] {
+	
+}
+input[type="submit"] {
+	display:block;
 	
 }
 input[type="text"] {
@@ -266,7 +277,7 @@ input[type="url"] {
 	
 }
 form label{
-	display: inline-block;
+	display: block;
 	margin-left: 10px;
 }
 form label:after {content:":";}
@@ -276,7 +287,7 @@ form label.radioBox:after{};
 form label.radioBox::after{};
 
 .text label {
-	display:block;
+	/*display:block;*/
 }
 
 /* IDS -------------------------------------------------------------- */
