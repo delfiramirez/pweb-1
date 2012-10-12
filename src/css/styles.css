@@ -48,15 +48,22 @@ p {
 }
 footer p:first-letter { font-size: 145%; }
 i {
+    font-style:normal;
 }
 u {
 }
 hr {
+
 }
 br {
+    clear:left;
 }
 
 blockquote {
+    font: 14px/22px serif;
+    margin: 0.625em 0.625em 1.5em 0.725em ;
+    padding-left: 15px;
+    border-left: 2px solid #ccc;
 }
 abbr {
     text-transform: none;
@@ -281,6 +288,9 @@ input[type="search"] {
     margin:0;
     border:none;
     color:inherit;
+    float:left;
+    width: 30%;
+    height:auto;
 }
 input[type="url"] {
 
@@ -294,8 +304,8 @@ form label{
 form label:after {content:":";}
 form label::after {content:":";}
 
-form label.radioBox:after{};
-form label.radioBox::after{};
+form label.radio-box:after{ content:" ";}
+form label.radio-box::after{ content:" ";}
 
 .text label {
     /*display:block;*/
@@ -376,6 +386,20 @@ button i{
     color:inherit;
     font-size:inherit;
 }
+#social-network li a{
+    *display:inline;
+    display:inline-block;
+
+}
+#social-network li a.sngplus{
+
+}
+#social-network li a.sntweet{
+
+}
+#social-network li a.snfb{
+
+}
 #selected-articles, #our-location, #archives{
     width:25%;
     margin-left:2%;
@@ -426,12 +450,12 @@ button i{
     height: 100%;
     height: auto !important;
     margin-bottom: 0.923em;
+
 }
 .title-logo{
     float:left;
     width:auto;
     min-height:100px;
-
 
 }
 /*Navigation */
@@ -573,6 +597,16 @@ button i{
 
 
 }
+.radio-box{
+
+    display:inline;
+    padding:0 1% 0 .675em;
+}
+.text .radio-box{
+
+    margin-left: 1.235em;
+}
+
 
 /*Footer */
 

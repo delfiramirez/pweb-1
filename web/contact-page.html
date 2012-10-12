@@ -17,10 +17,9 @@
     </a> 
     </h1>
     <hgroup>
-      <h1> {{title.h1}} </h1>
+      <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-    <input type=search id=buscar pattern="[a-zA-Z0-9]+">
   <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
       <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> ENG </a> </li>
@@ -28,8 +27,9 @@
       <li> <a href="#" class="{{link-one nav.ul.li.c}}" title="{{title.c}}"> CA </a> </li>
     </ul>
   </nav>
+      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+">
   </header>
-  <hr>
+  <hr class="clear">
     <nav id="corporate-company" class="main-nav">
     <ul>
       <li><a href="#" rel="">Mission</a></li>
@@ -63,7 +63,7 @@
           <label for=emaile>Email</label>
             <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
         
-            <input type=submit formnovalidate value="Next">
+            <input type=submit formnovalidate value="Contact Query">
 </fieldset>
           </section>
 
@@ -93,11 +93,11 @@
     <li> {{link.two}} </li>
     <li> {{link.three}} </li>
   </ul>
-  <ul id="social-network" class="nav-social" itemscope>
-    <li itemprop="Twitter"><a href="#" title="our company at Twitter" rel="http://twitter.com">Twitter</a></li>
-    <li itemprop="Google"><a href="#" title="our company at G+"> Google+</a> </li>
-    <li itemprop ="Facebook"><a href="#" title="our company at FB"> Facebook</a></li>
-  </ul>
+                    <ul id="social-network" class="nav-social">
+                        <li><a href="#" class="sntweet" title="our company at Twitter">Twitter</a></li>
+                        <li><a href="#" class="sngplus" title="our company at G+">Google+</a> </li>
+                        <li><a href="#" class="snfb" title="our company at FB">Facebook</a></li>
+                    </ul>
   <address itemscope>
   <span>Name of the Street</span>
   <span>City</span>

@@ -21,7 +21,7 @@
       <h1> {{title.h1}} </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-    <input type=search id=buscar pattern="[a-zA-Z0-9]+">
+
   <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
       <li> <a href="#" class="{{link-one nav.ul.li.a}}" title="{{title.a}}"> ENG </a> </li>
@@ -29,8 +29,9 @@
       <li> <a href="#" class="{{link-one nav.ul.li.c}}" title="{{title.c}}"> CA </a> </li>
     </ul>
   </nav>
+      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+">
   </header>
-  <hr>
+  <hr class="clear">
   <nav id="corporate-company" class="main-nav" >
     <ul>
       <li><a href="#">Mission</a></li>
@@ -106,11 +107,11 @@
     <li> {{link.two}} </li>
     <li> {{link.three}} </li>
   </ul>
-  <ul id="social-network" class="nav-social">
-    <li><a href="#" title="our company at Twitter">Twitter</a></li>
-    <li><a href="#" title="our company at G+"> Google+</a> </li>
-    <li><a href="#" title="our company at FB"> Facebook</a></li>
-  </ul>
+                    <ul id="social-network" class="nav-social">
+                        <li><a href="#" class="sntweet" title="our company at Twitter">Twitter</a></li>
+                        <li><a href="#" class="sngplus" title="our company at G+">Google+</a> </li>
+                        <li><a href="#" class="snfb" title="our company at FB">Facebook</a></li>
+                    </ul>
   <address>
   Name of the Street
   City
