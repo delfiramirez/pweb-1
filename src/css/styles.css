@@ -249,10 +249,11 @@ legend {
     width:auto;
 
 }
+
 button {
     cursor:pointer;
-    display:block; 
     margin:1em auto;
+     white-space:normal;
 }
 button i{
 
@@ -260,16 +261,22 @@ button i{
     width:auto;
     padding:0.33%;
 }
-textarea {
-    color:inherit;
-    font-size:inherit;
-    display:block;
-    /*CSS3*/
-    resize:vertical;
-}
-select {
-}
-option {
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+textarea,
+input,
+input[type=text],
+input[type=hidden],
+input[type=password],
+input[type=image]
+{
+ display: inline-block;
+ white-space: nowrap;
 }
 input{
     font-size: 90%;
@@ -301,7 +308,6 @@ input[type="range"] {
 
 }
 input[type="submit"] {
-    display:block;
 
 }
 input[type="text"] {
@@ -356,9 +362,31 @@ form label.radio-box::after{ content:" ";}
     /*display:block;*/
 }
 .text:first-child {float:left;}
-.text input {
-    box-sizing:border-box;
-    width:100%;
+
+textarea {
+    color:inherit;
+    font-size:inherit;
+    display:block;
+    white-space:pre-wrap;
+    /*CSS3*/
+    resize:vertical;
+}
+select {
+}
+optgroup,option
+{
+ display: block;
+ white-space: nowrap;
+}
+
+optgroup[label],option[label] 
+{
+ content: attr(label);
+}
+option[selected]::before 
+{ 
+ display: inline;
+ content: check; 
 }
 
 /*HTML5 drag and drop */
