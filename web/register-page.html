@@ -65,7 +65,12 @@
             <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
           <label for=files-upload>Choose an Image</label>
            <input type=file id="files-upload" single>
-        <div id="drop-area">
+           <!--creating support for drag'n'drop image.
+              NOTE: Must be compatible with Opera and early Safari-Konqueror Browsers.
+              Use html5.js debugging functions to test.
+              //-->
+
+        <div id="drop-area" dropzone="copy string:text/html file:image/*">
           or drag and drop image here
         </div>
             <input type=submit formnovalidate value="Next">
