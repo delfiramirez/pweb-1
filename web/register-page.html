@@ -24,12 +24,12 @@
     </hgroup>
   <nav id="language-selection" class="language nav-header" role ="navigation">
     <ul>
-      <li> <a href="#" class="en-lang" title="{{title.a}}"> ENG </a> </li>
-      <li> <a href="#" class="es-lang" title="{{title.b}}"> ES </a> </li>
-      <li> <a href="#" class="ca-lang" title="{{title.c}}"> CA </a> </li>
+      <li> <a href="#" class="en-lang" title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
+      <li> <a href="#" class="es-lang" title="{{title.b}}" hreflang="es"> ES </a> </li>
+      <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
   </nav>
-    <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
+    <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="{{lang...}}">
   </header>
     <hr class="clear">
   <nav id="corporate-company" class="main-nav">
@@ -140,7 +140,7 @@
             <textarea name="comments" id=comments maxlength="500"></textarea>
             <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
 </fieldset>
-        <button class="subscription-done" >
+        <button class="subscription-done" hidefocus="true" >
             <i> {{additional info}}</i>
             <img src="" alt="Save and Submit" > 
         </button>
@@ -183,14 +183,17 @@
   <span>Country</span>
   <span>PO BOX</span>
   </address>
-  <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small>
+  <p>&copy; <time pubdate> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small>
 
     </p>
 </footer>
   </div>
   
-<div id="mapWindow" class="modal-open">
+<div id="customerData" class="modal-open" hidden>
 <!-- here goes the modal map; scripts included //-->
+<table datasrc="#customer" datapagesize=10>
+   <tr><td datafld="customer_name"></td></tr>
+</table>
 </div>
 <script src="src/js/libs/jquery/path"></script>
 <script src="src/js/libs/cufon/path"></script>
