@@ -5,7 +5,7 @@
         <title>{{ title }}</title>
         <script src="src/js/html5.js"></script>              
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-        <link href="src/css/corporate-fonts.css" rel="stylesheet" media="screen, print">
+        <link href="../src/css/media-queries.css" rel="stylesheet">
         <link href="../src/css/styles.css" rel="stylesheet" >
     </head>
 <body id="corporate-project">
@@ -18,7 +18,7 @@
     </a> 
     </h1>
     <hgroup>
-      <h1> {{title.h1}} </h1>
+      <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
   <nav id="language-selection" class="language nav-header" role ="navigation">
@@ -28,7 +28,7 @@
       <li> <a href="#" class="{{link-one nav.ul.li.c}}" title="{{title.c}}"> CA </a> </li>
     </ul>
   </nav>
-      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+">
+      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
   </header>
   <hr class="clear">
     <nav id="corporate-company" class="main-nav">
@@ -40,11 +40,12 @@
     </ul>
   </nav>
               <div class="weblog">
+                <h1> Corporate Blog</h1>
             <!-- [ corporate template ]  //-->                  
                 <article id="corporate-articles" class="corporate-news left" role="main">
                     <header>
                     <h1> {{article-title.h1}} </h1>
-                    <img src="path-to-image" alt="description" title="Corporate Blog News">
+                     <h2><time class="updated" datetime="2012-08-07 11:12:03-0400" pubdate>08-07-2012</time></h2>
                     </header>
                         <p>Lorem ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod </p>
                    <footer>
@@ -78,7 +79,7 @@
                         <li><a href="#" class="sngplus" title="our company at G+">Google+</a> </li>
                         <li><a href="#" class="snfb" title="our company at FB">Facebook</a></li>
                     </ul>
-            <address role="widget">
+            <address>
                     Name of the Street
                     City
                     Postal Code
@@ -88,7 +89,8 @@
            <p>&copy; Copyright etcetera. <timedate> 2012</timedate>.</p>
             </footer>
         </div>
-
+<script src="src/js/jquery/path"></script>
+<script src="src/js/cufon/path"></script>
 <!--[if IE]>
 
 <style type="text/css" media="screen">
@@ -102,5 +104,5 @@ src: url('src/fonts/Corporate-webfont.eot?#iefix') format('embedded-opentype');
 }
 </style>
 <![endif]-->
-    </body>
+</body>
 </html>

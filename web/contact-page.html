@@ -27,7 +27,7 @@
       <li> <a href="#" class="{{link-one nav.ul.li.c}}" title="{{title.c}}"> CA </a> </li>
     </ul>
   </nav>
-      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+">
+      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
   </header>
   <hr class="clear">
     <nav id="corporate-company" class="main-nav">
@@ -43,7 +43,7 @@
   
   <div id="form-corporate" class="left">
     <canvas id="mycanvas" width="100%" height="300">Your browser does not support HTML5?</canvas> 
-    <section id="your-personal-data" class="contact tab1"> 
+    <section id="your-personal-data" class="contact"> 
 
       <!--section used to collect data //-->
 
@@ -68,12 +68,12 @@
           </section>
 
   </form>
-
+</section>
 </div>
 <aside id="our-location" class="left" role="complementary">
   <h3 title="where we are">Where We Are</h3>
   <p> 
-    <a href="#" ><img src="{{path-to-MAPimg}}" /></a> 
+    <a href="#" ><img src="../images/400x280-map.png" class="location-image" alt="Santa Rosa Calif."></a> 
     <a href="#mapWindow">{{action done}}</a> 
   </p>
   <address itemscope>
@@ -110,10 +110,11 @@
     </p>
 </footer>
   </div>
-  <div id="mapWindow" itemscope>
+  <div id="mapWindow" class="modal-open">
 <!-- here goes the modal map; scripts included //-->
   </div>
 <script src="src/js/jquery/path"></script>
+<script src="src/js/cufon/path"></script>
 <!--[if IE]>
 
 <style type="text/css" media="screen">

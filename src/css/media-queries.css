@@ -1,43 +1,14 @@
-@import url("corporate-fonts.css") screen, print;
 
 @media screen {
-  * { font-family: serif; }
-  html {}
-  body {
-  		font-size: 62.5%;
-}
-}
-
-@media print{
-
-  * { font-family: serif; }
-
-}
-  body {
-  	font-size: 12pt;
-  	font-size-adjust:none;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-}
-	i{ font-style: normal;}
-	strong { font-weight: bold; }
-	em, dfn { font-style: italic; }
-	dfn { font-weight: bold; }
-	pre, code { margin: 1.625em 0; white-space: pre; }
-	pre, code, tt { font: 1em monospace; line-height: 1.5; } 
-	tt { display: block; margin: 1.625em 0; }
-	hr { margin-bottom:1.625em; }
-
-	ul{ list-style-position:outside; }
-	li ul, li ol  { margin:0 1.625em;  }
-	ul, ol { margin: 0 0 1.625em 0; }
-
+    * { font-family: serif; }
+    html {}
+    body {
+        font-size: 62.5%;
+        text-align:center;
+    }
 }
 
 @media projector{
-
-
 
 }
 
@@ -50,7 +21,20 @@
 
 
 }
+@media handheld{
+    
+ .handheld{
+    width:80%;
+    max-width:80%;
+    height: auto;
+    min-height: 100px;
+    height: auto !important;
+    overflow:hidden;
 
+}
+}
+/*
+2012 Oct: Avoid device-aspect-ratio for sites intended to be displayed across multiple devices*/
 @media screen and (device-aspect-ratio: 16/9) {  }
 @media screen and (device-aspect-ratio: 32/18) {  }
 @media screen and (device-aspect-ratio: 1280/720) {  }
@@ -58,29 +42,34 @@
 
 @media only screen {
     /* "Advanced" CSS2 and CSS3 comes here to hide styles from older browsers 
-		Yes mates, besides one's low budget and incidental hurry, 
-		elders deserve some kinda respect ;)
+                Yes mates, besides one's low budget and incidental hurry, 
+                elders deserve some kinda respect ;)
 
     */
-body {
-	text-rendering:optimizeLegibility;
+    body {
+        text-rendering:optimizeLegibility;
+    }
+
+    header, nav, footer{
+
+        width:100%;
+    }
+
+    section, article, aside{
+        float:left;
+    }
+
+    /* Corporate Classes */
+
+    header hgroup {
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+}
+@media only screen and (max-device-width : 480px){
+dl {
+    margin: 0;
 }
 
-header, nav, footer{
-
-	width:100%;
-}
-
-section, aside{
-  	float:left;
-}
-
-/* Corporate Classes */
-
-/*Form  */
-.text {
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-}
 }

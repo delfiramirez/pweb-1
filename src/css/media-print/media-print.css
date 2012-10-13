@@ -1,0 +1,43 @@
+@media print{
+
+  * { font-family: serif; }
+
+}
+	html,body {background-color:#FFF; color:#000; font-size: 12pt; font-size-adjust:none; font-style:normal; font-variant:normal; font-weight:normal;
+}
+	i{ font-style: normal;}
+	strong { font-weight: bold; }
+	em, dfn { font-style: italic; }
+	dfn { font-weight: bold; }
+	pre, code { margin: 1.625em 0; white-space: pre; }
+	pre, code, tt { font: 1em monospace; line-height: 1.5; } 
+	tt { display: block; margin: 1.625em 0; }
+	hr { margin-bottom:1.625em; }
+
+	ul{ list-style-position:outside; }
+	li ul, li ol  { margin:0 1.625em;  }
+	ul, ol { margin: 0 0 1.625em 0; }
+
+	img  {max-width: 100%;}
+	h1,h2,h3,h4,h5,h6 {page-break-after: avoid;}
+	ul, ol, li {page-break-inside: avoid;}
+	table table,tr,td {page-break-before: avoid;page-break-after: avoid;}
+	header, nav, aside, #postcomment, #commentform, footer, video, audio {display: none;}
+	a:link:after,
+	a:visited:after,
+	a:visited:after { content: " (" attr(href) ") ";}
+	a[href^="/"]:after,
+	a[href^="/"]:after,
+	a[href^="#"]:after,
+	a[href^="javascript"]:after,
+ 	a[href^="#"]:after { content: ""; }
+
+ 	#wrapper, #content {
+	width: auto;
+	border: 0;
+	margin: 0 5%;
+	padding: 0;
+	float: none !important;
+	}
+
+}
