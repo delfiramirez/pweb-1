@@ -93,6 +93,8 @@ abbr {
 /* Headings ---------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
     font-weight : normal;
+    font-stretch: condensed;
+    font-size-adjust: 0.5;
 }
 h1 {
     margin-bottom : .5em;
@@ -115,7 +117,7 @@ h4 {
 }
 h5, h6 {
     margin-bottom : 1.5em;
-    font-weight : bold;
+    font-weight : 500;
     font-size : 1em;
 }
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
@@ -171,6 +173,7 @@ address {
    
 }
 article {
+    width:auto;
     
 }
 aside {
@@ -248,7 +251,8 @@ legend {
 }
 button {
     cursor:pointer;
-    display:block;
+    display:block; 
+    margin:1em auto;
 }
 button i{
 
@@ -495,6 +499,7 @@ a[href^="mailto:"]:before {
     /* CSS3 spec */
     background-origin: border-box, content-box; 
     background-size:100%;
+    background-size: contain;
     margin:0;
     padding:0;
     display:block;
@@ -704,25 +709,31 @@ a[href^="mailto:"]:before {
     padding:1em;
     margin:0;
 }
+.submit-nextButton   {
+    cursor:pointer;
+    display:block; 
+    margin:1em auto;
+}
 .tab1, .tab2, .tab3, .tab4, .tab5{
-    position: relative;   
-    clear:left;
+    float:left;
+    position:relative;
+    padding:0 0 1em 0;
+    overflow:hidden;
     width:auto;
     min-width: 70%;
     margin:0;
-    padding:0;
     border: 1px solid #ddd;
 
 
 }
 
 .tab1 legend,.tab2 legend, .tab3 legend, .tab4 legend {
-    padding: 10px; 
+    float:left;
+    width:100%;
+    position:relative;
     border: 1px solid #ccc; 
     margin-left: -1px; 
-    position: relative;
-    left: 1px; 
-    width:auto;
+    left: 1px;
 }
 .search-nav{
 
