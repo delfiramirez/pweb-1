@@ -21,6 +21,16 @@ document.createElement('section');
 document.createElement('time');
 document.createElement('wbr');
 
+/* Simple device detection
+
+Use carefully, to be replaced by CSS link
+
+For testing purposes */
+
+if(navigator.connection && navigator.connection.type !== 3){ //not 2g
+    document.write('<link rel="stylesheet" href="hi-res-backgrounds.css" media="only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-o-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5), only screen and (min-resolution:1.5dppx)">');
+}
+
 /* DEBUGGING
 W3C pointer tester
 http://www.w3.org/TR/pointerlock/

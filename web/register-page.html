@@ -22,17 +22,18 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-  <nav id="language-selection" class="language nav-header" role ="navigation">
-    <ul>
+  <nav >
+    <ul id="language-selection" class="language">
       <li> <a href="#" class="en-lang" title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
       <li> <a href="#" class="es-lang" title="{{title.b}}" hreflang="es"> ES </a> </li>
       <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
   </nav>
-    <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="{{lang...}}">
+  <label for=search>Search this site
+  <input type=search id="buscar" pattern="[a-zA-Z0-9]+" placeholder={{lang...}} formaction="search.php" results=5 name=s></label>
   </header>
     <hr class="clear">
-  <nav id="corporate-company" class="main-nav">
+  <nav id="corporate-company" class="main-nav" role ="navigation">
     <ul>
       <li><a href="#" rel="">Mission</a></li>
       <li><a href="#" rel="">Vision</a></li>
@@ -63,7 +64,7 @@
             <input type=text id=surname placeholder="Please, your surname" required>
           <label for=emaile>Email</label>
             <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
-          <label for=files-upload>Choose an Image</label>
+          <label for=files-upload>Upload an Image</label>
            <input type=file id="files-upload" single>
            <!--creating support for drag'n'drop image.
               NOTE: Must be compatible with Opera and early Safari-Konqueror Browsers.
@@ -140,7 +141,7 @@
             <textarea name="comments" id=comments maxlength="500"></textarea>
             <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
 </fieldset>
-        <button class="subscription-done" hidefocus="true" >
+        <button class="subscription-done" hidefocus="true" formaction="collect.php">
             <i> {{additional info}}</i>
             <img src="" alt="Save and Submit" > 
         </button>

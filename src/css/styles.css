@@ -205,11 +205,13 @@ footer {
 header {
     padding: 0 10px;
     width: auto;
+    /* CSS3 enhancements */
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+
 }
 hgroup {
     float:left;
     margin-left: .325em;
-
     max-width:33%;
 }
 header hgroup{
@@ -275,13 +277,13 @@ input[type=hidden],
 input[type=password],
 input[type=image]
 {
- display: inline-block;
- white-space: nowrap;
+    display: inline-block;
+    white-space: nowrap;
 }
 input{
     font-size: 90%;
     font-style: italic;
-    width:80%;
+    width:auto;
 }
 input[type="radio"] {
 }
@@ -314,7 +316,6 @@ input[type="text"] {
     font-style: inherit;
     color:inherit;
     font-size:inherit;
-
 }
 input[type="tel"] {
     font-style: inherit;
@@ -322,20 +323,13 @@ input[type="tel"] {
     font-size:inherit;
 }
 input[type="search"] {
+    float:right;
     font-style: inherit;
     color:inherit;
-    background: inherit url('') 50% right no-repeat;
     text-align:left;
     padding: 0 1.2em 0 0;
     margin:0;
-    border:none;
-    color:inherit;
-    clear:left;
-    width: 20%;
-    height:auto;
-
     /*CSS3*/
-
     -webkit-appearance: textfield;
 }
 input[type="url"] {
@@ -528,7 +522,7 @@ a[href^="mailto:"]:before {
     background-origin: border-box, content-box; 
     background-size:100%;
     background-size: contain;
-    margin:0;
+    margin-top:24px;
     padding:0;
     display:block;
     border:none;
@@ -559,7 +553,7 @@ a[href^="mailto:"]:before {
     height:100%;
     min-height: 1.745em;
     height: auto !important;
-}
+}/*
 .nav-header ul{
 
     list-style:none;
@@ -580,9 +574,9 @@ a[href^="mailto:"]:before {
 
     display:inline-block;
     padding:0;
+
 }
-
-
+*/
 .main-nav {
     overflow:hidden;
     margin:0;
@@ -663,8 +657,29 @@ a[href^="mailto:"]:before {
 
 }
 .language{
+    float:left;
+    width:auto;
+    text-align:right;
+    margin-top: 5px;
+    padding-top: 0;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 
 }
+.language li{
+    display: inline-block;
+    padding: 0;
+    text-align: right;
+    margin: 0 1.96078431372549%;
+}
+.language li a {
+    background: none;
+    font-size: 1em;
+}
+
+.language >li>a {
+    padding: 1.571428571428571em 0.5em;
+}
+
 .location-image{
     float:left;
     width:100%;
@@ -771,6 +786,10 @@ a[href^="mailto:"]:before {
 }
 .text .radio-box{
     margin-left: 1.235em;
+}
+.spoken-form label{
+    display:inline-block;
+    font:inherit;
 }
 
 
