@@ -196,10 +196,42 @@
 <div id="customerData" class="modal-open" hidden>
   <!-- here goes the modal map; scripts included //-->
   <table datasrc="#customer" datapagesize=10>
-   <tr><td datafld="customer_name"></td></tr>
+<table>
+  <caption>Here we assign header information to cells 
+      by setting the scope attribute.
+  </caption>
+  <colgroup />
+  <colgroup span="2" title="title" />
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Side</th>
+      <th scope="col">Role</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Darth Vader</td>
+      <td>Dark</td>
+      <td>Sith</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Obi Wan Kenobi</td>
+      <td>Light</td>
+      <td>Jedi</td>
+    </tr>
+    <tr>
+      <td>Greedo</td>
+      <td>South</td>
+      <td>Scumbag</td>
+    </tr>
+  </tbody>
+</table>
   </table>
 </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
 <script src="src/js/libs/cufon/path"></script>
 <!--[if IE]>
