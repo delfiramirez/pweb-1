@@ -188,17 +188,16 @@ function addEventSimple(obj,evt,fn) {
     obj.addEventListener(evt,fn,false);
   else if (obj.attachEvent)
     obj.attachEvent('on'+evt,fn);
-}
+};
 
 function removeEventSimple(obj,evt,fn) {
   if (obj.removeEventListener)
     obj.removeEventListener(evt,fn,false);
   else if (obj.detachEvent)
     obj.detachEvent('on'+evt,fn);
-}
-
+};
   // ref: http://diveintohtml5.org/detect.html
-  
+
   function supports_input_placeholder()
   {
     var i = document.createElement('input');
@@ -214,4 +213,4 @@ function removeEventSimple(obj,evt,fn) {
         fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
       }
     }
-  }
+  };
