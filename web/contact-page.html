@@ -1,10 +1,15 @@
 <!doctype html>
-<html lang="en-GB"  id="corporate-project" class="no-js corp">
-<head>
-<meta charset="utf-8">
-<title>{{title}}</title>
-<script src="src/js/libs/modernizr/path"></script>
-<script src="src/js/html5.js"></script>
+<html lang="en-GB" id="corporate-project" class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{ title }}</title>
+
+        <meta http-equiv="content-security-policy"></meta>
+        
+<script src="../src/js/libs/modernizr/path"></script>
+<script src="../src/js/html5.js"></script>
+<script src="https://github.com/douglascrockford/JSON-js/blob/master/json2.js"></script>
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
 <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
@@ -30,7 +35,7 @@
     </ul>
   </nav>
   <label for=search>Search this site
-  <input type=search id="buscar" pattern="[a-zA-Z0-9]+" placeholder={{lang...}} formaction="search.php" results=5 name=s></label>
+  <input type=search id="buscar" pattern="[a-zA-Z0-9]+" placeholder={{lang...}} maxlength="100" formaction="search.php" results=5 name=s></label>
   </header>
   <hr class="clear">
     <nav>
@@ -65,7 +70,8 @@
             <input type=text id=surname placeholder="Please, your surname" required>
           <label for=emaile>Email</label>
             <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
-        
+               <label for=esayhi>Have you say</label>
+        <textarea id="sayhi" wrap=hard maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
             <input type=submit formnovalidate value="Contact Query">
 </fieldset>
           </section>

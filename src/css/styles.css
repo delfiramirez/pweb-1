@@ -245,6 +245,7 @@ form {
 }
 fieldset {
     border:none;
+    width:auto;
 }
 legend {
     margin: 0 0 1.625em 0;
@@ -363,6 +364,7 @@ textarea {
     font-size:inherit;
     display:block;
     white-space:pre-wrap;
+
     /*CSS3*/
     resize:vertical;
 }
@@ -631,6 +633,10 @@ a[href^="mailto:"]:before {
     font-weight:200;
 }
 .contact{
+    width:70%;
+    height:100%;
+    min-height: 100%;
+    height: auto !important;
 
 }
 .language{
