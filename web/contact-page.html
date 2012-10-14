@@ -22,18 +22,19 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-  <nav id="language-selection" class="language nav-header" role ="navigation">
-    <ul>
-      <li> <a href="#" class="en-lang" title="{{title.a}}"> ENG </a> </li>
-      <li> <a href="#" class="es-lang" title="{{title.b}}"> ES </a> </li>
-      <li> <a href="#" class="ca-lang" title="{{title.c}}"> CA </a> </li>
+  <nav>
+    <ul id="language-selection" class="language">
+      <li> <a href="#" class="en-lang" title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
+      <li> <a href="#" class="es-lang" title="{{title.b}}" hreflang="es"> ES </a> </li>
+      <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
   </nav>
-      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
+  <label for=search>Search this site
+  <input type=search id="buscar" pattern="[a-zA-Z0-9]+" placeholder={{lang...}} formaction="search.php" results=5 name=s></label>
   </header>
   <hr class="clear">
-    <nav id="corporate-company" class="main-nav">
-    <ul>
+    <nav>
+    <ul id="corporate-company" class="main-nav">
       <li><a href="#" rel="">Mission</a></li>
       <li><a href="#" rel="">Vision</a></li>
       <li><a href="#" rel="">Values</a></li>

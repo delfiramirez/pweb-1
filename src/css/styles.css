@@ -553,30 +553,7 @@ a[href^="mailto:"]:before {
     height:100%;
     min-height: 1.745em;
     height: auto !important;
-}/*
-.nav-header ul{
-
-    list-style:none;
-    width:auto;
-    height: 1.745em;
-    padding:0;
-    margin: 1em auto;
-    text-align:right;
 }
-.nav-header ul li{
-
-    list-style:none;
-    display:inline;
-    margin-left: 4%;
-    padding:0;
-}
-.nav-header ul li a{
-
-    display:inline-block;
-    padding:0;
-
-}
-*/
 .main-nav {
     overflow:hidden;
     margin:0;

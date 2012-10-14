@@ -38,5 +38,6 @@
 	padding: 0;
 	float: none !important;
 	}
+	header, aside, footer{ display:none;}
 
 }

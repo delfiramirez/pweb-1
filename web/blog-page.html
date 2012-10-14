@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>{{ title }}</title>
-        <script src="src/js/libs/modernizr/path"></script>
-        <script src="src/js/html5.js"></script>              
+        <script src="../src/js/libs/modernizr/path"></script>
+        <script src="../src/js/html5.js"></script>              
         <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="./src/css/media-queries/media-print.css" media="print">
+<link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
 <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
     </head>
 <body id="project">
@@ -22,8 +22,8 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-    <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
-  <nav class="nav-header" role ="navigation">
+    <input type=search id="buscar"  pattern="[a-zA-Z0-9]+" placeholder="Search..." formaction="search.php" results=5 name=s>
+  <nav>
     <ul  id="language-selection" class="language">
       <li> <a href="#" class="en-lang" title="{{title.a}}"> ENG </a> </li>
       <li> <a href="#" class="es-lang" title="{{title.b}}"> ES </a> </li>
@@ -33,8 +33,8 @@
 
   </header>
   <hr class="clear">
-    <nav id="corporate-company" class="main-nav">
-    <ul>
+    <nav  class="main-nav"  role ="navigation">
+    <ul id="corporate-company">
       <li><a href="#" rel="">Mission</a></li>
       <li><a href="#" rel="">Vision</a></li>
       <li><a href="#" rel="">Values</a></li>
@@ -62,6 +62,10 @@
                 <h1> {{archives.h1}} </h1>
                 <h2> {{archive-list}} </h2>
               <hgroup>
+                <ul>
+                  <li><a href="#" rel="bookmarks">{{Month-Year-Date}}</a>
+                  </li>
+                </ul>
                 <!-- HTML5 semantic tag time & datetime //-->
             </aside>
   
