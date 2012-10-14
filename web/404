@@ -70,7 +70,7 @@
 	</footer>
   </div>
   
-<script src="src/js/libs/jquery/path"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 <script src="src/js/libs/cufon/path"></script>
 <!--[if IE]>
 
