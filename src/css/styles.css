@@ -176,6 +176,7 @@ article {
     width:auto;
     
 }
+
 aside {
     height:auto;
     min-height:100%;
@@ -418,6 +419,10 @@ option[selected]::before
 a[href^="mailto:"]:before { 
     content: "\2709"; 
 }
+article[id*=comment-] {}           
+
+article[id*=comment-] header h1 {} 
+article[id*=comment-] section p {} 
 
 
 /* IDS -------------------------------------------------------------- */
