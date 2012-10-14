@@ -21,7 +21,7 @@
 	h1,h2,h3,h4,h5,h6 {page-break-after: avoid;}
 	ul, ol, li {page-break-inside: avoid;}
 	table table,tr,td {page-break-before: avoid;page-break-after: avoid;}
-	header, nav, aside, #postcomment, #commentform, footer, video, audio {display: none;}
+	header, nav, aside, #postcomment, #commentform, .read-more, footer, video, audio {display: none;}
 	a:link:after,
 	a:visited:after,
 	a:visited:after { content: " (" attr(href) ") ";}
@@ -38,6 +38,4 @@
 	padding: 0;
 	float: none !important;
 	}
-	header, aside, footer{ display:none;}
-
 }

@@ -194,15 +194,16 @@ figcaption {
     color: #ededed;
 }
 footer {
-
+    clear:both;
     border-top:1px dotted #c9c9c9;
     border-top:1px dotted rgba(255,255,255,0.9);
     text-align:left;
-    clear:both;
-    float:left;
     width:100%;
+    height:auto;
+    min-height: 100%;
 }
 header {
+    text-align:left;
     padding: 0 10px;
     width: auto;
     /* CSS3 enhancements */
@@ -214,7 +215,7 @@ hgroup {
     margin-left: .325em;
     max-width:33%;
 }
-header hgroup{
+header > hgroup{
     text-align: center;
     margin: 1%;
 }
@@ -427,12 +428,11 @@ a[href^="mailto:"]:before {
 
 }
 #wrapper {
-    clear:both;
-    float:left;
-    width:100%;
-    margin: 0 auto;
     text-align:left;
-    position:relative;
+    width:100%;
+    margin: 0 .325em 0 0;
+    border-bottom:1px dashed #ccc;
+    line-height: 157%;
 }
 #our-mission {
 }
@@ -706,14 +706,6 @@ a[href^="mailto:"]:before {
 
 .window{
 
-
-}
-
-.weblog{
-    width:100%;
-    margin: 0 .325em 0 0;
-    border-bottom:1px dashed #ccc;
-    line-height: 157%;
 
 }
 
