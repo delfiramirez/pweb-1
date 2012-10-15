@@ -49,10 +49,13 @@
   <!-- [ corporate template ]  //-->
   
   <div id="{{id}}" class="our-mission [{{class1 class2 class3}}]">
-    <section id="{{id}}" class="corporate-slideshow"> 
+    <section id="{{id}}" class="corporate-slideshow left"> 
       <!--no need for header in section as part //-->
       <h1> {{section-title.h1}} </h1>
-      <figure> <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" >
+      <figure> 
+        <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > 
+        <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" > 
+        <img src="{{ /path-to/.img}}" alt ="{{ slideshow }}" >
         <figcaption>
           <ol class="{{our-company}}">
             <li>{{slideshow-caption-text-1}}</li>
@@ -62,15 +65,15 @@
         </figcaption>
       </figure>
       <nav>
-      <ul id="{{id}}" class="{{mission vision values}}">
+      <ul id="slideshow-navigation" class="left">
         <li> <a href="#" class=class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow1}}"> {{link.image.one}} </a> </li>
         <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow2}}"> {{link.image.two}} </a> </li>
         <li> <a href="#" class="{{a.nav.ul.li.slideshow}}" title="{{title.a.slideshow3}}"> {{link.image.two}} </a> </li>
       </ul>
       <nav>
     </section>
-    <article id="corporate-articles">
-      <article id="our-mission" class="left">
+    <article id="corporate-articles" class="left">
+      <article id="our-mission">
       <header>
         <h2>{{title.Mission}}
            <img src="path-to-image" alt="{{description}}" title="{{title}}" class="left thumb"> 

@@ -567,10 +567,12 @@ article[id*=comment-] section p {}
     height: auto !important;
 
 }
-#weblog-company, #corporate-articles, #form-corporate{
+#weblog-company, #corporate-articles, #form-corporate, .corporate-slideshow{
     /*width:70%;*/
     min-width: 0;
-    max-width: 70%;
+    max-width: 100%;
+    height:auto;
+    min-height:100%;
     padding:1em;
     margin:0;
 }
