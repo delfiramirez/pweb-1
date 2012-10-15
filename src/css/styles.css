@@ -23,7 +23,6 @@ html> body {
     text-rendering: optimizeLegibility;
 }
 body {
-
     text-align:center;
     margin:0;
     padding:0;
@@ -196,7 +195,7 @@ hr { margin-bottom:1.625em; }
 
 /* Semantic HTML5 tags ------------------------------------------------------ */
 address {
-    float:left;
+    
 }
 article {
     width:auto;   
@@ -348,6 +347,7 @@ input{
     font-size: 90%;
     font-style: italic;
     width:auto;
+    min-width:10em;
 }
 input[type="radio"] {
 }
@@ -408,7 +408,8 @@ input[placeholder], [placeholder], *[placeholder]
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus { background: #fafafa; outline: none !important; border-color: #b3b3b3; }
 input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled] { background-color: #edede7;}
 form label{
-    margin-left: 10px;
+    margin-left: 0.9784em;
+    display:block;
 }
 form label:after {content:":";}
 form label::after {content:":";}
