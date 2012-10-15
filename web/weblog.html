@@ -5,16 +5,15 @@
 
         <title>{{ title }}</title>
 
-        <meta http-equiv="content-security-policy"></meta>
+        <meta http-equiv="content-security-policy">
 
         <script src="../src/js/libs/modernizr/path"></script>
-<script src="src/js/html5.js"></script>
-<link rel="alternate" type="application/rss+xml" href="/feed.rss">
-<link rel="stylesheet" href="media-print.css" media="print">
-<link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
+        <script src="../src/js/html5.js"></script>
+        <link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
+        <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
 </head>
 
-<body id="corporate">
+<body id="project">
 <div id="wrapper" role="main">
    <header>
     <h1> <a class="title-logo" href="/" title="Go to Corporate Company Homepage">
@@ -27,7 +26,7 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-      <input type=search id=buscar class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
+      <input type='search' id='buscar' class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
   </header>
   <hr class="clear">
   <nav id="corporate-company" class="main-nav" >
@@ -39,38 +38,38 @@
     </ul>
   </nav>
   <!-- begin template  //-->
-  <article class="weblog-article" >
+  <article class="weblog-article" role="article">
   
   <article id="our-new-offices" class="weblog">
     <header>
  <h1>{{article1.title}}</h1>
- <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
+      <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small></p>
     </header>
-   Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
+   <p>Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, <br>
    dolore aliqua non est magna in labore pig pork biltong. 
-   Eiusmod
+     Eiusmod</p>
    <footer>
     <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
    </footer>
    </article>
-   <article class="weblog">
+   <article>
         <header>
  <h1>{{article2.title}}</h1>
-  <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
+          <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small></p>
     </header>
-   Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
+   <p>Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, 
-   dolore aliqua non est magna in labore pig pork biltong. 
-   Eiusmod
+   dolore aliqua non est magna in> labore pig pork biltong. 
+     Eiusmod</p>
     <footer>
     <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
    </footer>
    </article>
-     <article id="glad-toi-meet-you" class="weblog">
+     <article class="weblog">
           <header>
- <h1><a href="#" rel=bookmark>{{article3.title}}</a></h1>
-  <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
+            <h1><a href="#" rel='bookmark'>{{article3.title}}</a></h1>
+            <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small></p>
     </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit<wbr>. Aute in reprehenderit, 
@@ -101,7 +100,7 @@
     </aside>
   </section>
   <!-- end template  //-->
-<footer class="clear">
+<footer>
   <ul id="sitemap-navigation" class="nav-bottom">
     <li> {{link.one}}</li>
     <li> {{link.two}} </li>
@@ -122,7 +121,6 @@
   <p>&copy; <time datetime="2012"> 2012</time> Copyright et al.</p>
 </footer>
 </div>
-<script src="src/js/jquery/path"></script>
 <script src="src/js/cufon/path"></script>
 <!--[if IE]>
 
