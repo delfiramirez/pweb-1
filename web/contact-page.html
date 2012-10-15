@@ -5,20 +5,18 @@
 
         <title>{{ title }}</title>
 
-        <meta http-equiv="content-security-policy"></meta>
-        
-<script src="../src/js/libs/modernizr/path"></script>
-<script src="../src/js/html5.js"></script>
-<script src="https://github.com/douglascrockford/JSON-js/blob/master/json2.js"></script>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
-<link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
+        <meta http-equiv="content-security-policy">
+
+        <script src="../src/js/libs/modernizr/path"></script>
+        <script src="../src/js/html5.js"></script>
+        <link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
+        <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
 </head>
-<body id="corporate-project">
+<body id="project">
 <div id="wrapper" role="main" >
    <header>
     <h1> <a class="tcorporate-logo" href="/" title="Go to Corporate Company Homepage">
-    <i > 
+    <i> 
     <u class="title-logo"> Corporate Company Main Page</u> 
     </i> 
     </a> 
@@ -49,8 +47,8 @@
 
   <!-- [ corporate template ]  //-->
   
-  <div id="form-corporate" class="left">
-    <canvas id="mycanvas" width="100%" height="300">Your browser does not support HTML5?</canvas> 
+  <div id="{{id}}" class="web-section">
+    <canvas id="mycanvas" width="70%" height="300">Your browser does not support HTML5?</canvas> 
     <section id="your-personal-data" class="web-section"> 
 
       <!--section used to collect data //-->
@@ -58,21 +56,21 @@
       <h1>Title Form Page</h1>
 
       <!--removed quotes from atrributes HTML5 spec //-->
-      <form action="send.cgi">
+      <form action="send.cgi" >
 
           <!--first form-data //-->
-          <section>
+          <section >
 <fieldset>
         <legend>Contact</legend>  
-          <label for=name>Name</label>
-            <input type=text id=name placeholder="Please, your name" required>
-          <label for=surname> Surname</label>
-            <input type=text id=surname placeholder="Please, your surname" required>
-          <label for=emaile>Email</label>
-            <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
-               <label for=esayhi>Have you say</label>
-        <textarea id="sayhi" wrap=hard maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
-            <input type=submit formnovalidate value="Contact Query">
+          <label for='name'>Name</label>
+            <input type='text' id='name' placeholder="Please, your name" required>
+          <label for='surname'> Surname</label>
+            <input type='text' id='surname' placeholder="Please, your surname" required>
+          <label for='emaile'>Email</label>
+            <input type='email' name="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
+               <label for='sayhi'>Have you say</label>
+        <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
+            <input type='submit' formnovalidate value="Contact Query">
 </fieldset>
           </section>
 
@@ -120,7 +118,7 @@
   <div id="mapWindow" class="modal-open">
 <!-- here goes the modal map; scripts included //-->
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
 
 <script src="src/js/cufon/path"></script>
 <!--[if IE]>
