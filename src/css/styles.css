@@ -8,14 +8,19 @@ html{overflow-y:scroll;overflow:-moz-scrollbars-vertical}
 html.corp{overflow-x:hidden;overflow-y:auto}
 body{line-height:1}
 article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}
-
-* {
-}
 /* Document ---------------------------------------------------- */
-html {
-}
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html { font-size: 62.5%; }
 html> body {
+    font-family: "Corporate", Georgia, serif;
     overflow-y:auto;
+    font-size: 14px; 
+    line-height: 1; 
+    color: #4b4b4b; 
+    position: relative; 
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 
 }
 body {
@@ -61,7 +66,9 @@ img a:hover{
     opacity: 0.8;
 }
 p {
-    line-height: 1.27em;
+
+    line-height: 1.6; 
+    margin-bottom: 0.675%;
 }
 footer p:first-letter { font-size: 145%; }
 i {
@@ -88,12 +95,20 @@ blockquote:before {
 blockquote:after { 
     content: "\275E"; 
 }
+abbr, acronym { 
+    text-transform: uppercase; 
+    font-size: 91%; 
+    color: #020202; 
+    border-bottom: 1px solid #dedede; 
+    cursor: help; 
+}
+
 abbr {
     text-transform: none;
 }
 /* Headings ---------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight : normal;
+    font-weight: bold; 
     font-stretch: condensed;
     font-size-adjust: 0.5;
 }
@@ -146,7 +161,10 @@ ul {
 ol {
     list-style-type : decimal;
 }
-
+ol li ul, ol li ol { 
+    margin-left: 1.250em; 
+    margin-bottom: 0; 
+}
 dl {
     margin: 0 0 1.625em 0;
     padding-top: 1.5em;
@@ -214,9 +232,6 @@ header {
     text-align:left;
     padding: 0 10px;
     width: auto;
-    /* CSS3 enhancements */
-    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
-
 }
 hgroup {
     float:left;
@@ -351,6 +366,8 @@ input[placeholder], [placeholder], *[placeholder]
     color:#ccc !important;
     font-style: italic;
 }
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus { background: #fafafa; outline: none !important; border-color: #b3b3b3; }
+input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled] { background-color: #edede7;}
 form label{
     margin-left: 10px;
 }
@@ -376,6 +393,7 @@ textarea {
     resize:vertical;
 }
 select {
+    width: 100%;
 }
 optgroup,option
 {
@@ -419,6 +437,32 @@ option[selected]::before
     margin-bottom: 0.5em;
 }
 
+/* Tables ----------------------------------------------- */
+table { 
+    background: #fafafa; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+     border-radius: 3px; 
+     margin: 0 0 18px; 
+     border: 1px solid #eee;
+}
+table thead, table tfoot { 
+    background: #f5f5f5; 
+}
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { font-size: 14px; line-height: 18px; text-align: left; }
+
+table thead tr th, table tfoot tr td { padding: 8px 10px 9px; font-size: 16px; font-weight: bold; color: #222; }
+
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+
+table tbody tr.even, table tbody tr.alt { background: #fafafa; }
+
+table tbody tr:nth-child(even) { background: #f6f6f6; }
+
+table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
 
 /* Some -------------------------------------------------------------*/
 
@@ -444,17 +488,36 @@ article[id*=comment-] section p {}
 }
 #wrapper {
     text-align:left;
-    width:100%;
+    position: relative;
     margin: 0 .325em 0 0;
     border-bottom:1px dashed #ccc;
-    line-height: 157%;
+    line-height: 170%;
 }
 #our-mission {
+    width: 32%;
+    float:left;
+    padding:0.985em;
+        /* CSS3 enhancements */
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 #our-vision {
+    width: 32%;
+    float:left;
+    padding:0.985em;
+    margin-left: 0.652em;
+    border-left: 1px solid #ccc;
+        /* CSS3 enhancements */
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 #our-values {
+    width: 32%;
+    float:left;
+    padding:0.985em;
+    margin-left: 0.652em;
+        /* CSS3 enhancements */
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
+
 /* Location Objects */
 #googlemap img, object {
     max-width: none;
@@ -505,7 +568,7 @@ article[id*=comment-] section p {}
 
 }
 #weblog-company, #corporate-articles, #form-corporate{
-    width:70%;
+    /*width:70%;*/
     min-width: 0;
     max-width: 70%;
     padding:1em;
@@ -532,10 +595,10 @@ article[id*=comment-] section p {}
     padding:0;
     display:block;
     border:none;
-    width: auto;
     height: 100%;
     height: auto !important;
     margin-bottom: 0.923em;
+
 
 }
 .title-logo{
@@ -604,7 +667,6 @@ article[id*=comment-] section p {}
 /* Subnavigation */
 
 .article-navigation{
-
     list-style:none;
     margin:5px;
 
@@ -635,11 +697,16 @@ article[id*=comment-] section p {}
     display:table-cell;
     padding:8%;
     margin : 1.27em;
-    background : #ededec;
-    border: 1px solid #996;
+    background : #fafafa;
+    border: 1px solid #ccc;
     text-align:left;
     text-justify:distribute;
 
+}
+.cell img{
+
+    border:inherit;
+    float:left;
 }
 .company-location{
     display:block;
@@ -703,17 +770,18 @@ article[id*=comment-] section p {}
 
 .thumb{
     float:left;
-    width:100px;
+    width:150px;
     min-width:0;
-    height:100px;
+    height:150px;
+    min-height:0;
+    margin:5px;
     border: 1px solid #edede7;
     font-size: 50%;
-    font-weight:bold;
-    font-style:italic;
     color: #d9d6d7;
+    background:gray;
 }
 .updated{
-    posotion:relative;
+    position:relative;
     top:0;
     right:20px;
     display:block;
@@ -724,7 +792,6 @@ article[id*=comment-] section p {}
     box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 .wide{
-
     padding: 10%;	
 }
 

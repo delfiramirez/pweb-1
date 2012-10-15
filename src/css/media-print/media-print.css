@@ -1,6 +1,15 @@
 @media print{
 
-  * { font-family: serif; }
+  * { font-family: serif;
+
+    /* In case you made an filter abuse 2012 . Delfi ;) */
+	background: transparent !important; 
+	color: black !important; 
+	box-shadow: none !important; 
+	text-shadow: none !important; 
+	filter: none !important; 
+	-ms-filter: none !important; 
+}
 
 	html,body {background-color:#FFF; color:#000; font-size: 12pt; font-size-adjust:none; font-style:normal; font-variant:normal; font-weight:normal;
 }
@@ -38,4 +47,7 @@
 	padding: 0;
 	float: none !important;
 	}
+	img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+
 }
