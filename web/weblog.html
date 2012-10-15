@@ -35,12 +35,12 @@
     </ul>
   </nav>
   <!-- begin template  //-->
-  <article id="weblog-company" class="main left" >
+  <article id="weblog" class="weblog-article" >
   
   <article id="our-new-offices" class="weblog">
     <header>
  <h1>{{article1.title}}</h1>
- <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00">September 11th 20012</time></small>
+ <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
     </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, <br>
@@ -50,9 +50,10 @@
     <p class="read-more"><a href="#" title="{{article1.title}}">Read More</a></p>
    </footer>
    </article>
-   <article id="say-tah" class="weblog">
+   <article class="weblog">
         <header>
  <h1>{{article2.title}}</h1>
+  <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
     </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
    eiusmod commodo, chuck duis velit. Aute in reprehenderit, 
@@ -64,10 +65,11 @@
    </article>
      <article id="glad-toi-meet-you" class="weblog">
           <header>
- <h1>{{article3.title}}</h1>
+ <h1><a href="#" rel=bookmark>{{article3.title}}</a></h1>
+  <p><small>Posted on <time datetime="2012-11-04T16:31:24+02:00" datepub>September 11th 20012</time></small>
     </header>
    Lorem ipsum dolor sit amet nulla ham qui sint exercitation 
-   eiusmod commodo, chuck duis velit. Aute in reprehenderit, 
+   eiusmod commodo, chuck duis velit<wbr>. Aute in reprehenderit, 
    dolore aliqua non est magna in labore pig pork biltong. 
    Eiusmod
       <footer>
@@ -76,6 +78,7 @@
    </article>
    </article>
   <section id="selected-articles" class="left">
+    <h2>Latest Articles</h2>
     <dl>
       <dt> Mission November</dt>
       <dd class="read-more"> by {{author}}</dd>
@@ -90,7 +93,7 @@
       <dd class="read-more"> BY <a href="#" title="{{author}}">{{author}}</a></dd>
     </dl>
     <aside>
-  <img src="{{ /path-to/.img}}" alt ="{{ external-banner }}" >
+  <img src="{{ /path-to/.img}}" alt ="{{ external-banner }}" class="banner" >
     </aside>
   </section>
   <!-- end template  //-->

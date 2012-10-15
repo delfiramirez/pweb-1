@@ -576,6 +576,7 @@ article[id*=comment-] section p {}
     padding:1em;
     margin:0;
 }
+
 #postcomment{} 
 #commentform {} 
 /* Classes -------------------------------------------------------------- */
@@ -616,6 +617,19 @@ article[id*=comment-] section p {}
     background-size: contain;
     max-width:400px;
     max-height:100px;
+
+}
+.banner{
+    clear:both;
+    width:150px;
+    min-width:0;
+    height:350px;
+    min-height:0;
+    margin:5px;
+    border: 1px solid #edede7;
+    font-size: 50%;
+    color: #d9d6d7;
+    background:gray;
 
 }
 /*Navigation */
@@ -793,9 +807,26 @@ article[id*=comment-] section p {}
     margin:5px;
     box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
-.wide{
-    padding: 10%;	
+
+
+.weblog{
+
+
+
 }
+
+.weblog-article{
+float:left;
+width:70%;
+height:auto;
+min-height:100%;
+margin:0;
+
+}
+.wide{
+    padding-left: 3%;	
+}
+
 
 
 .window{
