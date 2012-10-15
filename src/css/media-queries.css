@@ -21,6 +21,14 @@
 
 
 }
+/*
+Handheld
+
+Good for older versions of Opera Mobile.
+
+PS: REmember, Hack for windows mobile ( media ="Screen");
+
+*/
 @media handheld{
     
  .handheld{
@@ -35,67 +43,67 @@
 }
 /*
 2012 Oct: Avoid device-aspect-ratio for sites intended to be displayed across multiple devices*/
+
 @media screen and (device-aspect-ratio: 16/9) {  }
 @media screen and (device-aspect-ratio: 32/18) {  }
 @media screen and (device-aspect-ratio: 1280/720) {  }
 @media screen and (device-aspect-ratio: 2560/1440) { }
-
 @media only screen {
     /* "Advanced" CSS2 and CSS3 comes here to hide styles from older browsers 
                 Yes mates, besides one's low budget and incidental hurry, 
                 elders deserve some kinda respect ;)
 
     */
-    body {
+  body {
         text-rendering:optimizeLegibility;
     }
 
-    header, nav, footer{
+  header, nav, footer{
 
         width:100%;
     }
 
-    section, article, aside{
+  section, article, aside{
         float:left;
     }
 
     /* Corporate Classes */
 
-    header hgroup {
+  header hgroup {
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
         box-sizing:border-box;
     }
 
-    /* helpers from bootstrap . Add yer ones i fneede */
+    /* helpers from bootstrap . Add yer ones if needed */
 
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  font-size: 100%;
-  vertical-align: middle;
-}
+  button,
+  input,
+  select,
+  textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+  }
 
-button,
-input {
-  *overflow: visible;
-  line-height: normal;
-}
+  button,
+  input {
+    *overflow: visible;
+    line-height: normal;
+  }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
 
-button,
+  button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-appearance: button;
 }
 
 input[type="search"] {
@@ -116,5 +124,12 @@ input[type="search"]::-webkit-search-cancel-button {
 dl {
     margin: 0;
 }
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+}
+@media only screen and (max-device-width: 980px) {
 
 }
