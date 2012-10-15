@@ -731,13 +731,13 @@ article[id*=comment-] section p {}
     padding:0 12px;
     border-right:1px solid #e6e6e7;
     border-left:1px solid #e6e6e7;
-    color:#ccc;
+    color:#fafafa;
     background:transparent;
     text-decoration:none;
 }
 .main-nav a:hover,
 .main-nav a:focus {    
-    color:inherit;
+    color:#090909;
     font-size:inherit;
 }
 .main-nav .sel a {background:#4c4c4c;}
