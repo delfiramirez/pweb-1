@@ -39,13 +39,17 @@ html body{
 }
 
 /* Hyperlinks ---------------------------------------------------- */
-
 a {
+    color: #494949;
 }
 a:hover {
+    color:inherit;
     opacity:0.8;
+    outline: 0;
 }
 a:active {
+    color:inherit;
+     outline: 0;
 }
 :focus, a{
     -moz-outline-style:none;
@@ -55,6 +59,10 @@ a:active {
 img {
     cursor:none;
     display:block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
 }
 img {
     -ms-interpolation-mode: bicubic;	
@@ -70,7 +78,7 @@ p {
     line-height: 1.6; 
     margin-bottom: 0.675%;
 }
-footer p:first-letter { font-size: 145%; }
+
 i {
     font-style:normal;
 }
@@ -108,6 +116,7 @@ abbr {
 }
 /* Headings ---------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
+    color:gray;
     font-weight: bold; 
     font-stretch: condensed;
     font-size-adjust: 0.5;
@@ -193,6 +202,8 @@ hr { margin-bottom:1.625em; }
 
 /* Semantic HTML5 tags ------------------------------------------------------ */
 address {
+    float:left;
+
    
 }
 article {
@@ -221,12 +232,14 @@ figcaption {
 }
 footer {
     clear:both;
-    border-top:1px dotted #c9c9c9;
     border-top:1px dotted rgba(255,255,255,0.9);
     text-align:left;
     width:100%;
     height:auto;
     min-height: 100%;
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    background-color: #f5f5f5;
 }
 header {
     text-align:left;
@@ -258,6 +271,54 @@ summary{
 }
 
 /* Forms -------------------------------------------------------------- */
+
+/* helpers from bootstrap . Add yer ones if needed
+
+
+ */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*----------------------------------------*/
 form {
     margin:0;
     padding:0;
@@ -557,10 +618,9 @@ article[id*=comment-] section p {}
 #social-network li a.snfb{
 
 }
-#selected-articles, #our-location, #archives{
+#selected-articles, #archives{
     text-align:left;
     width:25%;
-    margin-left:2%;
     padding:0 .6em 0 0;
     height: 100%;
     min-height:100%;
@@ -745,12 +805,20 @@ article[id*=comment-] section p {}
     padding-top: 0;
 
 }
-.language li{
-    display: inline-block;
-    padding: 0;
-    text-align: right;
-    margin: 0 1.96078431372549%;
+.language ul{
+
+    display:block;
+    width: auto;
+    height:auto;
+    margin: 1em auto;
+    position:relative;
 }
+
+.language ul li{
+
+  display: inline;
+  margin-right: 10px;
+
 .language li a {
     background: none;
     font-size: 1em;
@@ -815,7 +883,7 @@ article[id*=comment-] section p {}
 
 }
 
-.weblog-article{
+.weblog-article, .web-article, .web-section{
 float:left;
 width:70%;
 height:auto;
@@ -889,6 +957,28 @@ margin:0;
 
 /*Footer */
 
+footer p:first-letter { font-size: 145%; }
+
+footer ul{
+
+    display:block;
+    width: 35.675%;
+    height:auto;
+    margin: 1em auto;
+}
+
+footer ul li{
+
+  display: inline;
+  margin-right: 10px;
+
+}
+
+footer ul li a{
+
+    display:inline-block;
+}
+
 /* no-js */
 .no-js{
 
@@ -896,7 +986,7 @@ margin:0;
 
 
 
-/*  Copyright v 0.1 2012 authors_name for company_name
+/*  Copyright v 0.1 2012 Delfi Ramirez for Training Course on Web Project following HTML5 standards
 
 Corporate CSS Theme is distributed under the GNU General Public License, Version 2,
  June 1991. Copyright (C) 1989, 1991 Free Software Foundation, Inc., 51 Franklin
