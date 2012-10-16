@@ -1010,7 +1010,7 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     content:" >>";
 }
 .row{
-
+    height:auto;
     padding-bottom: 9px;
     margin: 20px 0 30px;
     border-bottom: 1px solid #eeeeee;

@@ -1,0 +1,24 @@
+/** Debuggger. Delfi Ramirez 2009
+
+TEST AND DEBUG PRODUCTION ONLY
+
+NOTE
+
+Comentar per fer invisible!!!
+
+Comment to restrict
+
+
+
+*/
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
+
+
+/***********************************************************/
