@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
     font-stretch: condensed;
     font-size-adjust: 0.5;
+    display:block;
 }
 h1 {
     margin-bottom: .5em;
@@ -252,7 +253,7 @@ article > header{
   border-bottom: 1px solid #eeeeee;
 }
 aside {
-    float:left;
+    float:right;
     width: 30%;
     max-width:30%;
     height:auto;
@@ -317,7 +318,7 @@ small {
 summary {
 
 }
-/* Oct 15 20102 helpers from bootstrap.css
+/* Oct 15 2012 helpers from bootstrap.css
 
 http://twitter.github.com/bootstrap
 
@@ -332,7 +333,7 @@ video {
 }
 /* Forms -------------------------------------------------------------- */
 
-/* Oct 15 20102 helpers from bootstrap.css
+/* Oct 15 2012 helpers from bootstrap.css
 
 http://twitter.github.com/bootstrap
 
@@ -467,10 +468,11 @@ fieldset {
     width:auto;
 }
 legend {
+    display:block;
     margin: 0 0 1.625em 0;
     color:inherit;
     width:auto;
-    max-width: 300px;
+    height:auto;
 
 }
 
@@ -645,7 +647,7 @@ a[href^="mailto:"]:before {
     content: "\2709"; 
 }
 
-/* Oct 16 20102 helpers from perisahble
+/* Oct 16 2012 helpers from perisahble
 
 http://perishable.com
 
@@ -1066,8 +1068,7 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 .weblog,
 .weblog-article, .web-article, .web-section, .columns{
     width:70%;
-    height:auto;
-    min-height:100%;
+    height:auto !important;
     margin:0;
     padding:1%;
 }
@@ -1189,6 +1190,52 @@ footer ul li a{
 }
 .web-section {
     position: relative;
+}
+
+/* Oct 16 2012 helpers from bootstrap.css
+
+http://twitter.github.com/bootstrap
+
+Twitter Bootstrap have become a UI standard, so we use it to not disturb our users 
+
+ */
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 14px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 

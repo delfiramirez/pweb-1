@@ -48,7 +48,8 @@
   <!-- [ corporate template ]  //-->
   
   <div id="{{id}}" class="web-section">
-    <canvas id="mycanvas" width="70%" height="300">Your browser does not support HTML5?</canvas> 
+    <canvas id="mycanvas" width="56%" height="250">Your browser does not support HTML5?</canvas> 
+    </div>
     <section id="your-personal-data" class="web-section"> 
 
       <!--section used to collect data //-->
@@ -57,9 +58,6 @@
 
       <!--removed quotes from atrributes HTML5 spec //-->
       <form action="send.cgi" >
-
-          <!--first form-data //-->
-          <section >
 <fieldset>
         <legend>Contact</legend>  
           <label for='name'>Name</label>
@@ -70,14 +68,12 @@
             <input type='email' name="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
                <label for='sayhi'>Have you say</label>
         <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
-            <input type='submit' formnovalidate value="Contact Query">
+            <input type='submit' class="btn" formnovalidate value="Contact Query">
 </fieldset>
-          </section>
-
   </form>
 </section>
-</div>
-<aside id="our-location" class="left" role="complementary">
+
+<aside id="our-location" role="complementary">
   <h3 title="where we are">Where We Are</h3>
   <p> 
     <a href="#" ><img src="../images/400x280-map.png" class="location-image" alt="Santa Rosa Calif."></a> 

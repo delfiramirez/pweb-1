@@ -62,13 +62,13 @@
   <section class="contact tab1">
       <fieldset>
         <legend>About You</legend>  
-          <label for=name>Name</label>
-            <input type=text id=name placeholder="Please, your name" required>
-          <label for=surname> Surname</label>
-            <input type=text id=surname placeholder="Please, your surname" required>
-          <label for=emaile>Email</label>
+          <label for='name'>Name</label>
+            <input type='text' id='name' placeholder="Please, your name" required>
+          <label for='surname'> Surname</label>
+            <input type=text class="btn" id='surname' placeholder="Please, your surname" required>
+          <label for='emaile'>Email</label>
             <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" maxlength="100" required>
-          <label for=files-upload>Upload an Image</label>
+          <label for='files-upload'>Upload an Image</label>
            <input type=file id="files-upload" single>
            <!--creating support for drag'n'drop image.
               NOTE: Must be compatible with Opera and early Safari-Konqueror Browsers.
@@ -85,20 +85,20 @@
   <section id="your-company-data" class="contact tab2">
       <fieldset>
         <legend>About Your Company</legend>  
-          <label for=work>Company name</label> 
-            <input type=text id=work placeholder="your company name">
-           <label for=site>Website</label> 
-            <input type=url id=site name="site" placeholder="your company website" maxlength="100" pattern="https?://.+" required>
-          <label for=telefon>Telephone: </label>
+          <label for='work'>Company name</label>  
+            <input type=text id='work' placeholder="your company name">
+           <label for='site'>Website</label> 
+            <input type=url id='site' name="site" placeholder="your company website" maxlength="100" pattern="https?://.+" required>
+          <label for='telefon'>Telephone: </label>
             <input type=tel id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000">
-          <label for=street>Name of the Street</label>
-            <input type=text id=street  placeholder="av/ name street">
-          <label for=city>City</label>
-            <input type=text id=city  placeholder="Headquarters">
-          <label for=postal>Postal Code</label>
-            <input type=text id=postal  placeholder="00000">
-          <label for=country>Country</label>
-            <input type=text id=country  placeholder="Country">
+          <label for='street'>Name of the Street</label>
+            <input type=text id='street'  placeholder="av/ name street">
+          <label for='city'>City</label>
+            <input type=text id='city'  placeholder="Headquarters">
+          <label for='postal'>Postal Code</label>
+            <input type=text id='postal'  placeholder="00000">
+          <label for='country'>Country</label>
+            <input type=text id='country'  placeholder="Country">
 
             <input type=submit class="submit-nextButton" value="Next">
       </fieldset>
