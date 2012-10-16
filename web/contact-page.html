@@ -5,7 +5,7 @@
 
         <title>{{ title }}</title>
 
-        <meta http-equiv="content-security-policy">
+        <meta http-equiv="content-security-policy" content="allow self" />
 
         <script src="../src/js/libs/modernizr/path"></script>
         <script src="../src/js/html5.js"></script>
@@ -32,7 +32,7 @@
       <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
   </nav>
-  <label for=search>Search this site
+  <label for=search>{{searchTitle}}
   <input type=search id="buscar" pattern="[a-zA-Z0-9]+" placeholder={{lang...}} maxlength="100" formaction="search.php" results=5 name=s></label>
   </header>
   <hr class="clear">
@@ -48,23 +48,23 @@
   <!-- [ corporate template ]  //-->
   
   <div id="{{id}}" class="web-section">
-    <canvas id="mycanvas" width="56%" height="250">Your browser does not support HTML5?</canvas> 
+    <canvas id="mycanvas" width="56%" height="250">{{messageError}}</canvas> 
     </div>
     <section id="your-personal-data" class="web-section"> 
 
       <!--section used to collect data //-->
 
-      <h1>Title Form Page</h1>
+      <h1>{{form.title}}</h1>
 
       <!--removed quotes from atrributes HTML5 spec //-->
       <form action="send.cgi" >
 <fieldset>
         <legend>Contact</legend>  
-          <label for='name'>Name</label>
+          <label for='name'>{{Name}}</label>
             <input type='text' id='name' placeholder="Please, your name" required>
-          <label for='surname'> Surname</label>
+          <label for='surname'>{{Surname}}</label>
             <input type='text' id='surname' placeholder="Please, your surname" required>
-          <label for='emaile'>Email</label>
+          <label for='emaile'>{{Email}}</label>
             <input type='email' name="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
                <label for='sayhi'>Have you say</label>
         <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
@@ -80,11 +80,11 @@
     <a href="#mapWindow">{{action}}</a> 
   </p>
   <address itemscope>
-  <span class="company-location" itemprop="name">Name of the Street</span>
-  <span class="company-location" itemprop="city">City</span>
-  <span class="company-location" itemprop="PostalCode">Postal Code</span>
-  <span class="company-location" itemprop="country">Country</span>
-  <span class="company-location" itemprop="poBox">PO BOX</span>
+  <span class="company-location" itemprop="name">{{Name of the Street}}</span>
+  <span class="company-location" itemprop="city">{{City}}</span>
+  <span class="company-location" itemprop="PostalCode">{{Postal Code}}</span>
+  <span class="company-location" itemprop="country">{{Country}}</span>
+  <span class="company-location" itemprop="poBox">{{PO BOX}}</span>
   </address>
 </aside>
 
@@ -92,8 +92,8 @@
   <hr class="clear">
 <footer>
   <ul id="sitemap-navigation">
-    <li> {{link.one}}</li>
-    <li> {{link.two}} </li>
+    <li>{{link.one}}</li>
+    <li>{{link.two}} </li>
     <li> {{link.three}} </li>
   </ul>
                     <ul class="nav-social">
