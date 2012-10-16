@@ -1006,12 +1006,20 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 .location-image{
     float:left;
     width:100%;
-    height:1auto;
+    height:auto;
     min-width:fit-content;
 
 }
 .progress{
 
+}
+
+.panel{
+    float:left;
+    margin-left:10px;
+    padding:0;
+    height:auto;
+    background:#666;
 }
 .read-more{
     /*text-align:right;*/
@@ -1071,8 +1079,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     padding:1%;
 }
 .wide{
-    padding-left: 3%;	
-}
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    
+    }
 .window{
     display:none;
     background:#020202;
