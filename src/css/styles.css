@@ -216,6 +216,8 @@ pre, code, tt { font: 1em monospace; line-height: 1.5; }
 tt { display: block; margin: 1.625em 0; }
 hr { margin-bottom:1.625em; }
 
+
+
 /* Semantic HTML5 tags ------------------------------------------------------ */
 address {
     
@@ -225,7 +227,7 @@ article {
 }
 aside {
     float:left;
-    width: auto;
+    width: 30%;
     max-width:30%;
     height:auto;
     min-height:100%;
@@ -275,7 +277,12 @@ progress{
 section {
     text-align:left;
 }
-summary{
+small { 
+    font-size:70%; 
+    font-style:italic; 
+    color:inherit;
+}
+summary {
 
 }
 
@@ -904,7 +911,7 @@ article[id*=comment-] section p {}
 
 .weblog,
 .weblog-article, .web-article, .web-section{
-    max-width:800px;
+    max-width:70%;
     height:auto;
     min-height:100%;
     margin:0;
@@ -1018,6 +1025,15 @@ footer ul li a{
 /* no-js */
 .no-js{
 
+}
+/* ie hacks */
+
+.content{
+    height: auto;
+    margin: 0;
+}
+.web-section {
+    position: relative;
 }
 
 
