@@ -56,6 +56,13 @@ html body{
 }
 
 /* Hyperlinks ---------------------------------------------------- */
+
+/* Oct 15 2010 helpers from Delfi Ramirez for nastymondays.com 
+
+http://projects.delfiramirez.info/nastymondays/site-2010/
+
+ */
+
 a {
     color: #494949;
     -webkit-transition: color 200ms linear;
@@ -285,10 +292,24 @@ small {
 summary {
 
 }
+/* Oct 15 20102 helpers from bootstrap.css
 
+http://twitter.github.com/bootstrap
+
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
 /* Forms -------------------------------------------------------------- */
 
-/* Oct 15 20102 helpers from bootstrap.css . Add yer ones if needed...
+/* Oct 15 20102 helpers from bootstrap.css
+
+http://twitter.github.com/bootstrap
 
  */
 
@@ -515,6 +536,13 @@ table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border:
 a[href^="mailto:"]:before { 
     content: "\2709"; 
 }
+
+/* Oct 16 20102 helpers from perisahble
+
+http://perishable.com
+
+ */
+
 article[id*=post-] {}           /* target all posts */
 article[id*=post-] header h1 {} /* target all post h1 tags */
 article[id*=post-] section p {} /* target all post p tags */
@@ -663,6 +691,13 @@ article[id*=comment-] section p {}
 .clear {
     clear: both;
 }
+
+/* Oct 15 2010 helpers from Delfi Ramirez for nastymondays.com 
+
+http://projects.delfiramirez.info/nastymondays/site-2010/
+
+ */
+
 .alignleft {
     display: inline;
     float: left;
@@ -679,6 +714,7 @@ article[id*=comment-] section p {}
     margin-left: auto;
     margin-right: auto;
 }
+
 /*Header */
 .corporate-logo {
     padding:0;
@@ -932,7 +968,8 @@ article[id*=comment-] section p {}
     min-height:100%;
     z-index:1000;
 }
-/* LWindow panel with some content */
+/* Window panel with some content */
+
 .window-panel{
     display:none;
     position:fixed;
