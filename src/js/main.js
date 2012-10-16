@@ -11,3 +11,19 @@ Build app flow
 et....
 
 */
+
+
+function detectCompatibilities() {
+
+/*IE 5 native draganddrop */
+
+if (Modernizr.draganddrop) {
+
+
+}
+
+}
+
+
+  // 
+  // 

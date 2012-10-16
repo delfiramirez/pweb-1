@@ -1,7 +1,8 @@
 
 /*Corporate syles  media 1024 */
 
-@import ('corporate-fonts.css');
+@import url('corporate-fonts.css');
+@import url(debugger.css);
 /*Reset  ---------------------------------------------------- */
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
@@ -435,6 +436,23 @@ input[type="button"],
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][readonly],
+input[type="checkbox"][readonly] {
+  background-color: transparent;
 }
 /*end helpers ----------------------------------------*/
 form {
@@ -1018,15 +1036,19 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 
 .thumb{
     float:left;
-    width:150px;
+    width:100%;
     min-width:0;
-    height:150px;
+    height:100%;
     min-height:0;
     margin:5px;
     border: 1px solid #edede7;
     font-size: 50%;
     color: #d9d6d7;
     background:gray;
+}
+.thumb img{
+
+    display:block;
 }
 .updated{
     position:relative;
@@ -1042,8 +1064,8 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 
 
 .weblog,
-.weblog-article, .web-article, .web-section{
-    max-width:70%;
+.weblog-article, .web-article, .web-section, .columns{
+    width:70%;
     height:auto;
     min-height:100%;
     margin:0;
