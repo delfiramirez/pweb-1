@@ -1092,27 +1092,30 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 .row{
     height:auto;
-    padding-bottom: 9px;
-    margin: 20px 0 30px;
     border-bottom: 1px solid #eeeeee;
+    position: relative;
+    margin: 0 0 40px;
+    padding: 0 0 0 60px;
+    overflow: hidden;
+    clear: both;
 }
 
 .thumb{
     float:left;
-    width:100%;
-    min-width:0;
-    height:100%;
-    min-height:0;
     margin:5px;
     border: 1px solid #edede7;
     font-size: 50%;
     color: #d9d6d7;
     background:gray;
-}
-.thumb img{
-
     display:block;
+    max-width:100%;
+    min-width:0;
+    width:50%;
+    max-height:100%;
+    min-height:0;
+    height:50%;
 }
+
 .updated{
     position:relative;
     top:0;
@@ -1188,6 +1191,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 .submit-nextButton   {
 
 }
+.tab{
+    position: relative;
+    margin: 40px auto;
+    width: 750px;
+}
+}
 .tab1, .tab2, .tab3, .tab4, .tab5{
     float:left;
     position:relative;
@@ -1197,16 +1206,44 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     min-width: 70%;
     margin:0;
     border: 1px solid #ddd;
+}
+.tab1{
 
+    left:150px;
+}
+.tab2{
 
+    left:300px;
+    z-index:1;
+}
+.tab3{
+
+    left:450px;
+    z-index:2;
+}
+.tab4{
+
+    left:600px;
+    z-index:3;
 }
 .tab1 legend,.tab2 legend, .tab3 legend, .tab4 legend {
-    float:left;
-    width:100%;
-    position:relative;
-    border: 1px solid #ccc; 
-    margin-left: -1px; 
-    left: 1px;
+    background: #edede7;
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+    float: left;
+    display: block;
+    width: auto;
+    color: #020202;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
 }
 .search-nav{
 

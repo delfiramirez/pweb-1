@@ -57,7 +57,7 @@
 
       <!--removed quotes from atrributes HTML5 spec //-->
       <form action="send.cgi" enctype="multipart/form-data" method="post">
-
+<section class="tab">
           <!--first form-data //-->
   <section class="contact tab1">
       <fieldset>
@@ -82,7 +82,7 @@
     </section>
         <!--second form-data //-->
 
-  <section id="your-company-data" class="contact tab2">
+  <section id="your-company-data" class="contact tab2" hidden>
       <fieldset>
         <legend>About Your Company</legend>  
           <label for='work'>Company name</label>  
@@ -106,7 +106,7 @@
 
        <!--third form-data //-->
 
-    <section id="subscription-range-data" class="contact tab3">
+    <section id="subscription-range-data" class="contact tab3" hidden>
 <fieldset>
           <legend>Newsletter Subscription</legend> 
           <label>I am interested in</label>
@@ -137,7 +137,7 @@
   </section>
 
 <!-- fourth validation step // -->
-  <section id="confirmal-range-data" class="contact tab4">
+  <section id="confirmal-range-data" class="contact tab4" hidden>
 <fieldset>
          <legend>Confirmal</legend> 
           <label>Additional needs</label>
@@ -150,6 +150,8 @@
         </button>
   </section>
   </form>
+</section>
+
 </section>
 </div>
 <aside id="our-location" role="complementary">
