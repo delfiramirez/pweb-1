@@ -1,21 +1,21 @@
 {
-     "name": "John",
-     "lastName": "Doe",
-     "website": "www.microgestio.es" ,
-     "address":
-     {
-         "streetAddress": "21 2nd Street",
-         "city": "Santa Clara",
-         "state": "CAL",
-         "postalCode": "10021"
-     },
-     "telefon":
-     [
-         {
-           "number": "+34 - 9000000"
-         },
-         {
-           "number": "634 - 9000000"
+    "name": "John",
+     "lastName": "Doe",
+     "website": "www.microgestio.es" ,
+     "address":
+     {
+     "streetAddress": "21 2nd Street",
+            "city": "Santa Clara",
+            "state": "CAL",
+            "postalCode": "10021"
+    },
+        "telefon":
+        [
+    {
+        "number": "+34-9000000"
+        },
+    {
+        "number": "634 - 9000000"
 }
-     ]
- }
+    ]
+}
