@@ -176,6 +176,12 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 h1 img a, h2 img a, h3 img a, h4 img a, h5 img a, h6 img a {
     border: none;
 }
+figcaption> h3 {
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1;
+    color:#434343;
+}
 /* Lists -------------------------------------------------------------- */
 li a{
     *display:inline;
