@@ -258,6 +258,13 @@ article > header{
   margin: 20px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
+
+article >p{
+
+ /* CSS3 Column model */
+  column-gap: 20px; 
+  column-rule: 2px solid #333; 
+}
 aside {
     float:left;
     width: 30%;
@@ -776,6 +783,7 @@ article[id*=comment-] section p {}
     list-style:none;
     color:inherit;
     font-size:inherit;
+    display:inline;
 }
 #social-network li a{
     *display:inline;
@@ -787,7 +795,9 @@ ul[class='nav-social'] li a {
  background-repeat: no-repeat; 
  background-position: 3px 6px; 
  padding-left: 25px; 
-} 
+ display:inline;
+}
+
 
  /* Icons */ 
  
@@ -1158,6 +1168,11 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     padding:1%;
 }
 .wide{
+
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
 
     display: flex;
     flex-flow: row wrap;
