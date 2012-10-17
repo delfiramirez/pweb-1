@@ -118,6 +118,23 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
+.wide{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    
+    }
+
+
+  footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+}
+
 /*----------------------------------------*/
 }
 @media only screen and (max-device-width : 480px){
