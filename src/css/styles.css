@@ -737,20 +737,11 @@ ul[class='nav-social'] li a {
 
  /* Icons */ 
  
-.nav-social a[href*='plus.google.com'] {background-image: url('../images/icons/googleplus.png');} 
-.nav-social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');} 
-.nav-sociala[href*='/feed/'] {background-image: url('../images/icons/rss.png');} 
-.nav-sociala[href*='twitter.com'] {background-image: url('../images/icons/twitter.png');}
+.nav-social a[class='sngplus'] {background-image: url('../images/icons/googleplus.png');} 
+.nav-social a[class='snfb'] {background-image: url('../images/icons/facebook.png');} 
+.nav-social a[href*='/feed/'] {background-image: url('../images/icons/rss.png');} 
+.nav-social a[class='sntweet'] {background-image: url('../images/icons/twitter.png');}
 
-#social-network li a.sngplus{
-
-}
-#social-network li a.sntweet{
-
-}
-#social-network li a.snfb{
-
-}
 #selected-articles, #archives{
     text-align:left;
     width:25%;

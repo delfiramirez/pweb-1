@@ -48,7 +48,7 @@
 
   <!-- [ corporate template ]  //-->
   
-  <div id="form-corporate" class="left">
+  <div id="form-corporate">
     <section id="your-personal-data"  class="web-section"> 
 
       <!--section used to collect data //-->
@@ -110,7 +110,7 @@
 <fieldset>
           <legend>Newsletter Subscription</legend> 
           <label>I am interested in</label>
-            <input type=text value="" list="newsletter-subscription" maxlength="100" placeholder="Select your subscription" required>
+            <input type='text' value="" list="newsletter-subscription" maxlength="100" placeholder="Select your subscription" required>
         <datalist id="newsletter-subscription">
             <option value="first-option">{{first}} 
             <option value="second-option">{{second}}
@@ -118,7 +118,7 @@
         </datalist>
 </fieldset>
           <label>Preferred delivery time</label>
-            <input type=time min="08:00" max="18:00" step="900">
+            <input type='tim'e min="08:00" max="18:00" step="900">
           <label>Payment Method</label>
 <fieldset>
           <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
@@ -141,10 +141,10 @@
 <fieldset>
          <legend>Confirmal</legend> 
           <label>Additional needs</label>
-            <textarea name="comments" id=comments maxlength="500"></textarea>
-            <input type=checkbox name=agree value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
+            <textarea name="comments" id='comments' maxlength="500"></textarea>
+            <input type='checkbox' name='agree' value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
 </fieldset>
-        <button class="subscription-done" hidefocus="true" formaction="collect.php">
+        <button class="btn" hidefocus="true" formaction="collect.php">
             <i> {{additional info}}</i>
             <img src="" alt="Save and Submit" > 
         </button>
@@ -152,7 +152,7 @@
   </form>
 </section>
 </div>
-<aside id="our-location" class="left" role="complementary">
+<aside id="our-location" role="complementary">
   <h3 title="where we are">Where We Are</h3>
   <p> 
     <a href="#" ><img src="../images/400x280-map.png" class="location-image" alt="Santa Rosa calif"></a> 
