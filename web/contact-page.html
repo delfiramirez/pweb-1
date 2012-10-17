@@ -63,13 +63,13 @@
 <fieldset>
         <legend>Contact</legend>  
           <label for='name'>{{Name}}</label>
-            <input type='text' id='name' placeholder="Please, your name" required>
+            <input type='text' id='name' placeholder="Please, your name" tabindex='1' required>
           <label for='surname'>{{Surname}}</label>
-            <input type='text' id='surname' placeholder="Please, your surname" required>
+            <input type='text' id='surname' placeholder="Please, your surname" tabindex='2' required>
           <label for='emaile'>{{Email}}</label>
-            <input type='email' name="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
+            <input type='email' name="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"  tabindex='3' required>
                <label for='sayhi'>Have you say</label>
-        <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
+        <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50"  tabindex='4' required></textarea>
             <input type='submit' class="btn" formnovalidate value="Contact Query">
 </fieldset>
   </form>
