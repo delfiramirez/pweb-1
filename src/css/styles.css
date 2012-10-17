@@ -1166,6 +1166,33 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     min-height:100%;
     z-index:1000;
 }
+/* Grid Gallery */
+
+.galleryItem figure{
+    color: #797478;
+    width: 16%;
+    margin:  2% 2% 50px 2%;
+    float: left;
+    -webkit-transition: color 0.5s ease;
+}
+
+.galleryItem figcaption h3 {
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.galleryItem:hover {
+    color: #000;
+}
+
+.galleryItem img {
+    max-width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
 /* Window panel with some content */
 
 .window-panel{

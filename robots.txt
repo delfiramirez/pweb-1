@@ -1,0 +1,1111 @@
+User-agent: *
+Crawl-delay: 60
+
+
+User-agent: 8484 Boston Project v 1.0 1836
+Disallow: /
+
+User-agent: AaronCarter/15.0 1680
+Disallow: /
+
+User-agent: AmfibiBOT 1729
+Disallow: /
+
+User-agent: amzn_assoc 2297
+Disallow: /
+
+User-agent: Ano-Kato 2140
+Disallow: /
+
+User-agent: AOLServer 2221, 2131, 1789
+Disallow: /
+
+User-agent: arirang_check 2119
+Disallow: /
+
+User-agent: Aruyo/0.01 1786
+Disallow: /
+
+User-agent: AsiaNetBot 1917Disallow: /
+Disallow: /
+
+User-agent: ASPseek/1.2.10 1923
+Disallow: /
+
+User-agent: asterias
+Disallow: /
+
+User-agent: atSpider 1668
+Disallow: /
+
+User-agent: augurfind 1883
+Disallow: /
+
+User-agent: autoemailspider 1668
+Disallow: /
+
+User-agent: baiduspider 2148, 1848
+Disallow: /
+
+User-agent: Batik/1.0 2069
+Disallow: /
+
+User-agent: Black Hole
+Disallow: /
+
+User-agent: BlackWidow ... 1777
+Disallow: /
+
+User-agent: Bullseye/1.0
+Disallow: /
+
+User-agent: boitho.com-robot/ ... 2149, 1951
+Disallow: /
+
+User-agent: BotALot
+Disallow: /
+
+User-agent: BunnySlippers
+Disallow: /
+
+User-agent: Cegbfeieh 
+Disallow: /
+
+User-agent: Cerberian Drtrs Version-3.1-Build-16 2467
+Disallow: /
+
+User-agent: Checkbot/1.71 2009
+Disallow: /
+
+User-agent: CheeseBot
+Disallow: /
+
+User-agent: CherryPicker
+Disallow: /
+
+User-agent: CherryPicker 1668
+Disallow: /
+
+User-agent: CHIP Explorer HU 2308
+Disallow: /
+
+User-agent: Cityreview Robot 2179
+Disallow: /
+
+User-agent: cj.com Spider 2289, 1799
+Disallow: /
+
+User-agent: ClariaBot/1.0 2495
+Disallow: /
+
+User-agent: Combine/ ... 2111, 1817
+Disallow: /
+
+User-agent: common::Proxtrans/1.00 f39-2539
+Disallow: /
+
+User-agent: Comodo 1857
+Disallow: /
+
+User-agent: Confuzzledbot/2.0 (+BETA http://bot.confuzzled.lu/) 1691
+Disallow: /
+
+User-agent: CopyHunter/... 2104
+Disallow: /
+
+User-agent: CopyRightCheck
+Disallow: /
+
+User-agent: Cowbot 0.1 2411, 2441, 2438
+Disallow: /
+
+User-agent: Crescent
+Disallow: /
+
+User-agent: Crawl_Application 2082
+Disallow: /
+
+User-agent: Crescent Internet ToolPak HTTP OLE Control v.1.0
+Disallow: /
+
+User-agent: CherryPicker /1.0
+Disallow: /
+
+User-agent: CherryPickerSE/1.0
+Disallow: /
+
+User-agent: Custo 2032
+Disallow: /
+
+User-agent: Cxhttp 2051
+Disallow: /
+
+User-agent: Datum/0.1 1760
+Disallow: /
+
+User-agent: DBrowse 1836
+Disallow: /
+
+User-agent: deepak-USC/ISI f39-2400
+Disallow: /
+
+User-agent: deepak-USC/ISI-1.0 2474
+Disallow: /
+
+User-agent: Demo Bot ... 1836
+Disallow: /
+
+User-agent: Diamond/1.0 2495
+Disallow: /
+
+User-agent: DickBlick 2398
+Disallow: /
+
+User-agent: DittoSpyder
+Disallow: /
+
+User-agent: dLoader(NaverRobot)/1.0 see minibot(NaverRobot)
+Disallow: /
+
+User-agent: Dolly/1.0 2122
+Disallow: /
+
+User-agent: DSurf15a 1836
+Disallow: /
+
+User-agent: DTS Agent 2305, 1634
+Disallow: /
+
+User-agent: Dumbot f39-2390
+Disallow: /
+
+User-agent: EasyDL/... 2189
+Disallow: /
+
+User-agent: EasyWebPromotion1.0:+(http//www.easywebpromotion.com/bot.html) 1658
+Disallow: /
+
+User-agent: EBrowse 1836
+Disallow: /
+
+User-agent: EducateSearch ... 2189
+Disallow: /
+
+User-agent: egothor/3.0a f39-2287
+Disallow: /
+
+User-agent: EgotoBot/4.8 2269
+Disallow: /
+
+User-agent: EliteSys Entry 1668
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: Email Spider by AlexW 2403
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ETS v5.1 1927
+Disallow: /
+
+User-agent: EroCrawler
+Disallow: /
+
+User-agent: Eversion Avenger/37.17 (Chorus/MiX 3.2; 4-bit) 1772
+Disallow: /
+
+User-agent: ExactSeek Crawler 1668
+Disallow: /
+
+User-agent: Exalead ... 2203, 2147, 2137
+Disallow: /
+
+User-agent: Exava (exabot@exava.com) 2487
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+User-agent: ExtractorPro 1668
+Disallow: /
+
+User-agent: f00/6.66 [spacy] (HMD; Sol/3; Transhuman OS 2.4i) f39-1440
+Disallow: /
+
+User-agent: Fakezilla f39-2514
+Disallow: /
+
+User-agent: FavOrg 2184
+Disallow: /
+
+User-agent: Fbot/1.1 2267
+Disallow: /
+
+User-agent: FeedBucker 1852
+Disallow: /
+
+User-agent: Feedster Crawler 2242
+Disallow: /
+
+User-agent: Firefly ... 2059
+Disallow: /
+
+User-agent: Flash Processor 2114
+Disallow: /
+
+User-agent: Foobot
+Disallow: /
+
+User-agent: Franklin Locator 1836
+Disallow: /
+
+User-agent: FT Agent 1915
+Disallow: /
+
+User-agent: FunWebProducts f39-2350
+Disallow: /
+
+User-agent: Gaisbot/3.0 2107
+Disallow: /
+
+User-agent: GalaxyBot 2088, 2073
+Disallow: /
+
+User-agent: gemina/1.0 2080
+Disallow: /
+
+User-agent: Generic 1907, 1702
+Disallow: /
+
+User-agent: GetRight/4.5e f39-2568
+Disallow: /
+
+User-agent: GoogleBot (fakes only) 2152, 2139, 2120, 2061, 1824, 1814, 1744
+Disallow: /
+
+User-agent: GornKer Crawler 2075
+Disallow: /
+
+User-agent: GrigorBot 0.8 1912
+Disallow: /
+
+User-agent: Gwyncound1-1 1787
+Disallow: /
+
+User-agent: Halo 1963
+Disallow: /
+
+User-agent: Harvest/1.5
+Disallow: /
+
+User-agent: HtBrowser 2471
+Disallow: /
+
+User-agent: HTML Works 5.5 1925
+Disallow: /
+
+User-agent: http//www.almaden.ibm.com/cs/crawler 2197
+Disallow: /
+
+User-agent: http//www.ctechld.com 1736
+Disallow: /
+
+User-agent: http://www.webmasterworld.com/forum11/1728.htm 1728
+Disallow: /
+
+User-agent: httplib
+Disallow: /
+
+User-agent: HTTPLib/1.0 1839
+Disallow: /
+
+
+User-agent: IBM WebExplorer /v0.94 1884
+Disallow: /
+
+User-agent: IBM_Planetwide 2262
+Disallow: /
+
+User-agent: IBSBand 2299
+Disallow: /
+
+User-agent: IE 5.5 Compatible Browser 2030
+Disallow: /
+
+User-agent: iexplore.exe f39-2422
+Disallow: /
+
+User-agent: Illinois State Tech Labs 2241
+Disallow: /
+
+User-agent: Image Collector V1.0 2292
+Disallow: /
+
+User-agent: Industry Program ... 1828, 1836
+Disallow: /
+
+User-agent: Infomine Virtual Library Crawler/3.0 (see http//infomine.ucr.edu/projects/vl_crawler/ f39-1506
+Disallow: /
+
+User-agent: infomine.ucr.edu 2421
+Disallow: /
+
+User-agent: InfoNaviRobot
+Disallow: /
+
+User-agent: Intelliseek 2281
+Disallow: /
+
+User-agent: Internet Explore 5.x 1668
+Disallow: /
+
+User-agent: InternetLinkAgent/3.1 2181
+Disallow: /
+
+User-agent: InternetSeer.com 2278, 2021
+Disallow: /
+
+User-agent: Irvine/1.1.1 f39-2413
+Disallow: /
+
+User-agent: IUPU Research Bot 1871
+Disallow: /
+
+User-agent: IUSA Browser 1837
+Disallow: /
+
+User-agent: iVia Site Checker\"/1.0 1506
+Disallow: /
+
+User-agent: Jakarta Commons-HttpClient/2.0rc1 2291
+Disallow: /
+
+User-agent: Jakarta HTTP Client f39-2504
+Disallow: /
+
+User-agent: Java/... 2318, 2143, f39-1521, 1783, 1869, 2295
+Disallow: /
+
+User-agent: JetBot/1.0 2510
+Disallow: /
+
+User-agent: K2-Summit 2479
+Disallow: /
+
+User-agent: k2spider 1758
+Disallow: /
+
+User-agent: KaHT 1893
+Disallow: /
+
+User-agent: Kapere 1743
+Disallow: /
+
+User-agent: Keebler elf 2175
+Disallow: /
+
+User-agent: Kenjin Spider
+Disallow: /
+
+User-agent: Keyword Density/0.9
+Disallow: /
+
+User-agent: kuloko-bot 2302, 2300, 1939
+Disallow: /
+
+User-agent: lachesis ... 1746
+Disallow: /
+
+User-agent: larbin ...(all kinds of) 2226, 1961, 1790
+Disallow: /
+
+User-agent: LGE/u8150 f39-2373
+Disallow: /
+
+User-agent: libWeb/clsHTTP
+Disallow: /
+
+User-agent: libwww ... (all kind of) f39-2576, 2160, 2022, 1937, 1885, 1859
+Disallow: /
+
+User-agent: Lincoln State Web Browser 1836
+Disallow: /
+
+User-agent: Linkman 2154
+Disallow: /
+
+User-agent: LinkScan/8.1a Unix
+Disallow: /
+
+User-agent: LinkSweeper/1.1 1631
+Disallow: /
+
+User-agent: LinkWalker 1668
+Disallow: /
+
+User-agent: LiteBot ... 1764
+Disallow: /
+
+User-agent: look.com 2233
+Disallow: /
+
+User-agent: LookBot 2486
+Disallow: /
+
+User-agent: lwp-trivial
+Disallow: /
+
+User-agent: lwp-trivial/1.34
+Disallow: /
+
+User-agent: LWP::Simple 2029
+Disallow: /
+
+User-agent: Mac Finder 1.0.38 2048, 1818, 2439
+Disallow: /
+
+User-agent: MacNetwork f39-2305
+Disallow: /
+
+User-agent: Mail Sweeper 1668
+Disallow: /
+
+User-agent: MarkWatch/1.0 2035, 1825
+Disallow: /
+
+User-agent: Martini 2215, 2162
+Disallow: /
+
+User-agent: MeatEater 1995
+Disallow: /
+
+User-agent: MediaPartners 2112, 2056
+Disallow: /
+
+User-agent: Mediapartners-Google/2.1 2110, 2097, 1749
+Disallow: /
+
+User-agent: Megite 2259
+Disallow: /
+
+User-agent: Microsoft Data Access Internet Publishing Provider Protocol Discovery 1668
+Disallow: /
+
+User-agent: Microsoft Internet Browser 1930
+Disallow: /
+
+User-agent: Microsoft URL Control - 5.01.4511
+Disallow: /
+
+User-agent: Microsoft URL Control - 6.00.8169 1668, 1698
+Disallow: /
+
+User-agent: Microsoft-WebDAV-MiniRedir/5.1.2600 2460, f39-2549
+Disallow: /
+
+User-agent: MicrosoftPrototypeCrawler 1877, 1889, 1855
+Disallow: /
+
+User-agent: MIIxpc
+Disallow: /
+
+User-agent: minibot(NaverRobot)/1.0 2115, 2152, 2120, 2113, 1898, 1711
+Disallow: /
+
+User-agent: Missauga Locate 1836
+Disallow: /
+
+User-agent: Missigua Locator 1.9 1823, 1836
+Disallow: /
+
+User-agent: Missouri College Browse 2012, 1836
+Disallow: /
+
+User-agent: Mister PiX
+Disallow: /
+
+User-agent: Mister Pix II 2.10 2220
+Disallow: /
+
+User-agent: MnogoSearch 2034
+Disallow: /
+
+User-agent: moget/2.1
+Disallow: /
+
+User-agent: Moozilla 1680
+Disallow: /
+
+User-agent: Mouse-House/7.4 (spider_monkey spider info at www.mobrien.com/sm.shtml) 1718
+Disallow: /
+
+User-agent: Mozilla 2179, 2036
+Disallow: /
+
+User-agent: Mozilla/3.0 (compatible) 1830, 1763
+Disallow: /
+
+User-agent: Mozilla/3.0 (compatible; Indy Library) 1864
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; BullsEye; Windows 95)
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; GoogleToolbar 1.1.60-deleon; Windows 98 SE 4. 2225
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; MSIE 5.00; Windows 98 2167
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 5.0) Fetch API Request 1704
+Disallow: /
+
+User-agent: Mozilla/4.0 (compatible; MSIE 7.01; Windows 98) 2480
+Disallow: /
+
+User-agent: Mozilla/4.0 efp@gmx.net 1577
+Disallow: /
+
+User-agent: Mozilla/5.0 (Version: ... Type: ...) 1861
+Disallow: /
+
+User-agent: Mozilla/6.0 (compatible; MSIE 6.0; Windows NT 5.2) 2432
+Disallow: /
+
+User-agent: Mozilla/8 2042
+Disallow: /
+
+User-agent: MSIE 6.0 2354, 2445
+Disallow: /
+
+User-agent: MSIECrawler 2270, 2109
+Disallow: /
+
+User-agent: Msnbot/0.1 2017
+Disallow: /
+
+User-agent: MSProxy ... f39-1431
+Disallow: /
+
+User-agent: MSWebPostPostInfoProcessor f39-2447
+Disallow: /
+
+User-agent: munky 1668
+Disallow: /
+
+User-agent: NameProtect 2236
+Disallow: /
+
+User-agent: NaverRobot 2471, -> see minibot
+Disallow: /
+
+User-agent: NCSA_Beta_1 1808
+Disallow: /
+
+User-agent: NetAnts
+Disallow: /
+
+User-agent: NetMechanic
+Disallow: /
+
+User-agent: Net Sweeper 2164
+Disallow: /
+
+User-agent: net.math.crawler.NetCrawler 2315
+Disallow: /
+
+User-agent: NetNose-Crawler 2.0 1969, 1845, 1926, 1904, 1688
+Disallow: /
+
+User-agent: Netscape (compatible) f39-2397
+Disallow: /
+
+User-agent: Netscape/PICgrabber 2060
+Disallow: /
+
+User-agent: newskies.net 2158
+Disallow: /
+
+User-agent: NexaBot/1.0 1800
+Disallow: /
+
+User-agent: NG/2.0 f39-2601
+Disallow: /
+
+User-agent: NICErsPRO
+Disallow: /
+
+User-agent: NICErsPRO 1668
+Disallow: /
+
+User-agent: NITLE Blog Spider/0.01 1953
+Disallow: /
+
+User-agent: NPBot 2130, 1928, 1633
+Disallow: /
+
+User-agent: NPT 0.0 beta 2461
+Disallow: /
+
+User-agent: nuSearch 2098
+Disallow: /
+
+User-agent: Nutch/... 2301, 2275, 1667
+Disallow: /
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: Nutscrape/... 1680
+Disallow: /
+
+User-agent: NY Internet Srvcs 1984
+Disallow: /
+
+User-agent: obot 1762, 1616
+Disallow: /
+
+User-agent: Ocelli/1.0 2417
+Disallow: /
+
+User-agent: Openfind data gathere
+Disallow: /
+
+User-agent: Openfind
+Disallow: /
+
+User-agent: openfind ... 1798
+Disallow: /
+
+User-agent: OWR_Crawler 1888, 1612
+Disallow: /
+
+User-agent: P.Arthur 1.1 2306
+Disallow: /
+
+User-agent: PaperPort GetUrlText f39-1486
+Disallow: /
+
+User-agent: PBrowse 1836
+Disallow: /
+
+User-agent: PersonaPilot/1.00 2324
+Disallow: /
+
+User-agent: PEval 1.4b 1836
+Disallow: /
+
+User-agent: PF Free Web Search Tool 1840
+Disallow: /
+
+User-agent: PHP/... 2274, 1811, 1751
+Disallow: /
+
+User-agent: Pita ... 2027
+Disallow: /
+
+User-agent: PlantyNet_WebRobot_V1.9 2245, 1765
+Disallow: /
+
+User-agent: Plucker/Py-1.4 2473
+Disallow: /
+
+User-agent: Powermarks/3.5 1910
+Disallow: /
+
+User-agent: Production Bot ... 1836
+Disallow: /
+
+User-agent: Program Shareware 1.0.3 [ 2280, 1924, 1836
+Disallow: /
+
+User-agent: ProWebWalker
+Disallow: /
+
+User-agent: psbot/... 1757
+Disallow: /
+
+User-agent: PSurf15a 1836
+Disallow: /
+
+User-agent: Python-urllib ... 287, 2057, 1571
+Disallow: /
+
+User-agent: Qango.com Web Directory 1936
+Disallow: /
+
+User-agent: QuepasaCreep ... 2204, 1880
+Disallow: /
+
+User-agent: readwebpage 1726, 1464
+Disallow: /
+
+User-agent: RepoMonkey
+Disallow: /
+
+User-agent: RepoMonkey Bait & Tackle/v1.01
+Disallow: /
+
+User-agent: rico/0.1 1738
+Disallow: /
+
+User-agent: RMA
+Disallow: /
+
+User-agent: RoboCrawl (www.canadiancontent.net) 1862
+Disallow: /
+
+User-agent: RobotMidareru/0.7libwww-perl/5.65 1859
+Disallow: /
+
+User-agent: Roverbot 1668
+Disallow: /
+
+User-agent: RPT-HTTPClient/0.3-3 2276
+Disallow: /
+
+User-agent: RSurf15a 1836
+Disallow: /
+
+User-agent: Rumours-Agent 1683
+Disallow: /
+
+User-agent: Scooter/3.3Y!CrawlX 2485
+Disallow: /
+
+User-agent: Searchalot 1980
+Disallow: /
+
+User-agent: SearchSpider.com/1.1 2162
+Disallow: /
+
+User-agent: semanticdiscovery/0.1 1732
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: SKIZZLE! Distributed Internet Spider v1.0 2502
+Disallow: /
+
+User-agent: Sleipnir 2249
+Disallow: /
+
+User-agent: SpaceBison/0.02 [fu] (Win67; X; SK) 2319
+Disallow: /
+
+User-agent: SpankBot
+Disallow: /
+
+User-agent: spanner
+Disallow: /
+
+User-agent: SpiderKU/0.9 2170, 2155
+Disallow: /
+
+User-agent: SplatSearch.com 1640
+Disallow: /
+
+User-agent: SSurf15a 1836
+Disallow: /
+
+User-agent: StackRambler 1804
+Disallow: /
+
+User-agent: StripIt 0.2 2430
+Disallow: /
+
+User-agent: suchtop-bot-1.14 2235
+Disallow: /
+
+User-agent: SURF 2490, f39-2388
+Disallow: /
+
+User-agent: SurveyBot/2.2 1921
+Disallow: /
+
+User-agent: Szukacz/... 2081
+Disallow: /
+
+User-agent: Taco Bell 2219
+Disallow: /
+
+User-agent: TAMU_CS_IRL_CRAWLER/1.0 2496, 2449
+Disallow: /
+
+User-agent: TECOMAC-Crawler/0.4 1742
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: Teleport Pro 2303
+Disallow: /
+
+User-agent: Telesoft
+Disallow: /
+
+User-agent: Telesoft 1668
+Disallow: /
+
+User-agent: Terrar-UK_Search robot@terrar.co.uk 2213
+Disallow: /
+
+User-agent: test f39-2528
+Disallow: /
+
+User-agent: TestCrawler/1.0 f39-2385
+Disallow: /
+
+User-agent: Tide ... 2310, 1919
+Disallow: /
+
+User-agent: TightTwatBot
+Disallow: /
+
+User-agent: timboBot/0.9 1766
+Disallow: /
+
+User-agent: Titan
+Disallow: /
+
+User-agent: The Intraformant
+Disallow: /
+
+User-agent: TheNomad
+Disallow: /
+
+User-agent: toCrawl/UrlDispatcher
+Disallow: /
+
+User-agent: toCrawl/UrlDispatcher 2007
+Disallow: /
+
+User-agent: tovero 2013
+Disallow: /
+
+User-agent: True_Robot
+Disallow: /
+
+User-agent: True_Robot/1.0
+Disallow: /
+
+User-agent: TSW Bot 1.01 f39-2316
+Disallow: /
+
+User-agent: turingos
+Disallow: /
+
+User-agent: TurnitinBot/1.5 http//www.turnitin.com/robot/crawlerinfo.html 1752
+Disallow: /
+
+User-agent: UbiCrawler/v0.3beta 2307
+Disallow: /
+
+User-agent: UCmore f39-1457, 2380
+Disallow: /
+
+User-agent: UdmSearch 3.0.3 1630
+Disallow: /
+
+User-agent: UltraWombat 1803
+Disallow: /
+
+User-agent: Under the Rainbow ... 2258, 1989
+Disallow: /
+
+User-agent: URLy Warning
+Disallow: /
+
+User-agent: URL Spider Pro/ ... 1821
+Disallow: /
+
+User-agent: Utse/0.04 2257
+Disallow: /
+
+User-agent: vang.net spider 1.6 (Spider 1.7/site@vang.net) 2437
+Disallow: /
+
+User-agent: VoilaBOT 2227, 1897
+Disallow: /
+
+User-agent: W3Bot 1.0 2466
+Disallow: /
+
+User-agent: Watchfire WebXM 1.0 1626
+Disallow: /
+
+User-agent: Wavepluz 2323
+Disallow: /
+
+User-agent: WE 8.0 2426
+Disallow: /
+
+User-agent: WebAuto
+Disallow: /
+
+User-agent: Web Link Validator 2003
+Disallow: /
+
+User-agent: WebBandit
+Disallow: /
+
+User-agent: WebBandit/3.50
+Disallow: /
+
+User-agent: WebBandit 1668
+Disallow: /
+
+User-agent: webbot bot include 2165
+Disallow: /
+
+User-agent: WebCapture 1793
+Disallow: /
+
+User-agent: WebClippings 1710
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebCopier ... 1802
+Disallow: /
+
+User-agent: WebcraftBoot 1700
+Disallow: /
+
+User-agent: WebEmailExtrac 1668
+Disallow: /
+
+User-agent: WebEnhancer
+Disallow: /
+
+User-agent: WebFilter Robot 1.0 1805
+Disallow: /
+
+User-agent: WebGather 3.0 2046
+Disallow: /
+
+User-agent: WebGo IS - 2168 f39-1523
+Disallow: /
+
+User-agent: WebHiker/1.0 2182
+Disallow: /
+
+User-agent: Web Image Collector
+Disallow: /
+
+User-agent: WebmasterWorldForumBot
+Disallow: /
+
+User-agent: WebmasterWorldWebBot 2086
+Disallow: /
+
+User-agent: WebRACE/1.1 2159
+Disallow: /
+
+User-agent: WebSauger
+Disallow: /
+
+User-agent: WebSearchBench 2145
+Disallow: /
+
+User-agent: Website Quester
+Disallow: /
+
+User-agent: Webster Pro
+Disallow: /
+
+User-agent: WebStripper 
+Disallow: /
+
+User-agent: WebStripper 1807
+Disallow: /
+
+User-agent: WebZip
+Disallow: /
+
+User-agent: WebZip/4.0
+Disallow: /
+
+User-agent: WEP Search ... 1865, 1871, 1836
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: Wget/1.5.3
+Disallow: /
+
+User-agent: Wget/1.6
+Disallow: /
+
+User-agent: who am i 2190
+Disallow: /
+
+User-agent: Willow Internet Crawler 2099
+Disallow: /
+
+User-agent: WIRE/0.1 f39-2297
+Disallow: /
+
+User-agent: WWW-Collector-E
+Disallow: /
+
+User-agent: www.netfactual.com/survey/ 1846
+Disallow: /
+
+User-agent: Wwwc/1.04 2472
+Disallow: /
+
+User-agent: wwwster/1.2 (Beta, mailto:gue[at]cis.uni-muenchen.de) 2491
+Disallow: /
+
+User-agent: XH p\xa4TC f39-1515
+Disallow: /
+
+User-agent: Yahoo-MMCrawler 2489, 2464
+Disallow: /
+
+User-agent: YahooSeeker/1.0 2186
+Disallow: /
+
+User-agent: YellCrawl V4.0 f39-2290
+Disallow: /
+
+User-agent: YellSpider 2248, 1696
+Disallow: /
+
+User-agent: Zao/0.1 1895
+Disallow: /
+
+User-agent: Zealbot 2298
+Disallow: /
+
+User-agent: Zelig/0.4 alpha2 1637
+Disallow: /
+
+User-agent: Zeus
+Disallow: /
+
+User-agent: Zeus 32297 Webster Pro V2.9 Win32
+Disallow: /
+
+User-agent: Zeus 2.6 1756
+Disallow: /
+
+User-agent: zeus 41852 webster pro v2.9 win32 2132
+Disallow: /
+
+User-agent: Zibie Spider 0.1 Java/1.4.2 2143 
+Disallow: /
