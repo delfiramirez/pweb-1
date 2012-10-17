@@ -1,0 +1,20 @@
+/* HI Resolution Images CSS*/
+
+/*Fill this template to personalize template and include high resolution foreground and background images of  your brand in Retina Displays
+
+HOWTO: 
+
+-) add @import ('hi-res-background.css') in the main style document:
+;
+
+-) OR link your style in the header of your site,
+
+<link rel="stylesheet" href="../src/css/hi-res-background.css" media="
+only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (-o-device-pixel-ratio:3/2),
+only screen and (min-device-pixel-ratio:1.5), 
+only screen and (min-resolution:1.5dppx)">
+
+- )OR use html.js to write it on the document template */
+
