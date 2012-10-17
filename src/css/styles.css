@@ -565,6 +565,15 @@ input[type="range"] {
 
 }
 input[type="submit"] {
+    color: #fafafa;
+    display:inline-block;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius:6px;
+    text-align:center;
+    cursor:pointer;
+    font-size: .85em;
+    background: #404040;
 
 }
 input[type="text"] {
@@ -708,6 +717,7 @@ article[id*=comment-] section p {}
     margin: 0 .325em 0 0;
     border-bottom:1px dashed #ccc;
     line-height: 170%;
+    z-index: 0;
 }
 #our-mission {
     width: 32%;
