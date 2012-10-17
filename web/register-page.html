@@ -67,7 +67,7 @@
           <label for='surname'> Surname</label>
             <input type=´'text' class="btn" id='surname' placeholder="Please, your surname" required>
           <label for='emaile'>Email</label>
-            <input type=email name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" maxlength="100" required>
+            <input type='email' name="email" id="emaile" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" maxlength="100" required>
           <label for='files-upload'>Upload an Image</label>
            <input type='file' id="files-upload" placeholder='click to upload' single>
            <!--creating support for drag'n'drop image.
@@ -90,18 +90,18 @@
            <label for='site'>Website</label> 
             <input type=url id='site' name="site" placeholder="your company website" maxlength="100" pattern="https?://.+" required>
           <label for='telefon'>Telephone: </label>
-            <input type=tel id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000">
+            <input type='tel' id=telefon pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" placeholder="+ 00(00)0000-0000" required>
           <label for='street'>Name of the Street</label>
-            <input type=text id='street'  placeholder="av/ name street">
+            <input type='text' id='street'  placeholder="av/ name street" required>
           <label for='city'>City</label>
-            <input type=text id='city'  placeholder="Headquarters">
+            <input type='text' id='city' placeholder="Headquarters" required>
           <label for='postal'>Postal Code</label>
-            <input type=text id='postal'  placeholder="00000">
+            <input type='text' id='postal'  placeholder="00000">
           <label for='country'>Country</label>
-            <input type=text id='country'  placeholder="Country">
+            <input type='text' id='country' placeholder="Country" required>
+      </fieldset>            
+      <input type='submit' class="btn" value="Next">
 
-            <input type='submit' class="btn" value="Next">
-      </fieldset>
   </section>
 
        <!--third form-data //-->
@@ -109,17 +109,17 @@
     <section id="subscription-range-data" class="contact tab3" hidden>
 <fieldset>
           <legend>Newsletter Subscription</legend> 
-          <label>I am interested in</label>
-            <input type='text' value="" list="newsletter-subscription" maxlength="100" placeholder="Select your subscription" required>
+          <label  for='newsletter'>I am interested in</label>
+            <input type='text' name='newsletter' id='newsletter' list="newsletter-subscription" maxlength="100" placeholder="Select your subscription" required>
         <datalist id="newsletter-subscription">
             <option value="first-option">{{first}} 
             <option value="second-option">{{second}}
             <option value="third-option">{{third}}
         </datalist>
 </fieldset>
-          <label>Preferred delivery time</label>
-            <input type='time' min="08:00" max="18:00" step="900">
-          <label>Payment Method</label>
+          <label for='delivery-time'>Preferred delivery time</label>
+            <input type='time' id='delivery-time' min="08:00" max="18:00" step="900">
+          <label for='payment-method'>Payment Method</label>
 <fieldset>
           <label class="radio-box"> <input type=radio name=payment value="visa">Visa </label>
           <label class="radio-box"> <input type=radio name=payment value="mastercard">MasterCard </label>
@@ -140,9 +140,9 @@
   <section id="confirmal-range-data" class="contact tab4" hidden>
 <fieldset>
          <legend>Confirmal</legend> 
-          <label>Additional needs</label>
+          <label for='comments'>Additional needs</label>
             <textarea name="comments" id='comments' maxlength="500"></textarea>
-            <input type='checkbox' name='agree' value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a>
+           <label for='terms'> <input type='checkbox' name='agree' value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a></label>
 </fieldset>
         <button class="btn" hidefocus="true" formaction="collect.php">
             <i> {{additional info}}</i>
