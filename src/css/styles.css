@@ -1181,6 +1181,9 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     float: left;
     -webkit-transition: color 0.5s ease;
 }
+.galleryItem figure:hover{
+    opacity:0.6;
+}
 
 .galleryItem figcaption h3 {
     text-transform: uppercase;
@@ -1192,6 +1195,8 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 
 .galleryItem img {
+    width:100%;
+    height:100%;
     max-width: 100%;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
