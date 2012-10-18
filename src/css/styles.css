@@ -774,6 +774,17 @@ article[id*=comment-] section p {}
     float:left;
 
 }
+
+#mapWindow{
+    width:500px;
+    height:300px;
+    border:1px solid #efefef;
+    margin:auto;
+    -moz-box-shadow:5px #999;
+    -webkit-box-shadow:5px #999;
+    box-shadow:5px #000;
+}
+
 #social-network{
 
     float:left;
