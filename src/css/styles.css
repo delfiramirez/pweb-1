@@ -221,7 +221,7 @@ dd {
     border-bottom : 1px dotted #a8a8a8;
 }
 
-/* Legibility */
+/* Legibility -------------------------------------------------------------------*/
 
 strong { font-weight: bold; }
 em, dfn { font-style: italic; }
@@ -354,7 +354,7 @@ video {
 
 http://twitter.github.com/bootstrap
 
-Twitter Bootstrap have become a UI standard, so we use it to not disturb our users 
+Twitter Bootstrap CSS style have become a UI standard, comfortable to our users 
 
  */
 
@@ -702,7 +702,7 @@ a[href^="mailto:"]:before {
     content: "\2709"; 
 }
 
-/* Oct 16 2012 helpers from perisahble
+/* Oct 16 2012 WP helpers from perisahble
 
 http://perishable.com
 
@@ -838,7 +838,7 @@ ul[class='nav-social'] li a {
 #postcomment{} 
 #commentform {} 
 
-/*HTML5 drag and drop */
+/*HTML5 drag and drop area */
 
 #drop-area {
     border: 1px dashed #edede7;
@@ -1010,11 +1010,8 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     display:inline-block;
 }
 .ca-lang,.en-lang, .es-lang{
-    /*Currently here blokes put styles for icon flags; but I do highly recommend to avoid icon flags */
 
-}
-.nav-social{
-    /*Here goes those icons you see around in  favourite social links */
+    /*Currently here blokes put styles for icon flags; but I do highly recommend to avoid icon flags */
 
 }
 

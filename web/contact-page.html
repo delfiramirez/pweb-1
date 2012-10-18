@@ -8,6 +8,7 @@
         <meta http-equiv="content-security-policy" content="allow self" />
 
         <script src="../src/js/libs/modernizr/path"></script>
+          <script src="https://www.google.com/jsapi"></script>
         <script src="../src/js/html5.js"></script>
 
         <link rel="stylesheet" href="../src/css/media-print/media-print.css" media="print">
@@ -60,7 +61,7 @@
       <h1>{{form.title}}</h1>
 
       <!--removed quotes from atrributes HTML5 spec //-->
-      <form action="send.cgi" >
+      <form action="send.cgi" id="corporatecontact" name="corporateContact">
 <fieldset>
         <legend>Contact</legend>  
           <label for='name'>{{Name}}</label>
@@ -115,12 +116,12 @@
 </footer>
   </div>
   <div id="mapWindow" class="modal-open">
-  <script src="https://www.google.com/jsapi"></script>
-<!-- here goes the modal map; scripts included //-->
+<script>
+/* here goes the modal map; scripts included */
+</script>
+
   </div>
 
-
-<script src="src/js/cufon/path"></script>
 <!--[if IE]>
 
 <style type="text/css" media="screen">
