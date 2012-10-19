@@ -9,22 +9,4 @@
             "state": "CAL",
             "postalCode": "10021"
     }
-[{
-"name": "Jane",
-"lastName": "Doe",
-"description":"Description One",
-"website": "www.microgestio.com"
-},
-{
-"name": "Jim",
-"lastName": "Doe",
-"description":"Description Two",
-"website": "www.microgestio.org"
-},
-{
- "name": "Molly",
-"lastName": "Doe",
-"description":"Description Three",
-"website": "www.microgestio.cat"
-}]
 }
