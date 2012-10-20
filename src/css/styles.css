@@ -1365,6 +1365,13 @@ footer ul li a{
     position: relative;
 }
 
+/*  Add Ons ----------------------------------------------------------*/
+
+/* Have in mind to place them in a CSS3 supported style */
+
+::-webkit-input-placeholder  { color:#4e4e4e; font-style:italic; }
+input:-moz-placeholder { color:#4e4e4e; font-style:italic; }
+
 /* Oct 16 2012 helpers from bootstrap.css
 
 http://twitter.github.com/bootstrap
