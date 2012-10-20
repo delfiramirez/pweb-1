@@ -40,6 +40,9 @@
 	a[href^="javascript"]:after,
  	a[href^="#"]:after { content: ""; }
 
+
+  	p, h2, h3 { orphans: 3; widows: 3; }
+
  	#wrapper, #content {
 	width: auto;
 	border: 0;

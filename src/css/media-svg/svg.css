@@ -3,6 +3,10 @@
 svg {
   background-color: #fafafa;
   }
+  
+svg:not(:root) { 
+	overflow: hidden; 
+}
 
 #canvas-logo, canvas{
 
