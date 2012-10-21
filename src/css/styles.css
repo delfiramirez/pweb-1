@@ -616,6 +616,7 @@ input[type="search"] {
     margin:0;
     /*CSS3*/
     -webkit-appearance: textfield;
+
 }
 input[type="url"] {
     font-style: inherit;
@@ -772,9 +773,9 @@ article[id*=comment-] section p {}
     height:300px;
     border:1px solid #efefef;
     margin:auto;
-    -moz-box-shadow:5px #999;
-    -webkit-box-shadow:5px #999;
-    box-shadow:5px #000;
+    -webkit-box-shadow: #000 5px 5px 10px 3px inset;
+    -moz-box-shadow: #000 5px 10px 8px 3px inset; 
+    box-shadow: #000 5px 5px 10px 3px inset; 
     background-color: currentColor;
 }
 
@@ -1223,15 +1224,18 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 .galleryItem figure{
     color: #797478;
     width: 16%;
+    max-width:100%;
+    height:auto;
     margin:  2% 2% 50px 2%;
     float: left;
     -webkit-transition: color 0.5s ease;
+
 }
 .galleryItem figure:hover{
     opacity:0.6;
 }
 .galleryItem figcaption{
-
+  /*CSS3 rgba colour */
     background: rgba(0,0,0,0.7);
 }
 
@@ -1275,6 +1279,7 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     width:auto;
     padding:1em;
     margin:0;
+
 }
 
 .tab{

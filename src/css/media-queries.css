@@ -138,6 +138,16 @@ article > p {
   flex-flow: row wrap;
   align-items: stretch;
 }
+/*CSS3 text colours background selected. To be applied in certain sections. 20 Oct 2012 */
+::selection {
+    background: yellow; /* WebKit, Opera, & IE9 */
+    color: #4b4b4b;
+}
+
+::-moz-selection {
+    background: yellow; /* Firefox */
+    color: #4b4b4b;
+}
 
 
 ::-webkit-input-placeholder  { color:#4e4e4e; font-style:italic; }
