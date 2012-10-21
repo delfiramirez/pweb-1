@@ -40,7 +40,7 @@
 	a[href^="javascript"]:after,
  	a[href^="#"]:after { content: ""; }
 
-
+	*[hidden] { display: none; }
   	p, h2, h3 { orphans: 3; widows: 3; }
 
  	#wrapper, #content {
