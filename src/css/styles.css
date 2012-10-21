@@ -23,6 +23,7 @@ html> body {
     font-family: "Corporate", Georgia, serif;
     overflow-y:auto;
     font-size: 14px; 
+    font-size: 1.4rem; /*20 Oct 2012 Iwe insert rem units */
     line-height: 1; 
     color: #4b4b4b; 
     position: relative; 
@@ -50,6 +51,7 @@ html body{
     text-align: center;
     color: #2a2a2a;
     font-size: 14px;
+    font-size: 1.4rem; /*20 Oct 2012 Iwe insert rem units */
     line-height: 1.85em;
     border-top: 3px solid #040404;
     -webkit-font-smoothing: antialiased;
@@ -120,6 +122,7 @@ br {
 }
 blockquote {
     font: 14px/22px serif;
+    font: 1.4rem serif; /*20 Oct 2012 Iwe insert rem units */
     margin: 0.625em 0.625em 1.5em 0.725em ;
     padding-left: 15px;
     border-left: 2px solid #ccc;
@@ -246,6 +249,7 @@ hr {
 
 /* Semantic HTML5 tags ------------------------------------------------------ */
 address {
+    width:auto;
     
 }
 article {
@@ -280,6 +284,9 @@ datalist{
 
 }
 figure {
+    width:auto;
+    height:auto;
+    min-height:0;
 }
 figcaption {
     font-style: italic;
@@ -760,29 +767,27 @@ article[id*=comment-] section p {}
 }
 
 /* Location Objects */
-#googlemap img, object {
-    max-width: none;
-}
-#map_canvas img {
-    max-width: none;
-}
-#map_canvas object {
-    max-width: none;
-}
-#sitemap-navigation{
-
-    float:left;
-
-}
-
-#mapWindow{
-    width:500px;
+#googlemap{
+    max-width:500px;
     height:300px;
     border:1px solid #efefef;
     margin:auto;
     -moz-box-shadow:5px #999;
     -webkit-box-shadow:5px #999;
     box-shadow:5px #000;
+    background-color: currentColor;
+}
+
+#googlemap img, object {
+    max-width: none;
+
+
+}
+#map_canvas img {
+    max-width: none;
+}
+#map_canvas object {
+    max-width: none;
 }
 
 #social-network{
@@ -801,12 +806,25 @@ article[id*=comment-] section p {}
     display:inline-block;
 
 }
+#sitemap-navigation{
+    float:left;
+    padding:0;
+    margin:0;
+
+}
+
+ul[class='nav-social'], #sitemap-navigation{
+    float:left;
+    padding:0;
+    margin:0;
+    max-width:32%;
+}
 
 ul[class='nav-social'] li a { 
- background-repeat: no-repeat; 
- background-position: 3px 6px; 
- padding-left: 25px; 
- display:inline;
+    background-repeat: no-repeat; 
+    background-position: 3px 6px; 
+    padding-left: 25px; 
+    display:inline;
 }
 
 
