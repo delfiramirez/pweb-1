@@ -35,8 +35,7 @@
       <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
   </nav>
-  <label for=search>{{searchTitle}}
-  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' maxlength="100" formaction="{{action}}" results='5' name='s'></label>
+  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' maxlength="100" formaction="{{action}}" results='5' name='s'>
     </header>'
   <hr class="clear">
     <nav>
@@ -115,7 +114,7 @@
   <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small></p>
 </footer>
   </div>
-  <div id="googlemap" class="modal-open">
+  <div id="googlemap" class="modal-open" hidden>
 <script>
 /* here goes the modal map; scripts included */
 </script>
@@ -131,10 +130,10 @@
 font-family:'Corporate';
 src: url('src/fonts/Corporate-webfont.eot');
 src: url('src/fonts/Corporate-webfont.eot?#iefix') format('embedded-opentype');
-
+google
 }
 </style>
 <![endif]-->
 </body>
-<script async src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
 </html>

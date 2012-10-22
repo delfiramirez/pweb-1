@@ -153,6 +153,8 @@ h1 {
     margin: 20px 0 30px;
     font-size: 2.6em;
     line-height: 1;
+    display:block;
+    width:auto;
 }
 h2 {
     margin-bottom: .75em;
@@ -925,12 +927,11 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     padding:0;
     display:block;
     border:none;
+    width:auto;
     height: 100%;
     height: auto !important;
     margin-bottom: 0.923em;
     overflow:hidden;
-
-
 }
 .title-logo{
     float:left;
