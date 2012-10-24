@@ -1,7 +1,7 @@
 /* TODO
 
 
-/* deprecated : TODOI create own detection in main.js
+/* deprecated : TODO create own detection in main.js
 call external UI JQuery ( if needed ): polyfill
 call Modernizr
 
@@ -23,7 +23,7 @@ TRY: use Google JSAPI to load external CDN APIS from Google
 
 function ourLocation(){
 
-
+//show map LatLng
 
 }
 
