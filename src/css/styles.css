@@ -16,7 +16,11 @@ html.corp{overflow-x:hidden;overflow-y:auto}
 body{line-height:1}
 article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}
 /* Document ---------------------------------------------------- */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
 
 html { font-size: 62.5%; }
 html> body {
@@ -835,7 +839,14 @@ ul[class='nav-social'] li a {
     padding-left: 25px; 
     display:inline;
 }
+/** help drag and drop native */
 
+#drop-area[draggable=true] {
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
 
  /* Icons */ 
  
@@ -847,6 +858,7 @@ ul[class='nav-social'] li a {
 #selected-articles, #archives{
     text-align:left;
     width:25%;
+            
     padding:0 .6em 0 0;
     height: 100%;
     min-height:100%;
@@ -890,6 +902,35 @@ ul[class='nav-social'] li a {
 #file-list div {
     margin-bottom: 0.5em;
 }
+
+/*language Node */
+
+#language-selection
+{
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    height: 27px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#language-selection > .ReturnButton {
+    display:inline-block;
+    width:170px;
+    height: 27px;
+    background-image: url("../../Includes/Image/ReturnButtonImageStrip.png");
+    background-position: 0px -1px;
+}
+
+#language-selection > .language {
+    display: inline-block;
+    position:relative;
+    width:  24px;
+    height: 27px;
+
+}
+
 /* Classes -------------------------------------------------------------- */
 
 .left {
@@ -1229,9 +1270,10 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 /* Grid Gallery */
 
 .galleryItem figure{
+
+    display: block;
+    max-width: 475px;
     color: #797478;
-    width: 16%;
-    max-width:100%;
     height:auto;
     margin:  2% 2% 50px 2%;
     float: left;

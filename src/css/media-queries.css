@@ -157,6 +157,12 @@ input:-moz-placeholder { color:#4e4e4e; font-style:italic; }
 /*----------------------------------------*/
 
 @media only screen and (max-device-width : 480px){
+    @-ms-viewport { width: 320px; }
+    @-webkit-viewport { width: 320px; }
+    @-moz-viewport { width: 320px; }
+    @-o-viewport { width: 320px; }
+    @viewport { width: 320px; }
+
 dl {
     margin: 0;
 }
@@ -164,8 +170,13 @@ img {
     max-width: 100%;
     height: auto !important;
 }
-
 }
-@media only screen and (max-device-width: 980px) {
 
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+    @-ms-viewport { width: 768px; }
+    @-webkit-viewport { width: 768px; }
+    @-moz-viewport { width: 768px; }
+    @-o-viewport { width: 768px; }
+    @viewport { width: 768px; }
 }
