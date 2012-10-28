@@ -18,8 +18,7 @@ article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}
 /* Document ---------------------------------------------------- */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; *
 
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+
 }
 
 html { font-size: 62.5%; }
@@ -873,6 +872,9 @@ ul[class='nav-social'] li a {
     min-height:100%;
     padding:1em;
     margin:0;
+    bottom: 0;
+    width: 100%;
+
 }
 #postcomment{} 
 #commentform {} 
@@ -915,20 +917,18 @@ ul[class='nav-social'] li a {
     overflow: hidden;
 }
 
-#language-selection > .ReturnButton {
-    display:inline-block;
-    width:170px;
-    height: 27px;
-    background-image: url("../../Includes/Image/ReturnButtonImageStrip.png");
-    background-position: 0px -1px;
-}
 
 #language-selection > .language {
     display: inline-block;
     position:relative;
     width:  24px;
     height: 27px;
+}
 
+#corporate-project{
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 /* Classes -------------------------------------------------------------- */

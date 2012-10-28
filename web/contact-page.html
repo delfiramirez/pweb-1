@@ -28,14 +28,14 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-  <nav>
+
+  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' formaction="{{action}}" results='5' name='s'>
     <ul id="language-selection" class="language">
       <li> <a href="#"  title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
       <li> <a href="#"  title="{{title.b}}" hreflang="es"> ES </a> </li>
       <li> <a href="#"  title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
-  </nav>
-  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' maxlength="100" formaction="{{action}}" results='5' name='s'>
+
     </header>'
   <hr class="clear">
     <nav>
@@ -105,11 +105,11 @@
                         <li><a href="#" class="snfb" title="our company at FB">Facebook</a></li>
                     </ul>
   <address itemscope>
-  <span>Name of the Street</span>
-  <span>City</span>
-  <span>Postal Code</span>
-  <span>Country</span>
-  <span>PO BOX</span>
+  <span data="street">Name of the Street</span>
+  <span data="city">City</span>
+  <span data="pcode">Postal Code</span>
+  <span data="country">Country</span>
+  <span data="pobox">PO BOX</span>
   </address>
   <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small></p>
 </footer>
