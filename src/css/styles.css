@@ -340,8 +340,8 @@ menu {
 }
 picture { /* Coming soon ;) */
 }  
-progress{
-}
+progress { width: 100%; }
+progress:after { content: '%'; }
 section {
     text-align:left;
 }
@@ -929,6 +929,59 @@ ul[class='nav-social'] li a {
 
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
+}
+
+/* Full Screen API 28 Oct 2012 -----------------------------------------*/
+
+figure:-webkit-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    background-color: #f00;
+}
+
+figure:-moz-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+figure:-ms-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+figure:-o-full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+figure:full-screen
+{
+    float: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
 }
 
 /* Classes -------------------------------------------------------------- */

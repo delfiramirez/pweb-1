@@ -11,4 +11,5 @@ svg:not(:root) {
 #canvas-logo, canvas{
 
 	background-color: #edede7;
+	object-fit:contain;
 }
