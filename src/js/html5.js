@@ -58,6 +58,7 @@ document.addEventListener("click", function (e) {
 
 /* end  */
 
+
 /* DEBUGGING
 Peter Koch's browser detection
 http://www.quirksmode.org/js/detect.html
