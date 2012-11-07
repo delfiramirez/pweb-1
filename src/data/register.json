@@ -1,0 +1,24 @@
+{
+     "idName": [],
+     "firstName": "John",
+     "lastName": "Doe",
+     "address":
+     {
+         "streetAddress": "20122 Boulevard",
+         "city": "Santa Clara",
+         "state": "CAL",
+         "postalCode": "03451"
+     },
+     "phoneNumber": "212 555-1234",
+     "email": "dummie@microgestio.es",
+
+    "where":
+    {
+        "street" : "Valencia 23",
+        "city": "Barcelona",
+        "postalCode": "08000",
+        "country": "ES",
+        "poBox": "09090BA"
+
+    }
+ }

@@ -1,0 +1,41 @@
+{
+	"messageError":
+	{
+	"en": "error message",
+	"es": "Mensaje de Error",
+	"cat": "Missatge error"
+	},
+
+	"companyName": "Corporate Project SCP",
+
+	"title":[
+
+	{
+	"h1": "Corporate Company",
+	"es": "Compañia Corporativa",
+	"cat": "Empresa Corporativa"
+	},
+
+	{
+	"h2": "Corporate Company",
+	"es": "Compañia Corporativa",
+	"cat": "Empresa Corporativa"
+	},
+	{
+	 "formTitle":"Contact Form",
+	 "esFormTitle": "Formulario de Contacto"
+	},
+
+
+],
+	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"]
+
+
+	}
+
+
+
+
+
+
+}

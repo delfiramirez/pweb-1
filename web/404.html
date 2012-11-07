@@ -4,10 +4,7 @@
         <meta charset="utf-8">
 
         <title>{{ title }}</title>
-
         <meta http-equiv="content-security-policy" content="allow self" />
-        
-        <script src="../src/js/libs/modernizr/path"></script>
         <script src="../src/js/html5.js"></script>
         <link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
         <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
@@ -33,7 +30,7 @@
     </ul>
   </nav>
   <label for='search'>Search this site
-  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' maxlength="100" formaction="search.php" results='5 name='s></label>
+  <input type='search' id="searchCorporation" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' maxlength="100" formaction="search.php" results='5' name='s'></label>
   </header>
   <hr class="clear">
     <nav>
@@ -47,50 +44,16 @@
 
   <!-- [ corporate template ]  //-->
   
-  <div id="{{id}}" class="web-section">
-    <canvas id="mycanvas" width="100%" height="300">Your browser does not support HTML5?</canvas> 
-    <section id="your-personal-data" class="web-section"> 
+  <div id="{{id}}" class="web-section error">
+    <canvas id="mycanvas" width="100%" height="300">Loading content</canvas> 
+    <section id="404 error" class="web-section"> 
 
       <!--section used to collect data //-->
 
-      <h1>Title Form Page</h1>
+      <h1>Title 404</h1>
+    </section>
 
-      <!--removed quotes from atrributes HTML5 spec //-->
-      <form action="send.cgi" >
-
-          <!--first form-data //-->
-          <section >
-<fieldset>
-        <legend>Contact</legend>  
-          <label for='name'>Name</label>
-            <input type='text' id='name' placeholder="Please, your name" required>
-          <label for='surname'> Surname</label>
-            <input type='text' id='surname' placeholder="Please, your surname" required>
-          <label for='emaile'>Email</label>
-            <input type='email' name="email" placeholder="Please, your email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" required>
-               <label for='sayhi'>Have you say</label>
-        <textarea id="sayhi" wrap='hard' maxlenght="200" placeholder="Maximum 200 characters" rows="10" cols="50" required></textarea>
-            <input type='submit' formnovalidate value="Contact Query">
-</fieldset>
-          </section>
-
-  </form>
-</section>
 </div>
-<aside id="our-location" class="left" role="complementary">
-  <h3 title="where we are">Where We Are</h3>
-  <p> 
-    <a href="#" ><img src="../images/400x280-map.png" class="location-image" alt="Santa Rosa Calif."></a> 
-    <a href="#mapWindow">{{action}}</a> 
-  </p>
-  <address itemscope>
-  <span class="company-location" itemprop="name">Name of the Street</span>
-  <span class="company-location" itemprop="city">City</span>
-  <span class="company-location" itemprop="PostalCode">Postal Code</span>
-  <span class="company-location" itemprop="country">Country</span>
-  <span class="company-location" itemprop="poBox">PO BOX</span>
-  </address>
-</aside>
 
 <!-- [ end corporate template ]  //-->
   <hr class="clear">
@@ -115,12 +78,6 @@
   <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small></p>
 </footer>
   </div>
-  <div id="mapWindow" class="modal-open">
-<!-- here goes the modal map; scripts included //-->
-  </div>
-
-
-<script src="src/js/cufon/path"></script>
 <!--[if IE]>
 
 <style type="text/css" media="screen">
