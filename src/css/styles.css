@@ -1542,6 +1542,36 @@ Twitter Bootstrap have become a UI standard, so we use it to not disturb our use
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+/*Responsive grid */
+
+.all{
+
+    width:100%;
+
+
+}
+.all50{
+    width:50%;
+
+
+}
+.all33{
+    width:33.345%;
+
+
+}
+.all18{
+    width:17.87%;
+
+
+}
+.all9{
+    width:6.45%;
+
+
+}
+
 
 
 /*  Copyright v 0.1 2012 Delfi Ramirez for Training Course on Web Project following HTML5 standards
