@@ -112,7 +112,11 @@
 
 
 
-		]
+		],
+
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	
 	},
 	{
 
@@ -123,7 +127,10 @@
 		
 
 
-		]
+		],
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	
 	},
 	{
 		"audioID":,
@@ -133,11 +140,10 @@
 		
 
 
-		]
-	}
-
-
-
+		],
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	},
 
 	]
 
