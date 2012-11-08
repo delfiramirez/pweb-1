@@ -1,8 +1,12 @@
 /* Corporate fonts */
 
 @font-face {
-      	font-family:'Corporate';
+       font-family:'Corporate';
        src: local(some_font_file),  
        local(some_font_file),   
-       url(http://valid_url/some_font_file.eot);
+       url(http://valid_url/some_font_file.eot),
+       url(http://valid_url/some_font_file.?#iefix) format('embedded-opentype'),
+       url(http://valid_url/some_font_file.svg#Corporate) format('svg');
+       font-weight: normal;
+       font-style: normal;
    }

@@ -1,31 +1,36 @@
 {
 	"messageError":
 	{
-	"en": "error message",
-	"es": "Mensaje de Error",
-	"cat": "Missatge error"
+		"en": "error message",
+		"es": "Mensaje de Error",
+		"cat": "Missatge error"
 	},
 
 	"companyName": "Corporate Project SCP",
-
+	"titlePage":[ "About Us","Activity Stream", "Contact", "Gallery Corporate","Mission", "Personal Blog", "Register" ,"Vision", "Values"],
+	"pageID":,
 	"mainPage":[
 
+
 	{
-	"h1Title": "Corporate Company",
-	"h2Title": "Corporate Company",
-	"es": "Compañia Corporativa",
-	"cat": "Empresa Corporativa"
+		"h1Title": "Corporate Company",
+		"h2Title": "Corporate Company",
+		"es": "Compañia Corporativa",
+		"cat": "Empresa Corporativa",
 	},
 
 	{
-	"h2SecondTitle": "Section Title",
-	"h3Title": "Post Title",
-	"es": "Compañia Corporativa",
-	"cat": "Empresa Corporativa"
+		"h2SecondTitle": "Section Title",
+		"h3Title": "Post Title",
+		"es": "Compañia Corporativa",
+		"cat": "Empresa Corporativa"
 	},
+
 	{
-	 "formTitle":"Contact Form",
-	 "esFormTitle": "Formulario de Contacto"
+		"formID":,
+	 	"formTitle":"Contact Form",
+	 	"esFormTitle": "Formulario de Contacto",
+	 	"formUserID":,
 	},
 
 
@@ -35,13 +40,14 @@
 
 	"archivo":[
 	{
+		"archivoID":,
 		"dateCategories":,
 		"dateArchives":,
 		"dateBlogRoll":
 
 	},
 	{
-
+		"articleID":,
 		"article-title":,
 		"asideTitle":
 	},
@@ -49,6 +55,57 @@
 
 	"footer-template":["tag1", "tag2", "tag3"]
 }
+
+	],
+
+	"activityStream":[
+
+
+
+	{
+		"imgID":,
+		"imgDesc": "alternative description goes here",
+		"imgSrc": "../images/200x200-persona.png",
+
+	},
+	{
+
+		"userID":,
+		"userName": ["john", "jack","jim","joe"],
+		"userSaysEn": "Said",
+		"userSaysEs": "Responde",
+		"userSaysCa": "Respon"
+
+	},
+	{
+		"personalInterestID":,
+		"personalInterest": ["PersonalInterest One", "PersonalInterest Two", "PersonalInterest Three", "PersonalInterest Four"]
+
+	}
+
+	],
+
+	"userPage":[
+	{
+
+		"userID":,
+		"userLoogedIn":1,
+		"userLoggedOut":0,
+		"userIsAuthor":,
+		"userHasPrivileges"
+	},
+	{
+
+
+
+
+	}
+
+
+
+
+
+
 
 	]
 

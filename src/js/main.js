@@ -73,6 +73,14 @@ window.applicationCache.addEventListener('updateready', function(e) {
  
 
 
+function documentLocation(){
+
+window.location.href= 
+
+
+
+}
+
 function ourLocation(){
 
 //show map LatLng
