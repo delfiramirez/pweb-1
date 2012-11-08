@@ -508,6 +508,7 @@ legend {
     margin: 0 0 1.625em 0;
     color:inherit;
     width:auto;
+    max-width:100%;
     height:auto;
 
 }
@@ -1202,6 +1203,13 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 
 }
 .progress{
+    position: absolute;
+    z-index: 200;
+    top:50%;
+    left:50%;
+    width: auto;
+    height:auto;
+    visibility:hidden;
 
 }
 
