@@ -8,16 +8,18 @@
 
 	"companyName": "Corporate Project SCP",
 
-	"title":[
+	"mainPage":[
 
 	{
-	"h1": "Corporate Company",
+	"h1Title": "Corporate Company",
+	"h2Title": "Corporate Company",
 	"es": "Compañia Corporativa",
 	"cat": "Empresa Corporativa"
 	},
 
 	{
-	"h2": "Corporate Company",
+	"h2SecondTitle": "Section Title",
+	"h3Title": "Post Title",
 	"es": "Compañia Corporativa",
 	"cat": "Empresa Corporativa"
 	},
@@ -28,10 +30,27 @@
 
 
 ],
-	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"]
+	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"] ,
 
 
-	}
+	"archivo":[
+	{
+		"dateCategories":,
+		"dateArchives":,
+		"dateBlogRoll":
+
+	},
+	{
+
+		"mainTitle":,
+		"asideTitle":
+	},
+	{
+
+	"footer-template":["tag1", "tag2", "tag3"]
+}
+
+	]
 
 
 
