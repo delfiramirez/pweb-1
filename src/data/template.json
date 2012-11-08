@@ -34,7 +34,8 @@
 	},
 
 
-],
+	],
+
 	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"] ,
 
 
@@ -54,13 +55,11 @@
 	{
 
 	"footer-template":["tag1", "tag2", "tag3"]
-}
+	}
 
 	],
 
 	"activityStream":[
-
-
 
 	{
 		"imgID":,
@@ -68,6 +67,7 @@
 		"imgSrc": "../images/200x200-persona.png",
 
 	},
+
 	{
 
 		"userID":,
@@ -77,6 +77,7 @@
 		"userSaysCa": "Respon"
 
 	},
+
 	{
 		"personalInterestID":,
 		"personalInterest": ["PersonalInterest One", "PersonalInterest Two", "PersonalInterest Three", "PersonalInterest Four"]
@@ -94,6 +95,7 @@
 		"userIsAuthor":,
 		"userHasPrivileges"
 	},
+
 	{
 		"latestArticlesID":,
 		"latestArticlesTitle":[ "Late Article One Title", "Late Article Two Title","Late Article Three Title"]
@@ -101,7 +103,8 @@
 	}
 
 	],
-	"gallery":[
+
+	"galleryPage":[
 
 	{
 
@@ -112,12 +115,13 @@
 
 
 
-		],
+	],
 
 		"figcaptionName":[],
 		"figCaptionDescripton":
 	
 	},
+
 	{
 
 		"videoID":,
@@ -132,6 +136,7 @@
 		"figCaptionDescripton":
 	
 	},
+	
 	{
 		"audioID":,
 		"audioDescription": "alternative text here",
