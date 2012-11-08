@@ -100,6 +100,42 @@
 
 	}
 
+	],
+	"gallery":[
+
+	{
+
+		"imageID":,
+		"imageDescription": "alternative text here",
+		"imageTitle": ["Title here","Title here","Title here"],
+		"imageSrc":[
+
+
+
+		]
+	},
+	{
+
+		"videoID":,
+		"videoDescription": "alternative text here",
+		"videoTitle": ["Title here","Title here","Title here"],
+		"videoSrc":[
+		
+
+
+		]
+	},
+	{
+		"audioID":,
+		"audioDescription": "alternative text here",
+		"audioTitle": ["Title here","Title here","Title here"],
+		"audioSrc":[
+		
+
+
+		]
+	}
+
 
 
 
