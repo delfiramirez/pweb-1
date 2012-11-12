@@ -3,7 +3,6 @@
 
 call CSS3.js
 call https://github.com/douglascrockford/JSON-js/blob/master/json2.js
-call JQuery
 Build app flow
 
 
@@ -16,7 +15,9 @@ TRY: use Google JSAPI to load external CDN APIS from Google
 /* Appcacache --------------------------------------------------------*/
 
 /*detect */
+
 if (window.applicationCache) {
+
   var appCache = window.applicationCache;
    appCache.addEventListener('error', appCacheError, false);
    appCache.addEventListener('checking', checkingEvent, false);
@@ -28,6 +29,7 @@ if (window.applicationCache) {
 }
 
 var message_CacheStatus = "Not supported";
+
 if (window.applicationCache) 
 {
    var meuAppCache = window.applicationCache;
@@ -60,37 +62,43 @@ if (window.applicationCache)
 return message_CacheStatus;
 
 console.log( message_CacheStatus );
-  // _______________________________________________________________________________________
-//Appcache
+
+
+// Appcache
 
 window.applicationCache.addEventListener('updateready', function(e) {
+
   if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+
     window.applicationCache.swapCache();
+
     if (confirm('updated version of this site available.')) {
+
       window.location.reload();
     }
   }
 }, false);
  
 
+//Gmaps location
 
-function document_location(){
+document_location = function(){
 
 
 
 
 }
 
-function our_location(){
+our_location = function(){
 
 //show map LatLng
 
 }
 
-function load_location(){
+load_location = function(){
 
 	//var maps
-
+  //+
 	//load googleapi
 
 
