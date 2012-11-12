@@ -908,23 +908,8 @@ ul[class='nav-social'] li a {
 
 /*language Node */
 
-#language-selection
-{
-    position: absolute;
-    top: 0px;
-    right: 40px;
-    height: 27px;
-    z-index: 1000;
-    overflow: hidden;
-}
 
 
-#language-selection > .language {
-    display: inline-block;
-    position:relative;
-    width:  24px;
-    height: 27px;
-}
 
 #corporate-project{
 
@@ -1142,12 +1127,14 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     display:inline-block;
 }
 .ca-lang,.en-lang, .es-lang{
+    display:inline;
 
     /*Currently here blokes put styles for icon flags; but I do highly recommend to avoid icon flags */
 
 }
 
 /*Content */
+
 
 .cell{
     display:table-cell;
@@ -1178,20 +1165,24 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 .language{
     z-index: 5;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#020202;
     margin: 5px 0 0 0;
     padding: 0;
-    float: right;
-    width:150px;
+    width:300px;
     height:40px;
 
 }
-.language ul{
-    width: auto;
+.language {
+    width: 100%;
+    min-width: 30rem;
     height:auto;
     margin: 1em auto;
-    position:relative;
+    display:inline;
 }
-.language ul li{
+.language li{
     display: inline;
     list-style: none;
     height: 15px;
@@ -1199,12 +1190,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 
 .language li a {
-    *display: inline;
-    display: inline-block;
+    display: inline;
     width: 50px;
     height: 15px;
     padding: 10px 0 0 0;
     margin: 0;
+    color:#fafafa;
 }
 
 .location-image{

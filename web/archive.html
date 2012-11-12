@@ -7,7 +7,7 @@
 
         <meta http-equiv="content-security-policy" content="allow self">
         <script src="../src/js/html5.js"></script>              
-<link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
+<link rel="stylesheet" href="../src/css/media-print/media-print.css" media="print">
 <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
     </head>
 <body id="project">
@@ -23,9 +23,9 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-    <input type=search id="buscar"  pattern="[a-zA-Z0-9]+" placeholder="Search..."  results=5 name=s>
+    <input type='search' id="buscar"  pattern="[a-zA-Z0-9]+" placeholder='Search...'  results='5' name='s'>
 
-    <ul  id="language-selection" class="language">
+    <ul class="language">
       <li> <a href="#" class="en-lang" title="{{title.a}}"> ENG </a> </li>
       <li> <a href="#" class="es-lang" title="{{title.b}}"> ES </a> </li>
       <li> <a href="#" class="ca-lang" title="{{title.c}}"> CA </a> </li>
@@ -34,7 +34,7 @@
 
   </header>
   <hr class="clear">
-    <nav  class="main-nav"  role ="navigation">
+    <nav  class="main-nav" role ="navigation">
     <ul id="corporate-company">
       <li><a href="#" rel="">Mission</a></li>
       <li><a href="#" rel="">Vision</a></li>
@@ -63,10 +63,11 @@
               </div>
 <hr >
       <aside>
-   Month-Year-Date}           <hgroup>
+   Month-Year-Date}           
+   <hgroup>
                 <h1> {{archives.h1}} </h1>
                 <h2> {{archive-list}} </h2>
-              <hgroup>
+  <hgroup>
                 <section class="left">
          <h3>Categories</h3>
          <ul>
