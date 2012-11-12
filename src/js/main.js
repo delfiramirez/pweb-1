@@ -27,45 +27,46 @@ if (window.applicationCache) {
    appCache.addEventListener('cached', cachedEvent, false);
 }
 
-var messageCacheStatus = "Not supported";
+var message_CacheStatus = "Not supported";
 if (window.applicationCache) 
 {
    var meuAppCache = window.applicationCache;
    switch ( meuAppCache.status ) 
    {
       case meuAppCache.UNCACHED : 
-         messageCacheStatus = "Not cached"; 
+         message_CacheStatus = "Not cached"; 
          break;
       case meuAppCache.IDLE : 
-         messageCacheStatus = "Idle"; 
+         message_CacheStatus = "Idle"; 
          break;
       case meuAppCache.CHECKING : 
-         messageCacheStatus = "Checking"; 
+         message_CacheStatus = "Checking"; 
          break;
       case meuAppCache.DOWNLOADING : 
-         messageCacheStatus = "Downloading"; 
+         message_CacheStatus = "Downloading"; 
          break;
       case meuAppCache.UPDATEREADY : 
-         messageCacheStatus = "Update ready"; 
+         message_CacheStatus = "Update ready"; 
          break;
       case meuAppCache.OBSOLETE : 
-         messageCacheStatus = "Obsolete"; 
+         message_CacheStatus = "Obsolete"; 
          break;
       default : 
-        messageCacheStatus = "Unexpected Status ( " + 
+        message_CacheStatus = "Unexpected Status ( " + 
                        meuAppCache.status.toString() + ")";
         break;
    }
 }
-return messageCacheStatus;
+return message_CacheStatus;
 
+console.log( message_CacheStatus );
   // _______________________________________________________________________________________
 //Appcache
 
 window.applicationCache.addEventListener('updateready', function(e) {
   if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
     window.applicationCache.swapCache();
-    if (confirm('An updated version of this site is available.')) {
+    if (confirm('updated version of this site available.')) {
       window.location.reload();
     }
   }
@@ -73,21 +74,20 @@ window.applicationCache.addEventListener('updateready', function(e) {
  
 
 
-function documentLocation(){
+function document_location(){
 
-window.location.href= 
 
 
 
 }
 
-function ourLocation(){
+function our_location(){
 
 //show map LatLng
 
 }
 
-function loadLocation(){
+function load_location(){
 
 	//var maps
 
@@ -96,18 +96,3 @@ function loadLocation(){
 
 }
 
-
-
-/* xhr send data for Forms and JSON 29 Oct 2012 */
-
-function sendForm() {
-  var formData = new FormData();
-  formData.append('username', 'johndoe');
-  formData.append('id', 123456);
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', '/server', true);
-  xhr.onload = function(e) { ... };
-
-  xhr.send(formData);
-}

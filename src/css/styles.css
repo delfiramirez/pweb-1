@@ -431,13 +431,16 @@ input[type="color"],
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 9px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #555555;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
 }
+/*CSS evitar zoom en input amb focus */
+input[type='text'],input[type='number'],textarea {font-size:16px;}
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -491,25 +494,28 @@ input[type="checkbox"][readonly] {
   background-color: transparent;
 }
 /*end helpers ----------------------------------------*/
+
 form {
-    margin: 0 0 1.941641em;
-    padding:0;
-    float:left;
-    text-align:left;
-    width:auto;
-    box-sizing: border-box; 
+  margin: 0 0 1.5em 0;
 }
-fieldset {
-    border:none;
-    width:auto;
+form fieldset {
+  margin-bottom: 1.5em;
+  padding: 0;
+  border-width: 0;
+  box-sizing: border-box; 
+  text-align:left;
+}
+form br {
+  display: none;
 }
 legend {
-    display:inline-block;
+    display:block;
     margin: 0 0 1.625em 0;
     color:inherit;
     width:auto;
     max-width:100%;
     height:auto;
+    white-space: normal;
 
 }
 
