@@ -96,6 +96,7 @@ if (window.applicationCache)
    }
    return message_CacheStatus;
    console.log( message_CacheStatus );
+   //error a dpurar
 }
 };
 
