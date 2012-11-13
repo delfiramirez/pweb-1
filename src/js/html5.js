@@ -31,30 +31,6 @@ if(navigator.connection && navigator.connection.type !== 3){ //not 2g
     document.write('<link rel="stylesheet" href="hi-res-backgrounds.css" media="only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (-o-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5), only screen and (min-resolution:1.5dppx)">');
 }
 
-/* DEBUGGING
-W3C pointer tester
-http://www.w3.org/TR/pointerlock/
-Just for debugging purposes, avoid in stage production. 
-*/
-
-
-document.addEventListener("click", function (e) {
-  if (e._isSynthetic)
-    return;
-  // send a synthetic click
-  var ee = document.createEvent("MouseEvents");
-  ee._isSynthetic = true;
-  x = myCursor.x;
-  y = myCursor.y;
-  ee.initMouseEvent("click", true, true, null, 1,
-                    x + e.screenX - e.clientX,
-                    y + e.screenY - e.clientY,
-                    x,
-                    y);
-  var target = document.elementFromPoint(x, y)
-  if (target)
-    target.dispatchEvent(ee)
-});
 
 /* end  */
 
@@ -184,14 +160,14 @@ BrowserDetect.init();
 
 /*end*/
 
-function addEventSimple(obj,evt,fn) {
+add_event_simple= function(obj,evt,fn) {
   if (obj.addEventListener)
     obj.addEventListener(evt,fn,false);
   else if (obj.attachEvent)
     obj.attachEvent('on'+evt,fn);
 };
 
-function removeEventSimple(obj,evt,fn) {
+remove_event_simple= function(obj,evt,fn) {
   if (obj.removeEventListener)
     obj.removeEventListener(evt,fn,false);
   else if (obj.detachEvent)
@@ -199,7 +175,7 @@ function removeEventSimple(obj,evt,fn) {
 };
   // ref: http://diveintohtml5.org/detect.html
 
-  function supports_input_placeholder()
+supports_input_placeholder= function()
   {
     var i = document.createElement('input');
     return 'placeholder' in i;

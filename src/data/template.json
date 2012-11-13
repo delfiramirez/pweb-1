@@ -5,11 +5,18 @@
 		"es": "Mensaje de Error",
 		"cat": "Missatge error"
 	},
-
+	
+	"enctype":"application/x-www-form-urlencoded",
 	"companyName": "Corporate Project SCP",
 	"titlePage":[ "About Us","Activity Stream", "Contact", "Gallery Corporate","Mission", "Personal Blog", "Register" ,"Vision", "Values"],
-	"pageID":,
+	"pageID":"id={ID}",
+	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"] ,
+
 	"mainPage":[
+	{
+
+		"url-base": "/mainPage/", 
+	}
 
 
 	{
@@ -22,7 +29,7 @@
 	{
 		"h2SecondTitle": "Section Title",
 		"h3Title": "Post Title",
-		"es": "Compañia Corporativa",
+		"es": "Nuestra Empresa",
 		"cat": "Empresa Corporativa"
 	},
 
@@ -31,15 +38,20 @@
 	 	"formTitle":"Contact Form",
 	 	"esFormTitle": "Formulario de Contacto",
 	 	"formUserID":,
+	 	"required":true
 	},
 
 
 	],
 
-	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"] ,
 
+	"archivePage":[
 
-	"archivo":[
+	{
+
+		"url-base": "/archivePage/", 
+	}
+
 	{
 		"archivoID":,
 		"dateCategories":,
@@ -59,7 +71,13 @@
 
 	],
 
-	"activityStream":[
+	"activityStreamPage":[
+
+	{
+
+		"url-base": "/activityStreamPage/", 
+	}
+
 
 	{
 		"imgID":,
@@ -77,6 +95,10 @@
 		"userSaysCa": "Respon"
 
 	},
+       {
+         "rel":"comments",
+         "href":"comments/?id={id}"
+       },
 
 	{
 		"personalInterestID":,
@@ -87,13 +109,18 @@
 	],
 
 	"userPage":[
+
+	{
+
+		"url-base": "/userPage/", 
+	}
 	{
 
 		"userID":,
 		"userLoogedIn":1,
 		"userLoggedOut":0,
 		"userIsAuthor":,
-		"userHasPrivileges"
+		"userHasPrivileges":,
 	},
 
 	{
@@ -105,6 +132,11 @@
 	],
 
 	"galleryPage":[
+	{
+
+		"url-base": "/galleryPage/", 
+	}
+
 
 	{
 
@@ -112,8 +144,7 @@
 		"imageDescription": "alternative text here",
 		"imageTitle": ["Title here","Title here","Title here"],
 		"imageSrc":[
-
-
+		{"url": "1.png"}
 
 	],
 
@@ -150,7 +181,66 @@
 		"figCaptionDescripton":
 	},
 
-	]
+	],
+	"registerPage":[
+
+	{
+
+		"url-base": "/registerPage/", 
+	}
+
+	{
+
+		"userID":,
+		"userLoggedIn":1,
+		"userLoggedOut":0,
+		"userIsAuthor":,
+		"userHasPrivileges":,
+	},
+
+	{
+		"firstStep":{
+
+	 	"formTitle":"About You",
+	 	"esFormTitle": "Hablenos de Usted",
+	 	"work":,
+		"site":,
+		"telefon":,
+		"street":,
+		"city":,
+		"postal":,
+		"country":,
+	 	"required":true
+	 	},
+
+	 	"secondStep":{
+	
+	 	"formTitle":"About Your Company",
+	 	"esFormTitle": "Háblenos de su Empresa",
+	 	"formUserID":,
+	 	"required":true
+	 	},
+	 	"thirdStep":{
+		
+	 	"formTitle":"Newsletter Subscription",
+	 	"esFormTitle": "Subscripción a Noticias",
+	 	"newsletter": "I am interested in",
+	 	"newsletter-subscription":["Fisrt Order Logic", "Unicorns", "Semantic and Ontologies"],
+	 	"delivery-time":"00:11.12-AM",
+	 	"required":true
+	 	},
+	 	"fourStep":{
+		
+	 	"formTitle":"Confirmal",
+	 	"esFormTitle": "Confirmación",
+	 	"formUserID":,
+	 	"required":true
+	 	},
+
+	},
+
+	],
+
 
 
 

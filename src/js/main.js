@@ -12,9 +12,45 @@ TRY: use Google JSAPI to load external CDN APIS from Google
 
 */
 
-/* Appcacache --------------------------------------------------------*/
+/*Basics and redirects */
 
+
+
+/*Avoid iframe busting ------------------------------*/
+ if (self != top) {
+
+  top.location.replace(location.href);
+ }
+
+/*Detect AJAX ---------------------------------------*/
+
+/* Set up variables */
+
+var corporate_project = ['/blog/','/mission/','/vision/', '/value/'];
+
+var oudated_message = 'We are maintaining this part of the site. Please follow the back button';
+
+  sendRequest('data/text/header.txt',setHeader);
+  sendRequest('data/text/nav.txt',setNavigation);
+  sendRequest('data/text/footer.txt',setFooter);
+
+//http://www.w3.org/TR/access-control/
+
+var invocation = new XMLHttpRequest();
+var url = 'register.html';
+     
+function load_test_page(){
+  if(invocation) {
+    invocation.open('GET', url, true);
+    invocation.withCredentials = true;
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+
+
+/* Appcacache --------------------------------------------------------*/
 /*detect */
+function appcache_deteccio(){
 
 if (window.applicationCache) {
 
@@ -58,10 +94,13 @@ if (window.applicationCache)
                        meuAppCache.status.toString() + ")";
         break;
    }
+   return message_CacheStatus;
+   console.log( message_CacheStatus );
 }
-return message_CacheStatus;
+};
 
-console.log( message_CacheStatus );
+
+
 
 
 // Appcache

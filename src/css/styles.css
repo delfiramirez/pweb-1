@@ -159,6 +159,13 @@ h1 {
     display:block;
     
 }
+header > h1{
+
+    min-width:40rem;
+    height:auto;
+    display:block;
+    float:left;
+}
 h2 {
     margin-bottom: .75em;
     font-size: 2em;
@@ -462,10 +469,14 @@ input[type="color"],
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;  
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;  
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;   
+    
+  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;  
+  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;  
+  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;  
+  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;  
 }
 input[type="file"],
 input[type="image"],
@@ -645,12 +656,18 @@ input[placeholder], [placeholder], *[placeholder]
     color:#ccc !important;
     font-style: italic;
 }
-input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus { background: #fafafa; outline: none !important; border-color: #b3b3b3; }
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus { 
+    background: #fafafa; outline: none !important; border-color: #b3b3b3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(179,179,179, 0.6);  
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(179,179,179, 0.6);  
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(179,179,179, 0.6);  
+}
 input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled] { background-color: #edede7;}
 form label{
     margin-left: 0.9784em;
     display:block;
 }
+
 form label:after {content:":";}
 form label::after {content:":";}
 
@@ -1169,26 +1186,24 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     height: auto !important;
 
 }
-.language{
+
+.language {
     z-index: 5;
     position:absolute;
     top:0;
     right:0;
     background:#020202;
-    margin: 5px 0 0 0;
+    margin: 0;
     padding: 0;
-    width:300px;
-    height:40px;
-
-}
-.language {
     width: 100%;
-    min-width: 30rem;
+    min-width: 300rem;
+    min-height:2rem;
     height:auto;
-    margin: 1em auto;
     display:inline;
+    text-align:right;
 }
 .language li{
+
     display: inline;
     list-style: none;
     height: 15px;
@@ -1199,9 +1214,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     display: inline;
     width: 50px;
     height: 15px;
+    margin-right: 10%;
     padding: 10px 0 0 0;
     margin: 0;
     color:#fafafa;
+    font-weight:bold;
+    text-decoration:none;
 }
 
 .location-image{
@@ -1510,7 +1528,7 @@ footer ul li a{
 
 /* Have in mind to place them in a CSS3 supported style */
 
-::-webkit-input-placeholder  { color:#4e4e4e; font-style:italic; }
+::-webkit-input-placeholder  { color:#4e4e4e; font-style:italic; font-size:16px;}
 input:-moz-placeholder { color:#4e4e4e; font-style:italic; }
 
 /* Oct 16 2012 helpers from bootstrap.css
