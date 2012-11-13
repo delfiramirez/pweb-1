@@ -170,6 +170,29 @@ img {
     max-width: 100%;
     height: auto !important;
 }
+
+
+article, aside{
+  clear:left;
+}
+
+form{
+
+  width:100%;
+
+}
+
+form legend{
+
+  clear:left;
+}
+
+.galleryItem figure{
+  clear:left;
+}
+
+
+
 }
 
 

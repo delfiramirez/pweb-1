@@ -26,7 +26,7 @@ TRY: use Google JSAPI to load external CDN APIS from Google
 
 /* Set up variables */
 
-var corporate_project = ['/blog/','/mission/','/vision/', '/value/'];
+var corporate_project = ['/blog/','/mission/','/vision/', '/num_value/'];
 
 var oudated_message = 'We are maintaining this part of the site. Please follow the back button';
 
@@ -144,3 +144,37 @@ load_location = function(){
 
 }
 
+//Progess Load files HTML% progess TAG Nov 2012 -----*/
+
+var incremental_proges = 0;
+
+var finished_proges = false;
+
+var completed_progres = 100;
+
+
+crea_proges = function () {
+    var progess_bar = document.getElementById("prog");
+
+    var num_val = document.getElementById("num_value");
+
+    progess_bar.num_value = incremental_proges;
+
+    num_val.innerHTML = Math.round((incremental_proges / completed_progres) * 100) + "%";
+
+    incremental_proges++;
+
+    if (incremental_proges > 100) finished_proges = true;
+
+    if (!finished_proges) setTimeout("crea_proges()", 100);
+
+    else {
+        finished_proges = false;
+        incremental_proges = 0;
+    }
+}
+
+/*Set Cookie ------------------------------------*/
+
+document.cookie="resolution= '+Math.max(screen.width,screen.height)+'; path=/";
+console.log(document.cookie);

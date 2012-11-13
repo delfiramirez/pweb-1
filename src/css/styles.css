@@ -303,9 +303,11 @@ datalist{
 
 }
 figure {
-    width:auto;
-    height:auto;
-    min-height:0;
+    min-width:0px;
+    max-width:350px;
+    min-height:0px;
+    max-height:350px;
+
 }
 figcaption {
     font-style: italic;
@@ -1340,13 +1342,10 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     height:100%;
     margin:0;
     padding:0;
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-around;
+    clear:both;
     
-    }
+}
+
 .window{
     display:none;
     background:#020202;
@@ -1364,9 +1363,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 .galleryItem figure{
 
     display: block;
-    max-width: 475px;
+    max-width: 47.5rem;
+    min-width:0px;
     color: #797478;
     height:auto;
+    max-height:30rem;
+    min-height:0px;
     margin:  2% 2% 50px 2%;
     float: left;
     -webkit-transition: color 0.5s ease;
