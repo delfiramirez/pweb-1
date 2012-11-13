@@ -200,6 +200,7 @@ figcaption> h3 {
 /* Lists -------------------------------------------------------------- */
 li a{
     *display:inline;
+    zoom:1;
     display:inline-block;
 }
 li ul, li 
@@ -725,7 +726,7 @@ table thead, table tfoot {
     background: #f5f5f5; 
 }
 
-table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { font-size: 14px; line-height: 18px; text-align: left; }
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { font-size: 16px; line-height: 18px; text-align: left; }
 
 table thead tr th, table tfoot tr td { padding: 8px 10px 9px; font-size: 16px; font-weight: bold; color: #222; }
 
@@ -816,6 +817,9 @@ article[id*=comment-] section p {}
 
 #googlemap img, object {
     max-width: none;
+    position:relative;
+    top:0;
+    padding:0;
 
 
 }
@@ -839,6 +843,7 @@ article[id*=comment-] section p {}
 }
 #social-network li a{
     *display:inline;
+    zoom:1;
     display:inline-block;
 
 }
