@@ -204,3 +204,4 @@ function loadJSON(file,callback){
 loadJSON("../data/template.txt",function(obj){
     console.log(obj.responseText);
 });
+
