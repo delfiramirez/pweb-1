@@ -182,11 +182,17 @@
 	},
 
 	],
+
 	"registerPage":[
 
 	{
 
 		"url-base": "/registerPage/", 
+		"additional-info":{
+
+			"url":"",
+			"text":
+		}
 	}
 
 	{
