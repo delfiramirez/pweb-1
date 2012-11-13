@@ -30,9 +30,9 @@ var corporate_project = ['/blog/','/mission/','/vision/', '/num_value/'];
 
 var oudated_message = 'We are maintaining this part of the site. Please follow the back button';
 
-  sendRequest('data/text/header.txt',setHeader);
-  sendRequest('data/text/nav.txt',setNavigation);
-  sendRequest('data/text/footer.txt',setFooter);
+  //sendRequest('data/text/header.txt',setHeader);
+  //sendRequest('data/text/nav.txt',setNavigation);
+  //sendRequest('data/text/footer.txt',setFooter);
 
 //http://www.w3.org/TR/access-control/
 
@@ -46,6 +46,7 @@ function load_test_page(){
     invocation.onreadystatechange = handler;
     invocation.send(); 
   }
+}
 
 
 /* Appcacache --------------------------------------------------------*/
@@ -178,3 +179,28 @@ crea_proges = function () {
 
 document.cookie="resolution= '+Math.max(screen.width,screen.height)+'; path=/";
 console.log(document.cookie);
+
+var useActiveX = !window.ActiveXObject && window.ActiveXObject;
+function loadJSON(file,callback){
+    var xobj;
+    if(useActiveX){
+        xobj = new ActiveXObject("Microsoft.XMLHTTP"); 
+    }else{
+        xobj = new XMLHttpRequest();
+    }
+    xobj.callback = callback;
+    if(xobj.overrideMimeType){
+        xobj.overrideMimeType("application/json");
+    }
+    xobj.open('GET', file, false);
+    xobj.onreadystatechange = function(){
+        if(this.readyState == 4){
+            this.callback(this);
+        }
+     }
+     xobj.send(null);
+}
+
+loadJSON("../data/template.txt",function(obj){
+    console.log(obj.responseText);
+});

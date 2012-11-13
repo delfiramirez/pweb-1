@@ -1,0 +1,257 @@
+{
+	"messageError":
+	{
+		"en": "error message",
+		"es": "Mensaje de Error",
+		"cat": "Missatge error"
+	},
+
+	"enctype":"application/x-www-form-urlencoded",
+	"companyName": "Corporate Project SCP",
+	"titlePage":[ "About Us","Activity Stream", "Contact", "Gallery Corporate","Mission", "Personal Blog", "Register" ,"Vision", "Values"],
+	"pageID":"id={ID}",
+	"navigation" : ["Home", "Vision", "Mission", "Values", "Contact"] ,
+
+	"mainPage":[
+	{
+
+		"url-base": "/mainPage/", 
+	}
+
+
+	{
+		"h1Title": "Corporate Company",
+		"h2Title": "Corporate Company",
+		"es": "Compañia Corporativa",
+		"cat": "Empresa Corporativa",
+	},
+
+	{
+		"h2SecondTitle": "Section Title",
+		"h3Title": "Post Title",
+		"es": "Nuestra Empresa",
+		"cat": "Empresa Corporativa"
+	},
+
+	{
+		"formID":,
+	 	"formTitle":"Contact Form",
+	 	"esFormTitle": "Formulario de Contacto",
+	 	"formUserID":,
+	 	"required":true
+	},
+
+
+	],
+
+
+	"archivePage":[
+
+	{
+
+		"url-base": "/archivePage/", 
+	}
+
+	{
+		"archivoID":,
+		"dateCategories":,
+		"dateArchives":,
+		"dateBlogRoll":
+
+	},
+	{
+		"articleID":,
+		"article-title":,
+		"asideTitle":
+	},
+	{
+
+	"footer-template":["tag1", "tag2", "tag3"]
+	}
+
+	],
+
+	"activityStreamPage":[
+
+	{
+
+		"url-base": "/activityStreamPage/", 
+	}
+
+
+	{
+		"imgID":,
+		"imgDesc": "alternative description goes here",
+		"imgSrc": "../images/200x200-persona.png",
+
+	},
+
+	{
+
+		"userID":,
+		"userName": ["john", "jack","jim","joe"],
+		"userSaysEn": "Said",
+		"userSaysEs": "Responde",
+		"userSaysCa": "Respon"
+
+	},
+       {
+         "rel":"comments",
+         "href":"comments/?id={id}"
+       },
+
+	{
+		"personalInterestID":,
+		"personalInterest": ["PersonalInterest One", "PersonalInterest Two", "PersonalInterest Three", "PersonalInterest Four"]
+
+	}
+
+	],
+
+	"userPage":[
+
+	{
+
+		"url-base": "/userPage/", 
+	}
+	{
+
+		"userID":,
+		"userLoogedIn":1,
+		"userLoggedOut":0,
+		"userIsAuthor":,
+		"userHasPrivileges":,
+	},
+
+	{
+		"latestArticlesID":,
+		"latestArticlesTitle":[ "Late Article One Title", "Late Article Two Title","Late Article Three Title"]
+
+	}
+
+	],
+
+	"galleryPage":[
+	{
+
+		"url-base": "/galleryPage/", 
+	}
+
+
+	{
+
+		"imageID":,
+		"imageDescription": "alternative text here",
+		"imageTitle": ["Title here","Title here","Title here"],
+		"imageSrc":[
+		{"url": "1.png"}
+
+	],
+
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	
+	},
+
+	{
+
+		"videoID":,
+		"videoDescription": "alternative text here",
+		"videoTitle": ["Title here","Title here","Title here"],
+		"videoSrc":[
+		
+
+
+		],
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	
+	},
+	
+	{
+		"audioID":,
+		"audioDescription": "alternative text here",
+		"audioTitle": ["Title here","Title here","Title here"],
+		"audioSrc":[
+		
+
+
+		],
+		"figcaptionName":[],
+		"figCaptionDescripton":
+	},
+
+	],
+
+	"registerPage":[
+
+	{
+
+		"url-base": "/registerPage/", 
+		"additional-info":{
+
+			"url":"",
+			"text":
+		}
+	}
+
+	{
+
+		"userID":,
+		"userLoggedIn":1,
+		"userLoggedOut":0,
+		"userIsAuthor":,
+		"userHasPrivileges":,
+	},
+
+	{
+		"firstStep":{
+
+	 	"formTitle":"About You",
+	 	"esFormTitle": "Hablenos de Usted",
+	 	"work":,
+		"site":,
+		"telefon":,
+		"street":,
+		"city":,
+		"postal":,
+		"country":,
+	 	"required":true
+	 	},
+
+	 	"secondStep":{
+	
+	 	"formTitle":"About Your Company",
+	 	"esFormTitle": "Háblenos de su Empresa",
+	 	"formUserID":,
+	 	"required":true
+	 	},
+
+	 	"thirdStep":{
+		
+	 	"formTitle":"Newsletter Subscription",
+	 	"esFormTitle": "Subscripción a Noticias",
+	 	"newsletter": "I am interested in",
+	 	"newsletter-subscription":["Fisrt Order Logic", "Unicorns", "Semantic and Ontologies"],
+	 	"delivery-time":"00:11.12-AM",
+	 	"payment-method":["Visa", "MasterCard",{}],
+	 	"required":true
+	 	},
+
+	 	"fourStep":{
+		
+	 	"formTitle":"Confirmal",
+	 	"esFormTitle": "Confirmación",
+	 	"additional-needs":,
+	 	"agree":,
+	 	"required":true
+	 	},
+
+	},
+
+	],
+
+
+
+
+}

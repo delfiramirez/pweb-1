@@ -1,0 +1,18 @@
+  <ul id="sitemap-navigation" class="nav-bottom">
+    <li> {{link.one}}</li>
+    <li> {{link.two}} </li>
+    <li> {{link.three}} </li>
+  </ul>
+                    <ul id="social-network" class="nav-social">
+                        <li><a href="#" class="sntweet" title="our company at Twitter">Twitter</a></li>
+                        <li><a href="#" class="sngplus" title="our company at G+">Google+</a> </li>
+                        <li><a href="#" class="snfb" title="our company at FB">Facebook</a></li>
+                    </ul>
+  <address>
+  Name of the Street
+  City
+  Postal Code
+  Country
+  PO BOX
+  </address>
+  <p>&copy; <time datetime="2012"> 2012</time> Copyright et al.</p>

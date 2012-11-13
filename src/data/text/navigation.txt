@@ -1,0 +1,7 @@
+  <hr class="clear">
+    <nav id="corporate-company" class="main-nav" role="navigation">
+      <a href="#" rel="">Mission</a>
+      <a href="#" rel="">Vision</a>
+      <a href="#" rel="">Values</a>
+      <a href="#" rel="">Contact Us</a>
+  </nav>
