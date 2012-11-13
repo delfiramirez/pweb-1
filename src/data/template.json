@@ -5,7 +5,7 @@
 		"es": "Mensaje de Error",
 		"cat": "Missatge error"
 	},
-	
+
 	"enctype":"application/x-www-form-urlencoded",
 	"companyName": "Corporate Project SCP",
 	"titlePage":[ "About Us","Activity Stream", "Contact", "Gallery Corporate","Mission", "Personal Blog", "Register" ,"Vision", "Values"],
@@ -220,6 +220,7 @@
 	 	"formUserID":,
 	 	"required":true
 	 	},
+
 	 	"thirdStep":{
 		
 	 	"formTitle":"Newsletter Subscription",
@@ -227,13 +228,16 @@
 	 	"newsletter": "I am interested in",
 	 	"newsletter-subscription":["Fisrt Order Logic", "Unicorns", "Semantic and Ontologies"],
 	 	"delivery-time":"00:11.12-AM",
+	 	"payment-method":["Visa", "MasterCard",{}],
 	 	"required":true
 	 	},
+
 	 	"fourStep":{
 		
 	 	"formTitle":"Confirmal",
 	 	"esFormTitle": "Confirmación",
-	 	"formUserID":,
+	 	"additional-needs":,
+	 	"agree":,
 	 	"required":true
 	 	},
 
