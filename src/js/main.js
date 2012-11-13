@@ -201,7 +201,7 @@ function loadJSON(file,callback){
      xobj.send(null);
 }
 
-loadJSON("http://raw.github.com/delfiramirez/pweb-1/addons/src/data/template.json",function(obj){
+loadJSON("../data/template.txt",function(obj){
     console.log(obj.responseText);
 });
 
