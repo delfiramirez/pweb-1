@@ -29,15 +29,22 @@
       <h2> {{title.h2}} </h2>
     </hgroup>
       <input type='search' id='buscar' class="search-nav"  pattern="[a-zA-Z0-9]+" placeholder="Search...">
+      <!-- Nov 2012 : to be replaced with plain .txt //-->
+    <ul class="language">
+      <li> <a href="#" class="en-lang" title="{{title.a}}"> ENG </a> </li>
+      <li> <a href="#" class="es-lang" title="{{title.b}}"> ES </a> </li>
+      <li> <a href="#" class="ca-lang" title="{{title.c}}"> CA </a> </li>
+    </ul>
   </header>
   <hr class="clear">
-  <nav id="corporate-company" class="main-nav" >
-    <ul>
-      <li><a href="#" id="test">Mission</a></li>
-      <li><a href="#">Vision</a></li>
-      <li><a href="#">Values</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
+
+  <!--- Fixed navigation for mobile first compatible  Nov 2012 //---------------->
+  <nav id="corporate-company" class="main-nav" role="navigation">
+    <a href="#">&#9776; Menu</a>
+    <a href="#" id="test">Mission</a>
+    <a href="#">Vision</a>
+    <a href="#">Values</a>
+    <a href="#">Contact Us</a>
   </nav>
   <!-- begin template  //-->
       <div class="wide">

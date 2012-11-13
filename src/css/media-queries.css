@@ -1,6 +1,10 @@
 
 @media screen {
+
+
     * { font-family: serif; }
+
+
     html {}
     body {
         font-size: 62.5%;
@@ -69,7 +73,7 @@ PS: REmember, Hack for windows mobile ( media ="Screen");
 
     /* Corporate Classes */
 
-  header hgroup {
+  header > hgroup {
         -moz-box-sizing:border-box;
         -webkit-box-sizing:border-box;
         box-sizing:border-box;
@@ -163,29 +167,77 @@ input:-moz-placeholder { color:#4e4e4e; font-style:italic; }
     @-o-viewport { width: 320px; }
     @viewport { width: 320px; }
 
+  }
+
+@media screen and (max-width: 480px) {
+
+
+h1 { 
+  font-size: 4rem; 
+}
+h2 { 
+  font-size: 2rem; 
+  margin-left: 4rem;  
+}
+nav, nav a { 
+  padding: 1rem; 
+}
+p {
+ margin: 1rem; 
+}
+
 dl {
     margin: 0;
 }
+
 img {
     max-width: 100%;
     height: auto !important;
 }
 
+/* 13 Nov 2013: Adapatative Responsive CSS3 nav menu ----*/
+
+header{
+
+  width:100%;
+  clear:left;
+}
+
+nav   { padding: 0; }
+
+nav a { 
+
+  display: block; 
+  padding: 1.2rem; 
+}
+nav a:first-child { 
+  display: block; 
+}
+
+/*Float left and place the elments on screen -------------*/
 
 article, aside{
+  width: 100%;
   clear:left;
 }
 
 form{
 
   width:100%;
+  display:block;
 
 }
 
 form legend{
 
-  clear:left;
 }
+
+
+figure{
+
+  width:auto;
+}
+
 
 .galleryItem figure{
   clear:left;
@@ -201,6 +253,7 @@ form legend{
     body {
         width: 580px;
     }
+
     @-ms-viewport { width: 768px; }
     @-webkit-viewport { width: 768px; }
     @-moz-viewport { width: 768px; }
