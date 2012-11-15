@@ -8,8 +8,8 @@
         <meta http-equiv="content-security-policy" content="allow self">
 
 
-        <script src="https://www.google.com/jsapi"></script>
-        <script src="../src/js/html5.js"></script>
+        <script src="https://www.google.com/jsapi" async></script>
+        <script src="../src/js/html5.js" defer></script>
         <script src="../src/js/main.js"></script>
 
         <link rel="stylesheet" href="../src/css/media-print/media-print.css" media="print">
@@ -30,7 +30,8 @@
       <h2> {{title.h2}} </h2>
     </hgroup>
 
-  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' formaction="{{action}}" results='5' name='s'>
+  <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' formaction="{{action}}" results='5' name='s' class="search-nav">
+
     <ul id="language-selection" class="language">
       <li> <a href="#"  title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
       <li> <a href="#"  title="{{title.b}}" hreflang="es"> ES </a> </li>
@@ -80,7 +81,7 @@
   <h3 title="where we are">Where We Are</h3>
   <p> 
     <a href="#" ><img src="../images/400x280-map.png" class="location-image" alt="Santa Rosa Calif."></a> 
-    <a href="#googlemap">{{action}}</a> 
+    <a href="#googlemap">Click to Locate</a> 
   </p>
   <address itemscope>
   <span class="company-location" itemprop="name">{{Name of the Street}}</span>
@@ -114,10 +115,11 @@
   <p>&copy; <time> 2012</time> <small><a rel="license" href="/legal/"> Copyright et al.</a></small></p>
 </footer>
   </div>
-  <details hidden>
+  <details class="modal-open" id="googlemap">
       <summary data="summary">
+        <a href="#" id="close">Close Panel</a>
           </summary>
-  <div id="googlemap" class="modal-open">
+  <div id="mapcanvas">
 <script>
 /* here goes the modal map; scripts included */
 </script>
@@ -125,6 +127,8 @@
   </div>
 
   </details>
+  <!---LightBox effect, if needed//-->
+  <div class="background-full-content"></div>
 <!--[if IE]>
 
 <style type="text/css" media="screen">

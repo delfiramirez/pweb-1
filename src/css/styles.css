@@ -413,7 +413,7 @@ input[type="submit"] {
 input[type="search"] {
     -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
-             box-sizing: content-box;
+     box-sizing: content-box;
     -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-decoration,
@@ -754,10 +754,10 @@ http://perishable.com
 
  */
 
-article[id*=post-] {}           /* target all posts */
+article[id*=post-] {}   /* target all posts */
 article[id*=post-] header h1 {} /* target all post h1 tags */
 article[id*=post-] section p {} /* target all post p tags */
-article[id*=comment-] {}           
+article[id*=comment-] {}   
 article[id*=comment-] header h1 {} 
 article[id*=comment-] section p {} 
 
@@ -772,7 +772,7 @@ article[id*=comment-] section p {}
 
 }
 #wrapper {
-    width:100%;
+    width:auto;
     text-align:left;
     position: relative;
     margin: 0 .325em 0 0;
@@ -806,7 +806,7 @@ article[id*=comment-] section p {}
 }
 
 /* Location Objects */
-#googlemap{
+.modal-open{
     max-width:500px;
     height:300px;
     border:1px solid #efefef;
@@ -815,16 +815,50 @@ article[id*=comment-] section p {}
     -moz-box-shadow: #000 5px 10px 8px 3px inset; 
     box-shadow: #000 5px 5px 10px 3px inset; 
     background-color: currentColor;
+   display:none;
+    -o-animation-name: fade;
+    -o-animation-duration:1s; /* Opera */
+    animation-name: fade;
+    animation-duration: 1s;
+    -moz-animation-name:fade;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+}
 }
 
-#googlemap img, object {
+.modal-open img, object {
     max-width: none;
     position:relative;
     top:0;
     padding:0;
+    padding: 5px 5px 4.5rem 5px;
+        -o-animation-name:grow;
+        -o-animation-duration: 0.50s;
+        animation-name:grow;
+        animation-duration: 0.50s;
+        -moz-animation-name:grow;
+        -moz-animation-duration: 0.50s;
+
+    -webkit-animation-duration: 0.50s;
+    -webkit-animation-name: grow;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;         
+}
 
 
 }
+
+.modal-open:target {
+
+    display: table;
+    height:100%;
+
+    }
+
 #map_canvas img {
     max-width: none;
 }
@@ -888,7 +922,7 @@ ul[class='nav-social'] li a {
 #selected-articles, #archives{
     text-align:left;
     width:25%;
-            
+    
     padding:0 .6em 0 0;
     height: 100%;
     min-height:100%;
@@ -1091,7 +1125,7 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 /*Navigation */
 
-/* Helper second navi<<gation Nov 2012 Revision -----*/
+/* Helper second navigation Nov 2012 Revision -----*/
 
 .nav-header{
     position:absolute;
@@ -1168,6 +1202,9 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
     /*Currently here blokes put styles for icon flags; but I do highly recommend to avoid icon flags */
 
 }
+/* Search Form , if stysles required ----------------------*/
+
+
 
 /*Content */
 
@@ -1366,6 +1403,30 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 /* Grid Gallery */
 
+article figure{
+    width:100%;
+    margin:0 auto 20px auto;
+    max-width:480px;
+    position: relative;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 0 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 0 4px rgba(0,0,0,0.3);
+    
+}
+article figure a{display:block;}
+
+article figure img, article figure video, article figure audio{
+    padding:10px;
+    display:block;
+    border:none;
+    background:#eee;
+    text-align:center;
+    max-width:100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
 .galleryItem figure{
 
     display: block;
@@ -1486,6 +1547,12 @@ http://projects.delfiramirez.info/nastymondays/site-2010/
 }
 .search-nav{
 
+    float:left;
+    margin-top:50px;
+    display: table;
+    vertical-align: text-bottom;
+    background-color:orange;
+
 }
 .subscription-done{
 
@@ -1591,6 +1658,42 @@ Twitter Bootstrap have become a UI standard, so we use it to not disturb our use
 }
 
 /*--------------------------------------------------------------------------------------------------*/
+
+/* Styling  for responsive slider */
+.corporate-slideshow  {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0px auto 20px auto;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;  
+  box-sizing: border-box;
+  }
+
+.corporate-slideshow  li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.corporate-slideshow  li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.corporate-slideshow  img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  max-width:100%;
+  border: 0;
+  }
 /*Responsive grid */
 
 .all{
@@ -1601,6 +1704,8 @@ Twitter Bootstrap have become a UI standard, so we use it to not disturb our use
 }
 .all50{
     width:50%;
+    height:auto;
+    float:left;
 
 
 }
@@ -1619,6 +1724,61 @@ Twitter Bootstrap have become a UI standard, so we use it to not disturb our use
 
 
 }
+
+/*** Pop Up slide CSS ( No JQuery)----------------------------------------------------*/
+
+@keyframes fade
+ {
+ from {top:0px;}
+ to {top:200px;}
+ }
+
+@-moz-keyframes fade /* Firefox */
+ {
+ from {top:0px;}
+ to {top:200px;}
+ }
+
+ @-webkit-keyframes fade /* Safari and Chrome */
+ {
+ from {top:0px;}
+ to {top:200px;}
+ }
+
+ @-o-keyframes fade /* Opera */
+ {
+ from {top:0px;}
+ to {top:200px;}
+ }
+
+ /*----------------------- alternate Javscript method --------------*/
+.background-full-content{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:#4b4b4b;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+    background: rgba(0,0,0,0.5);
+        }
+.overground-content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 16px;
+    border: 16px solid orange;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+        }
 
 
 
