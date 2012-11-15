@@ -8,8 +8,6 @@
         <meta http-equiv="content-security-policy" content="allow self" />
         
 <script src="../src/js/html5.js"></script>
-<script src="../src/js/libs/modernizr/path"></script>
-
 <link rel="stylesheet" href="../src/css/media-queries/media-print.css" media="print">
 <link rel="stylesheet" href="../src/css/styles.css" media="only screen and (color)">
 </head>
@@ -26,26 +24,24 @@
       <h1> Company Name </h1>
       <h2> {{title.h2}} </h2>
     </hgroup>
-  <nav >
+
     <ul id="language-selection" class="language">
       <li> <a href="#" class="en-lang" title="{{title.a}}" hreflang="en-GB"> ENG </a> </li>
       <li> <a href="#" class="es-lang" title="{{title.b}}" hreflang="es"> ES </a> </li>
       <li> <a href="#" class="ca-lang" title="{{title.c}}" hreflang="es-CA"> CA </a> </li>
     </ul>
-  </nav>
   <label for=search>Search this site
   <input type='search' id="buscar" pattern="[a-zA-Z0-9]+" placeholder='{{lang...}}' formaction="search.php" results='5' name='s'></label>
   </header>
-    <hr class="clear">
-  <nav id="corporate-company" class="main-nav" role ="navigation">
-    <ul>
-      <li><a href="#" rel="">Mission</a></li>
-      <li><a href="#" rel="">Vision</a></li>
-      <li><a href="#" rel="">Values</a></li>
-      <li><a href="#" rel="">Contact Us</a></li>
-    </ul>
+  <hr class="clear">
+  <!--- Fixed navigation for mobile first compatible  Nov 2012 //-->
+  <nav id="corporate-company" class="main-nav" role="navigation">
+    <a href="#">&#9776; Menu</a>
+    <a href="#">Mission</a>
+    <a href="#">Vision</a>
+    <a href="#">Values</a>
+    <a href="#">Contact Us</a>
   </nav>
-
   <!-- [ corporate template ]  //-->
   
   <div id="form-corporate">
@@ -57,11 +53,11 @@
 
       <!--removed quotes from atrributes HTML5 spec //-->
       <form action="send.cgi" enctype="multipart/form-data" method="post">
-<section class="tab">
+<section class="contact">
           <!--first form-data //-->
-  <section class="contact tab1">
-      <fieldset>
-        <legend>About You</legend>  
+  <section id="tab1">
+      <fieldset class="tab" >
+        <legend><a href="#tab1">About You</a></legend>  
           <label for='name'>Name</label>
             <input type='text' id='name' placeholder="Please, your name" required>
           <label for='surname'> Surname</label>
@@ -96,9 +92,9 @@
     </section>
         <!--second form-data //-->
 
-  <section id="your-company-data" class="contact tab2" hidden>
-      <fieldset>
-        <legend>About Your Company</legend>  
+  <section id="your-company-data" class="tab1">
+        <fieldset class="tab" >
+        <legend><a href="#tab2">About Your Company</a></legend>  
           <label for='work'>Company name</label>  
             <input type=text id='work' placeholder="your company name">
            <label for='site'>Website</label> 
@@ -120,9 +116,9 @@
 
        <!--third form-data //-->
 
-    <section id="subscription-range-data" class="contact tab3" hidden>
-<fieldset>
-          <legend>Newsletter Subscription</legend> 
+    <section id="subscription-range-data" class="tab3">
+   <fieldset class="tab" >
+          <legend><a href="#tab3">Newsletter Subscription</a></legend> 
           <label  for='newsletter'>I am interested in</label>
             <input type='text' name='newsletter' id='newsletter' list="newsletter-subscription" maxlength="100" placeholder="Select your subscription" required>
         <datalist id="newsletter-subscription">
@@ -151,10 +147,10 @@
   </section>
 
 <!-- fourth validation step // -->
-  <section id="confirmal-range-data" class="contact tab4" hidden>
-<fieldset>
-         <legend>Confirmal</legend> 
-          <label for='needs'>Additional needs</label>
+  <section id="confirmal-range-data" class="tab4" hidden>
+   <fieldset class="tab">
+         <legend><a href="#tab4">Confirmal</a></legend> 
+          <label for='needs'><a href="#tab4">Additional needs</a></label>
             <textarea name="needs" id='needs' maxlength="500"></textarea>
            <label for='terms'> <input type='checkbox' name='agree' value="checked">I agree to <a href="#" rel="terms">Terms and conditions</a></label>
 </fieldset>

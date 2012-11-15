@@ -1492,11 +1492,12 @@ article figure img, article figure video, article figure audio{
 
 }
 
-.tab{
+section.tab{
     position: relative;
     margin: 40px auto;
     width: auto;
 }
+/*
 .tab1, .tab2, .tab3, .tab4, .tab5{
     float:left;
     position:relative;
@@ -1507,6 +1508,7 @@ article figure img, article figure video, article figure audio{
     margin:0;
     border: 1px solid #ddd;
 }
+*/
 .tab1{
 
     left:150px;

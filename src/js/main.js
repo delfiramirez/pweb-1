@@ -51,7 +51,7 @@ function load_test_page(){
 
 /* Appcacache --------------------------------------------------------*/
 /*detect */
-function appcache_deteccio(){
+appcache_deteccio = function(){
 
 if (window.applicationCache) {
 
@@ -96,13 +96,9 @@ if (window.applicationCache)
         break;
    }
    return message_CacheStatus;
-   console.log( message_CacheStatus );
    //error a dpurar
 }
 };
-
-
-
 
 
 // Appcache
@@ -179,6 +175,8 @@ crea_proges = function () {
 
 document.cookie="resolution= '+Math.max(screen.width,screen.height)+'; path=/";
 console.log(document.cookie);
+
+/* #http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#the-formdata-interface */
 
 var useActiveX = !window.ActiveXObject && window.ActiveXObject;
 function loadJSON(file,callback){
